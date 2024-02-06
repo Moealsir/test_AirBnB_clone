@@ -79,6 +79,23 @@ class HBNBCommand(cmd.Cmd):
                 storage.save()  # Save after deleting the instance
             else:
                 print("** no instance found **")
+        
+    def do_all(self, line):
+        """Prints all string representation of all instances"""
+        args = line.split()
+        if not args:
+            # Print all instances of all classes
+            for obj_key, obj in self.objects.items():
+                print(obj)
+        elif args[0] not in self.classes:
+            # Print error message if class name doesn't exist
+            print("** class doesn't exist **")
+        else:
+            # Print instances of the specified class
+            class_name = args[0]
+            instances = [str(obj) for obj_key, obj in self.objects.items() if obj_key.startswith(class_name)]
+            print(instances)
+
 
 if __name__ == "__main__":
     HBNBCommand().cmdloop()
