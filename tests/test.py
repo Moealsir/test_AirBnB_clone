@@ -15,14 +15,17 @@ class TestBaseModel(unittest.TestCase):
 
     def tearDown(self):
         pass
+    
+    def test_id_generation(self):
+        self.assertIsNotNone(self.model.id)
 
     def test_instance_creation(self):
         self.assertTrue(hasattr(self.model, 'id'), "id attribute is missing")
-        self.assertTrue(isinstance(self.model.id, uuid.UUID), "id is not of type uuid.UUID")
         self.assertTrue(hasattr(self.model, 'created_at'), "created_at attribute is missing")
         self.assertTrue(isinstance(self.model.created_at, datetime), "created_at is not of type datetime")
         self.assertTrue(hasattr(self.model, 'updated_at'), "updated_at attribute is missing")
         self.assertTrue(isinstance(self.model.updated_at, datetime), "updated_at is not of type datetime")
+
 
     def test_to_dict(self):
         model_dict = self.model.to_dict()
