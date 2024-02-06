@@ -9,6 +9,7 @@ class HBNBCommand(cmd.Cmd):
         super().__init__(*args, **kwargs)
         self.prompt = '(hbnb)'
         self.classes = ["BaseModel"]
+        self.objects = storage.all()
         storage.reload()
         
     def emptyline(self):
@@ -52,18 +53,13 @@ class HBNBCommand(cmd.Cmd):
             print("** instance id missing **")
             return
         else:
-            objects = storage.all()
+            
             key = "{} {}".format(args[0], args[1])
-            if key in objects.keys():
-                print(objects[key])
+            if key in self.objects.keys():
+                print(self.objects[key])
             else:
                 print("** no instance found **")
-            # obj = storage.all().get(obj_id)
-            # if obj:
-            #     print(obj)
-            # else:
-            #     print("** no instance found **")
-        
+
     
 if __name__ == "__main__":
     HBNBCommand().cmdloop()
