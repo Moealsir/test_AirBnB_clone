@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import json
 import cmd
 from models.base_model import BaseModel
 from models import storage
@@ -12,7 +13,7 @@ class HBNBCommand(cmd.Cmd):
         self.classes = ["BaseModel", "User"]
         self.objects = storage.all()
         storage.reload()
-
+        
     def emptyline(self):
         pass
 
@@ -42,7 +43,7 @@ class HBNBCommand(cmd.Cmd):
             new_instance.save()
 
     def do_show(self, line):
-        """Function to show an instance of a class"""
+        """Prints the string representation of an instance"""
         args = line.split()
         if not args:
             print("** class name missing **")
@@ -50,15 +51,18 @@ class HBNBCommand(cmd.Cmd):
         elif args[0] not in self.classes:
             print("** class doesn't exist **")
             return
-        elif len(args) == 1:
+        elif len(args) < 1:
+            print(args)
             print("** instance id missing **")
             return
         else:
-            key = "{} {}".format(args[0], args[1])
-            if key in self.objects.keys():
-                print(self.objects[key])
+            key = "{}.{}".format(args[0], args[1])
+            if key in storage.all():
+                obj = storage.all()[key]
+                print(obj)
             else:
                 print("** no instance found **")
+
 
     def do_destroy(self, line):
         """Function to destroy an instance of a class"""
@@ -73,28 +77,34 @@ class HBNBCommand(cmd.Cmd):
             print("** instance id missing **")
             return
         else:
-            key = "{} {}".format(args[0], args[1])
-            if key in self.objects:
-                del self.objects[key]
-                storage.save()  # Save after deleting the instance
+            key = "{}.{}".format(args[0], args[1])
+            if key in self.test:
+                # del  self.test[key]
+                # storage.__objects = self.test
+                # storage.save()
+                
+                print('** destryed')
             else:
-                print("** no instance found **")
-        
+                print("** no such object exists **")
+
     def do_all(self, line):
         """Prints all string representation of all instances"""
         args = line.split()
+        all_instances = []
+
         if not args:
-            # Print all instances of all classes
-            for obj_key, obj in self.objects.items():
-                print(obj)
+            for obj_key, obj in storage.all().items():
+                all_instances.append(str(obj))
         elif args[0] not in self.classes:
-            # Print error message if class name doesn't exist
             print("** class doesn't exist **")
+            return
         else:
-            # Print instances of the specified class
             class_name = args[0]
-            instances = [str(obj) for obj_key, obj in self.objects.items() if obj_key.startswith(class_name)]
-            print(instances)
+            for obj_key, obj in storage.all().items():
+                if obj_key.split(".")[0] == class_name:
+                    all_instances.append(str(obj))
+        print(all_instances)
+
 
     def do_update(self, line):
         """Updates an instance based on the class name and id"""
@@ -118,16 +128,17 @@ class HBNBCommand(cmd.Cmd):
         class_name = args[0]
         instance_id = args[1]
         attribute_name = args[2]
-        attribute_value = " ".join(args[3:])
+        attribute_value = args[3]
 
-        key = "{} {}".format(class_name, instance_id)
-        if key not in self.objects:
+        key = "{}.{}".format(class_name, instance_id)
+        if key not in storage.all():
             print("** no instance found **")
             return
+        obj = storage.get(key)
+        setattr(obj, attribute_name, attribute_value)
+        storage.save(obj)
+            
 
-        instance = self.objects[key]
-        setattr(instance, attribute_name, attribute_value)
-        instance.save()
-
+    
 if __name__ == "__main__":
     HBNBCommand().cmdloop()

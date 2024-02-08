@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-# description of code
-"""FileStorage class to store content"""
 import json
-
+from pathlib import Path
+from ..base_model import BaseModel
 
 class FileStorage:
     """
@@ -12,43 +11,33 @@ class FileStorage:
 
     __file_path = "file.json"
     __objects = {}
-
-    def all(self):
-        """return  a dictionary of objects in memory"""
-        return self.__objects
-
+    
     def new(self, obj):
-        """Add a new object instance to the dictionary __objects."""
-        key = "{} {}".format(obj.__class__.__name__, obj.id)
-        self.__objects[key] = obj
+        """ """
+        self.__objects[obj.__class__.__name__ +'.' + obj.id] = obj
+        
+        
+    def all(self):
 
+        return self.__objects
+    
     def save(self):
-        """serialize __objects to the JSON file"""
-        with open(self.__file_path, "w") as fp:
-            json.dump(self.__objects, fp, default=str)
-
+        """
+        Serialize __objects to the JSON file (path: __file_path).
+        """
+        values = {}
+        for key, value in self.__objects.items():
+            values[key] = value.to_dict()
+        json.dump(values, open(self.__file_path, 'w', encoding=('utf-8')), indent=2)
+    
     def reload(self):
-        """Deserialize the JSON file to __objects."""
         try:
-            with open(self.__file_path, "r") as json_file:
-                self.__objects = json.load(json_file)
+            with  open(self.__file_path, 'r+', encoding=('utf-8')) as f:
+                f.seek(0)
+                data = json.load(f)
+                for  key, value in data.items():
+                    self.__objects[key] = eval(value['__class__'])(**value)
+            
         except Exception:
             pass
-
-
-if __name__ == "__main__":
-    from models import storage
-    from models.base_model import BaseModel
-
-    all_objs = storage.all()
-    print("-- Reloaded objects --")
-    for obj_id in all_objs.keys():
-        obj = all_objs[obj_id]
-        print(obj)
-
-    print("-- Create a new object --")
-    my_model = BaseModel()
-    my_model.name = "My_First_Model"
-    my_model.my_number = 89
-    my_model.save()
-    print(my_model)
+        
