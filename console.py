@@ -81,7 +81,7 @@ class HBNBCommand(cmd.Cmd):
         else:
             key = "{}.{}".format(args[0], args[1])
             if key in self.objects.keys():
-                del  self.objects[key]
+                del self.objects[key]
                 storage.__objects = self.objects
                 storage.save()
             else:
@@ -150,44 +150,6 @@ class HBNBCommand(cmd.Cmd):
                     else:
                         obj.__dict__[k] = v
             storage.save()
-
-
-    # def do_update(self, line):
-    #     """update <class name> <id> <attribute name> "<attribute value>" """
-    #     args = line.split()
-
-        
-    #     if not args:
-    #         print("** class name missing **")
-    #         return
-    #     elif args[0] not in self.classes:
-    #         print("** class doesn't exist **")
-    #         return
-    #     elif len(args) < 2:
-    #         print("** instance id missing **")
-    #         return
-    #     elif len(args) < 3:
-    #         class_name = args[0]
-    #         instance_id = args[1]
-    #         key = "{}.{}".format(class_name, instance_id)
-    #         if key not in storage.all():
-    #             print("** no instance found **")
-    #             return
-    #         elif len(args) < 3:
-    #             print("** attribute name missing **")
-    #             return
-    #     elif len(args) < 4:
-    #         attribute_name = args[2]
-    #         print("** value missing **")
-    #         return
-    #     else:
-    #         attribute_value = args[3]            
-    #         obj = storage.get(key)
-    #         setattr(obj, attribute_name, attribute_value)
-    #         storage.save(obj)
-                
-            
-            
 
     
 if __name__ == "__main__":
