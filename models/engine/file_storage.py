@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 from ..base_model import BaseModel
-
+ 
 class FileStorage:
     """
     Class for serializing instances to a JSON file

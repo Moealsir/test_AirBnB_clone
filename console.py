@@ -21,6 +21,9 @@ class HBNBCommand(cmd.Cmd):
         if len(line) == 0:
             return True
 
+    def help_EOF(self):
+        print("Quit command to exit the program\n")
+
     def help_quit(self):
         print("Quit command to exit the program\n")
 
@@ -51,8 +54,7 @@ class HBNBCommand(cmd.Cmd):
         elif args[0] not in self.classes:
             print("** class doesn't exist **")
             return
-        elif len(args) < 1:
-            print(args)
+        elif len(args) == 1:
             print("** instance id missing **")
             return
         else:
@@ -78,14 +80,12 @@ class HBNBCommand(cmd.Cmd):
             return
         else:
             key = "{}.{}".format(args[0], args[1])
-            if key in self.test:
-                # del  self.test[key]
-                # storage.__objects = self.test
-                # storage.save()
-                
-                print('** destryed')
+            if key in self.objects.keys():
+                del  self.objects[key]
+                storage.__objects = self.objects
+                storage.save()
             else:
-                print("** no such object exists **")
+                print("** no instance found **")
 
     def do_all(self, line):
         """Prints all string representation of all instances"""
@@ -107,36 +107,86 @@ class HBNBCommand(cmd.Cmd):
 
 
     def do_update(self, line):
-        """Updates an instance based on the class name and id"""
-        args = line.split()
-        if not args:
-            print("** class name missing **")
-            return
-        elif args[0] not in self.classes:
-            print("** class doesn't exist **")
-            return
-        elif len(args) < 2:
-            print("** instance id missing **")
-            return
-        elif len(args) < 3:
-            print("** attribute name missing **")
-            return
-        elif len(args) < 4:
-            print("** value missing **")
-            return
+            """Update an instance based on the class name and id."""
+            args = line.split()
+            obj_dict = storage.all()
 
-        class_name = args[0]
-        instance_id = args[1]
-        attribute_name = args[2]
-        attribute_value = args[3]
+            if len(args) == 0:
+                print("** class name missing **")
+                return False
+            if args[0] not in self.classes:
+                print("** class doesn't exist **")
+                return False
+            if len(args) == 1:
+                print("** instance id missing **")
+                return False
+            if "{}.{}".format(args[0], args[1]) not in obj_dict.keys():
+                print("** no instance found **")
+                return False
+            if len(args) == 2:
+                print("** attribute name missing **")
+                return False
+            if len(args) == 3:
+                try:
+                    type(eval(args[2])) != dict
+                except NameError:
+                    print("** value missing **")
+                    return False
 
-        key = "{}.{}".format(class_name, instance_id)
-        if key not in storage.all():
-            print("** no instance found **")
-            return
-        obj = storage.get(key)
-        setattr(obj, attribute_name, attribute_value)
-        storage.save(obj)
+            if len(args) == 4:
+                obj = obj_dict["{}.{}".format(args[0], args[1])]
+                if args[2] in obj.__class__.__dict__.keys():
+                    valtype = type(obj.__class__.__dict__[args[2]])
+                    obj.__dict__[args[2]] = valtype(args[3])
+                else:
+                    obj.__dict__[args[2]] = args[3]
+            elif type(eval(args[2])) == dict:
+                obj = obj_dict["{}.{}".format(args[0], args[1])]
+                for k, v in eval(args[2]).items():
+                    if (k in obj.__class__.__dict__.keys() and
+                            type(obj.__class__.__dict__[k]) in {str, int, float}):
+                        valtype = type(obj.__class__.__dict__[k])
+                        obj.__dict__[k] = valtype(v)
+                    else:
+                        obj.__dict__[k] = v
+            storage.save()
+
+
+    # def do_update(self, line):
+    #     """update <class name> <id> <attribute name> "<attribute value>" """
+    #     args = line.split()
+
+        
+    #     if not args:
+    #         print("** class name missing **")
+    #         return
+    #     elif args[0] not in self.classes:
+    #         print("** class doesn't exist **")
+    #         return
+    #     elif len(args) < 2:
+    #         print("** instance id missing **")
+    #         return
+    #     elif len(args) < 3:
+    #         class_name = args[0]
+    #         instance_id = args[1]
+    #         key = "{}.{}".format(class_name, instance_id)
+    #         if key not in storage.all():
+    #             print("** no instance found **")
+    #             return
+    #         elif len(args) < 3:
+    #             print("** attribute name missing **")
+    #             return
+    #     elif len(args) < 4:
+    #         attribute_name = args[2]
+    #         print("** value missing **")
+    #         return
+    #     else:
+    #         attribute_value = args[3]            
+    #         obj = storage.get(key)
+    #         setattr(obj, attribute_name, attribute_value)
+    #         storage.save(obj)
+                
+            
             
 
     
