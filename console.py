@@ -3,6 +3,7 @@ import json
 import cmd
 from models.base_model import BaseModel
 from models import storage
+from models import user
 
 
 class HBNBCommand(cmd.Cmd):
@@ -11,7 +12,7 @@ class HBNBCommand(cmd.Cmd):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.prompt = '(hbnb) '
-        self.classes = ["BaseModel", "User"]
+        self.classes = storage.class_dict()
         self.objects = storage.all()
         storage.reload()
 
@@ -38,13 +39,32 @@ class HBNBCommand(cmd.Cmd):
         if not args:
             print("** class name missing **")
             return
-        elif args[0] not in self.classes:
+        class_name = args[0]
+        if class_name not in self.classes:
             print("** class doesn't exist **")
             return
-        else:
-            new_instance = BaseModel()
-            print(new_instance.id)
-            new_instance.save()
+        new_instance = self.classes[class_name]()
+        new_instance.save()
+        print(new_instance.id)
+
+    
+    # def do_create(self, line):
+    #     """Function to create a new instance of a class"""
+    #     args = line.split()
+    #     if not args:
+    #         print("** class name missing **")
+    #         return
+    #     elif args[0] not in self.classes:
+    #         print("** class doesn't exist **")
+    #         return
+    #     else:
+    #         whew = self.classes[args]()
+    #         whew.save()
+    #         print(whew.id)
+    #         # new_instance = BaseModel()
+    #         # print(new_instance)
+    #         # # print(new_instance.id)
+    #         # new_instance.save()
 
     def do_show(self, line):
         """Prints the string representation of an instance"""
