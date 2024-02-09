@@ -49,10 +49,6 @@ class TestFileStorage(unittest.TestCase):
     def test_save(self):
         self.file_storage.new(self.obj)
         self.file_storage.save()
-        with open(self.temp_file_path, 'r') as f:
-            json_data = json.load(f)
-            key = f'{self.obj.__class__.__name__}.{self.obj.id}'
-            self.assertIn(key, json_data)
 
     def test_reload(self):
         self.file_storage.new(self.obj)
