@@ -47,7 +47,6 @@ class HBNBCommand(cmd.Cmd):
         new_instance.save()
         print(new_instance.id)
 
-    
     # def do_create(self, line):
     #     """Function to create a new instance of a class"""
     #     args = line.split()

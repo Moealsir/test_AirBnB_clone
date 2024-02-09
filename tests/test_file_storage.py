@@ -1,76 +1,82 @@
-import sys
-
 import unittest
+from unittest.mock import patch
+import sys
+sys.path.append('../')  # Add the parent directory to Python path
+from models.engine.file_storage import FileStorage 
+
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+import tempfile
+import json
+from unittest.mock import mock_open, patch
 from datetime import datetime
+
 from models.base_model import BaseModel
-from models import storage
-from models.engine.file_storage import FileStorage
-
-
+from models.user import User
+from models.state import State
+from models.city import City
+from models.place import Place
+from models.review import Review
+from models.amenity import Amenity
+from models import FileStorage
 class TestFileStorage(unittest.TestCase):
-    def setUp(self):
-        """Set up test environment."""
-        # Create a unique FileStorage instance for testing
-        self.storage = FileStorage()
 
-        # Create a test BaseModel instance
-        self.base_model = BaseModel()
+    def setUp(self):
+        self.temp_file, self.temp_file_path = tempfile.mkstemp()
+        self.file_storage = FileStorage()
+        FileStorage.__file_path = self.temp_file_path
+        self.obj = BaseModel()
+
+        # Create an empty JSON file
+        with open(self.temp_file_path, 'w') as f:
+            f.write('{}')
 
     def tearDown(self):
-        """Clean up after each test."""
-        # Delete the test JSON file if it exists
-        if os.path.exists(self.storage._FileStorage__file_path):
-            os.remove(self.storage._FileStorage__file_path)
+        try:
+            os.remove(self.temp_file_path)
+        except FileNotFoundError:
+            pass
 
-    def test_save_reload(self):
-        """Test saving and reloading objects."""
-        # Save the test BaseModel instance
-        self.storage.new(self.base_model)
-        self.storage.save()
+    def test_new(self):
+        self.file_storage.new(self.obj)
+        key = f'{self.obj.__class__.__name__}.{self.obj.id}'
+        self.assertIn(key, self.file_storage.all())
 
-        # Create a new FileStorage instance to simulate reloading
-        new_storage = FileStorage()
-        new_storage.reload()
+    def test_all(self):
+        self.file_storage.new(self.obj)
+        objects = self.file_storage.all()
+        self.assertIsInstance(objects, dict)
 
-        # Check if the BaseModel instance was reloaded
-        reloaded_objects = new_storage.all()
-        self.assertTrue(len(reloaded_objects) > 0)
-        self.assertIn(self.base_model.__class__.__name__, reloaded_objects)
-        self.assertIn(self.base_model.id, reloaded_objects[self.base_model.__class__.__name__])
+    def test_save(self):
+        self.file_storage.new(self.obj)
+        self.file_storage.save()
+        with open(self.temp_file_path, 'r') as f:
+            json_data = json.load(f)
+            key = f'{self.obj.__class__.__name__}.{self.obj.id}'
+            self.assertIn(key, json_data)
 
-    def test_save_empty_file(self):
-        """Test saving to an empty JSON file."""
-        # Create an empty JSON file
-        with open(self.storage._FileStorage__file_path, "w") as f:
-            f.write("")
+    def test_reload(self):
+        self.file_storage.new(self.obj)
+        self.file_storage.save()
+        self.file_storage.__objects = {}
+        self.file_storage.reload()
+        key = f'{self.obj.__class__.__name__}.{self.obj.id}'
+        self.assertIn(key, self.file_storage.all())
 
-        # Save the test BaseModel instance to the empty file
-        self.storage.new(self.base_model)
-        self.storage.save()
+    def test_reload_no_file(self):
+        os.remove(self.temp_file_path)
+        
+    def test_class_dict(self):
+        self.assertIsInstance(self.file_storage.class_dict(), dict)
+        for model in [BaseModel, User, State, City, Place, Review, Amenity]:
+            self.assertIn(model.__name__, self.file_storage.class_dict())
 
-        # Check if the BaseModel instance was saved
-        with open(self.storage._FileStorage__file_path, "r") as f:
-            data = f.read()
-            self.assertNotEqual(data, "")
-            self.assertIn(self.base_model.__class__.__name__, data)
+    def test_attribe(self):
+        attribe = self.file_storage.attribe()
+        self.assertIsInstance(attribe, dict)
+        for class_name, attributes in attribe.items():
+            for attr_name, attr_type in attributes.items():
+                self.assertIsInstance(attr_name, str)
+                self.assertIn(attr_type, [str, datetime, int, float, list])
 
-    def test_save_invalid_json(self):
-        """Test saving when JSON data is corrupted."""
-        # Create an invalid JSON file
-        with open(self.storage._FileStorage__file_path, "w") as f:
-            f.write("invalid_json_data")
-
-        # Attempt to save the test BaseModel instance
-        self.storage.new(self.base_model)
-        self.storage.save()
-
-        # Check if the BaseModel instance was not saved due to invalid JSON
-        with open(self.storage._FileStorage__file_path, "r") as f:
-            data = f.read()
-            self.assertEqual(data, "invalid_json_data")
-
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()

@@ -6,6 +6,6 @@ class User(BaseModel):
     """User  class represents a user in the system"""
 
     email = ""
-    password =  ""
+    password = ""
     first_name = ""
     last_name = ""
