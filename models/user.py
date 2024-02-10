@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Class User  for handling user data."""
-
 from models.base_model import BaseModel
 
 

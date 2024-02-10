@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Test edge cases"""
 import unittest
 from datetime import datetime, timedelta
 import sys
@@ -6,28 +7,34 @@ sys.path.append('../')
 from models.base_model import BaseModel 
 
 class TestBaseModelEdgeCases(unittest.TestCase):
+    """test edge  cases for base model class"""
 
     def test_empty_object_initialization(self):
+        """test"""
         model = BaseModel()
         self.assertTrue(hasattr(model, 'id'))
         self.assertTrue(hasattr(model, 'created_at'))
         self.assertTrue(hasattr(model, 'updated_at'))
 
     def test_initialization_with_invalid_arguments(self):
+        """test"""
         with self.assertRaises(TypeError):
             BaseModel(invalid_arg=42)
 
     def test_updating_attributes(self):
+        """test"""
         model = BaseModel()
         model.name = "Updated Name"
         self.assertEqual(model.name, "Updated Name")
 
     def test_equality_testing(self):
+        """test"""
         model1 = BaseModel()
         model2 = BaseModel()
         self.assertNotEqual(model1, model2)
 
     def test_save_method(self):
+        """test"""
         model = BaseModel()
         old_updated_at = model.updated_at
         model.save()
@@ -36,12 +43,14 @@ class TestBaseModelEdgeCases(unittest.TestCase):
         self.assertTrue(new_updated_at > old_updated_at)
 
     def test_string_representation(self):
+        """test"""
         model = BaseModel()
         model_str = str(model)
         self.assertIn('[BaseModel]', model_str)
         self.assertIn(str(model.id), model_str)
 
     def test_dictionary_conversion(self):
+        """test"""
         model = BaseModel()
         model_dict = model.to_dict()
         self.assertIn('__class__', model_dict)
@@ -51,11 +60,13 @@ class TestBaseModelEdgeCases(unittest.TestCase):
         self.assertIn('id', model_dict)
 
     def test_future_updated_at(self):
+        """test"""
         model = BaseModel()
         model.updated_at = datetime.now() + timedelta(days=1)
         self.assertLessEqual(model.updated_at, datetime.now())
 
     def test_corner_cases_for_datetime_formatting(self):
+        """test"""
         model = BaseModel()
         model.created_at = datetime.min
         model.updated_at = datetime.max
