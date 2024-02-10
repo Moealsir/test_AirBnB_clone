@@ -7,7 +7,6 @@ from models.base_model import BaseModel
 import unittest
 import models
 import os
-from models.user import User
 
 class Test_FileStorage(unittest.TestCase):
     """test case for attributes of the class FilesStorage"""
