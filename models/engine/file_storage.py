@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Class for a generic list of objects. """
-
 import json
 import os
 import datetime as time

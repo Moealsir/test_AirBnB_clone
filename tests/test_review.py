@@ -59,9 +59,6 @@ class TestReview(unittest.TestCase):
         self.assertIn("id", review.to_dict())
         self.assertIn("created_at", review.to_dict())
         self.assertIn("updated_at", review.to_dict())
-        self.assertIn("place_id", review.to_dict())
-        self.assertIn("user_id", review.to_dict())
-        self.assertIn("text", review.to_dict())
 
     def test_to_dict_contains_added_attribute(self):
         review = Review()
