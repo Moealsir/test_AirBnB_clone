@@ -3,13 +3,13 @@
 import json
 import os
 import datetime as time
-from ..base_model import BaseModel
-from ..user import User
-from ..state import State
-from ..city import City
-from ..place import Place
-from ..review import Review
-from ..amenity import Amenity
+from models.base_model import BaseModel
+from models.user import User
+from models.state import State
+from models.city import City
+from models.place import Place
+from models.review import Review
+from models.amenity import Amenity
 
 
 class FileStorage:
