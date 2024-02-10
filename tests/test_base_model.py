@@ -1,7 +1,8 @@
+#!/usr/bin/python3
 import unittest
 from unittest.mock import patch
 import sys
-sys.path.append('../')  # Add the parent directory to Python path
+sys.path.append('../')
 from models.base_model import BaseModel
 import uuid
 from datetime import datetime

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import json
+"""Console, the command interpreter."""
 import cmd
 from models.base_model import BaseModel
 from models import storage
@@ -10,31 +10,33 @@ class HBNBCommand(cmd.Cmd):
     """Command line interface"""
 
     def __init__(self, *args, **kwargs):
+        """initialize  variables and start the shell"""
         super().__init__(*args, **kwargs)
-        self.prompt = '(hbnb) '
-        self.all_classes = ["BaseModel",
+        self.prompt = "(hbnb) "
+        self.all_classes = [
+            "BaseModel",
             "User",
             "State",
             "City",
             "Amenity",
             "Place",
-            "Review",]
+            "Review",
+        ]
         self.classes = storage.class_dict()
         self.objects = storage.all()
         storage.reload()
 
     def emptyline(self):
+        """empty input"""
         pass
 
     def do_EOF(self, line):
         """Quit command to exit the program"""
-        if len(line) == 0:
-            return True
+        return True
 
     def do_quit(self, line):
         """Quit command to exit the program"""
-        if len(line) == 0:
-            return True
+        return True
 
     def do_create(self, line):
         """Function to create a new instance of a class"""
@@ -146,8 +148,9 @@ class HBNBCommand(cmd.Cmd):
         elif type(eval(args[2])) == dict:
             obj = obj_dict["{}.{}".format(args[0], args[1])]
             for k, v in eval(args[2]).items():
-                if (k in obj.__class__.__dict__.keys() and
-                        type(obj.__class__.__dict__[k]) in {str, int, float}):
+                if k in obj.__class__.__dict__.keys() and type(
+                    obj.__class__.__dict__[k]
+                ) in {str, int, float}:
                     valtype = type(obj.__class__.__dict__[k])
                     obj.__dict__[k] = valtype(v)
                 else:

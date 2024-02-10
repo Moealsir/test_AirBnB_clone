@@ -42,4 +42,3 @@ class BaseModel:
         the_dict['id'] = self.id
         the_dict["created_at"] = self.created_at.isoformat()
         return the_dict
-

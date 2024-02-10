@@ -4,6 +4,7 @@ from models import BaseModel
 import uuid
 from datetime import datetime
 
+
 class TestBaseModel(unittest.TestCase):
 
     def setUp(self):
@@ -50,8 +51,10 @@ class TestBaseModel(unittest.TestCase):
         expected_keys = {"id", "__class__", "created_at", "updated_at"}
         self.assertTrue(expected_keys.issubset(model_dict.keys()))
         self.assertEqual(model_dict["__class__"], "BaseModel")
-        self.assertEqual(model_dict["created_at"], self.model.created_at.isoformat())
-        self.assertEqual(model_dict["updated_at"], self.model.updated_at.isoformat())
+        self.assertEqual(model_dict["created_at"],
+                         self.model.created_at.isoformat())
+        self.assertEqual(model_dict["updated_at"],
+                         self.model.updated_at.isoformat())
         self.assertNotIn("_sa_instance_state", model_dict)
 
     def test_to_dict_with_extra_attribute(self):
