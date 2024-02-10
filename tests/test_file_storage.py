@@ -22,70 +22,98 @@ from models.amenity import Amenity
 from models import FileStorage
 
 
+
 class TestFileStorage(unittest.TestCase):
-    """test"""
 
     def setUp(self):
-        """test"""
-        self.temp_file, self.temp_file_path = tempfile.mkstemp()
         self.file_storage = FileStorage()
-        FileStorage.__file_path = self.temp_file_path
-        self.obj = BaseModel()
-
-        with open(self.temp_file_path, 'w') as f:
-            f.write('{}')
+        # Create a temporary directory and file to be used in tests
+        self.temp_dir = tempfile.TemporaryDirectory()
+        self.file_storage._FileStorage__file_path = os.path.join(self.temp_dir.name, 'file.json')
 
     def tearDown(self):
-        """test"""
-        try:
-            os.remove(self.temp_file_path)
-        except FileNotFoundError:
-            pass
+        # Close and remove the temporary directory and file
+        self.temp_dir.cleanup()
 
     def test_new(self):
-        """test"""
-        self.file_storage.new(self.obj)
-        key = f'{self.obj.__class__.__name__}.{self.obj.id}'
+        """
+        Test adding new object to storage.
+        """
+        base_model = BaseModel()
+        self.file_storage.new(base_model)
+        key = f"BaseModel.{base_model.id}"
         self.assertIn(key, self.file_storage.all())
 
     def test_all(self):
-        """test"""
-        self.file_storage.new(self.obj)
+        """
+        Test getting all objects in storage.
+        """
         objects = self.file_storage.all()
         self.assertIsInstance(objects, dict)
 
     def test_save(self):
-        """test"""
-        self.file_storage.new(self.obj)
+        """
+        Test saving objects to file.
+        """
+        base_model = BaseModel()
+        self.file_storage.new(base_model)
         self.file_storage.save()
+        key = f"BaseModel.{base_model.id}"
+        self.assertTrue(os.path.exists(self.file_storage._FileStorage__file_path))
+        with open(self.file_storage._FileStorage__file_path, 'r', encoding='utf-8') as file:
+            data = file.read()
+            self.assertIn(key, data)
 
     def test_reload(self):
-        """test"""
-        self.file_storage.new(self.obj)
+        """
+        Test loading objects from file.
+        """
+        base_model = BaseModel()
+        self.file_storage.new(base_model)
         self.file_storage.save()
-        self.file_storage.__objects = {}
+        self.file_storage._FileStorage__objects = {}
         self.file_storage.reload()
-        key = f'{self.obj.__class__.__name__}.{self.obj.id}'
+        key = f"BaseModel.{base_model.id}"
         self.assertIn(key, self.file_storage.all())
 
     def test_reload_no_file(self):
-        """test"""
-        os.remove(self.temp_file_path)
-        
+        """
+        Test reloading non-existing file should be handled without error.
+        """
+        # Create an empty file to simulate a missing file
+        open(self.file_storage._FileStorage__file_path, 'w').close()
+
+        # Delete the file to simulate the missing file scenario
+        os.unlink(self.file_storage._FileStorage__file_path)
+
+        # Reload should handle the missing file without error
+        self.file_storage.reload()
+
     def test_class_dict(self):
-        """test"""
-        self.assertIsInstance(self.file_storage.class_dict(), dict)
-        for model in [BaseModel, User, State, City, Place, Review, Amenity]:
-            self.assertIn(model.__name__, self.file_storage.class_dict())
+        """
+        Test class dictionary for serialization-deserialization.
+        """
+        classes = self.file_storage.class_dict()
+        expected_classes = {
+            "BaseModel": BaseModel,
+            "User": User,
+            "State": State,
+            "City": City,
+            "Amenity": Amenity,
+            "Place": Place,
+            "Review": Review,
+        }
+        self.assertDictEqual(classes, expected_classes)
 
     def test_attribe(self):
-        """test"""
-        attribe = self.file_storage.attribe()
-        self.assertIsInstance(attribe, dict)
-        for class_name, attributes in attribe.items():
-            for attr_name, attr_type in attributes.items():
-                self.assertIsInstance(attr_name, str)
-                self.assertIn(attr_type, [str, datetime, int, float, list])
+        """
+        Test valid attributes and their types for classname.
+        """
+        attributes = self.file_storage.attribe()
+        self.assertIn('BaseModel', attributes)
+        self.assertIn('id', attributes['BaseModel'])
+        self.assertIn('User', attributes)
+        self.assertIn('email', attributes['User'])
 
 
 if __name__ == '__main__':
