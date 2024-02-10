@@ -34,6 +34,7 @@ class FileStorage:
         """
         values = {}
         for key, value in self.__objects.items():
+
             values[key] = value.to_dict()
         json.dump(values, open(self.__file_path, "w", encoding=("utf-8")), indent=2)
 

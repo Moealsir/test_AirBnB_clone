@@ -12,6 +12,13 @@ class HBNBCommand(cmd.Cmd):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.prompt = '(hbnb) '
+        self.all_classes = ["BaseModel",
+            "User",
+            "State",
+            "City",
+            "Amenity",
+            "Place",
+            "Review",]
         self.classes = storage.class_dict()
         self.objects = storage.all()
         storage.reload()
@@ -20,16 +27,12 @@ class HBNBCommand(cmd.Cmd):
         pass
 
     def do_EOF(self, line):
+        """Quit command to exit the program"""
         if len(line) == 0:
             return True
 
-    def help_EOF(self):
-        print("Quit command to exit the program\n")
-
-    def help_quit(self):
-        print("Quit command to exit the program\n")
-
     def do_quit(self, line):
+        """Quit command to exit the program"""
         if len(line) == 0:
             return True
 
@@ -46,24 +49,6 @@ class HBNBCommand(cmd.Cmd):
         new_instance = self.classes[class_name]()
         new_instance.save()
         print(new_instance.id)
-
-    # def do_create(self, line):
-    #     """Function to create a new instance of a class"""
-    #     args = line.split()
-    #     if not args:
-    #         print("** class name missing **")
-    #         return
-    #     elif args[0] not in self.classes:
-    #         print("** class doesn't exist **")
-    #         return
-    #     else:
-    #         whew = self.classes[args]()
-    #         whew.save()
-    #         print(whew.id)
-    #         # new_instance = BaseModel()
-    #         # print(new_instance)
-    #         # # print(new_instance.id)
-    #         # new_instance.save()
 
     def do_show(self, line):
         """Prints the string representation of an instance"""

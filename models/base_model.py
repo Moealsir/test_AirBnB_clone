@@ -43,14 +43,3 @@ class BaseModel:
         the_dict["created_at"] = self.created_at.isoformat()
         return the_dict
 
-    def to_dict(self):
-        """Return a dictionary representation of the object."""
-        obj_dict = self.__dict__.copy()
-
-        obj_dict['__class__'] = self.__class__.__name__
-        obj_dict['id'] = self.id
-
-        obj_dict['created_at'] = self.created_at.isoformat()
-        obj_dict['updated_at'] = self.updated_at.isoformat()
-
-        return obj_dict

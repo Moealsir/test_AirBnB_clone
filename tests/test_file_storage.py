@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch
 import sys
-sys.path.append('../')  # Add the parent directory to Python path
+sys.path.append('../')
 from models.engine.file_storage import FileStorage 
 
 import os
@@ -26,7 +26,6 @@ class TestFileStorage(unittest.TestCase):
         FileStorage.__file_path = self.temp_file_path
         self.obj = BaseModel()
 
-        # Create an empty JSON file
         with open(self.temp_file_path, 'w') as f:
             f.write('{}')
 
