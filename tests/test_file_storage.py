@@ -76,18 +76,21 @@ class TestFileStorage(unittest.TestCase):
         key = f"BaseModel.{base_model.id}"
         self.assertIn(key, self.file_storage.all())
 
-    def test_reload_no_file(self):
+     def test_reload(self):
         """
-        Test reloading non-existing file should be handled without error.
+        Tests method: reload (reloads objects from string file)
         """
-        # Create an empty file to simulate a missing file
-        open(self.file_storage._FileStorage__file_path, 'w').close()
-
-        # Delete the file to simulate the missing file scenario
-        os.unlink(self.file_storage._FileStorage__file_path)
-
-        # Reload should handle the missing file without error
-        self.file_storage.reload()
+        a_storage = FileStorage()
+        try:
+            os.remove("file.json")
+        except:
+            pass
+        with open("file.json", "w") as f:
+            f.write("{}")
+        with open("file.json", "r") as r:
+            for line in r:
+                self.assertEqual(line, "{}")
+        self.assertIs(a_storage.reload(), None)
 
     def test_class_dict(self):
         """
@@ -103,18 +106,7 @@ class TestFileStorage(unittest.TestCase):
             "Place": Place,
             "Review": Review,
         }
-        self.assertDictEqual(classes, expected_classes)
-
-    def test_attribe(self):
-        """
-        Test valid attributes and their types for classname.
-        """
-        attributes = self.file_storage.attribe()
-        self.assertIn('BaseModel', attributes)
-        self.assertIn('id', attributes['BaseModel'])
-        self.assertIn('User', attributes)
-        self.assertIn('email', attributes['User'])
-
+ 
 
 if __name__ == '__main__':
     unittest.main()

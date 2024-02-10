@@ -12678,5 +12678,3271 @@
     "created_at": "2024-02-10T22:21:19.795037",
     "updated_at": "2024-02-10T22:21:19.795040",
     "__class__": "User"
+  },
+  "Amenity.e7b603cf-3ad9-4e37-ada0-84f1595dc338": {
+    "id": "e7b603cf-3ad9-4e37-ada0-84f1595dc338",
+    "created_at": "2024-02-10T22:21:43.936529",
+    "updated_at": "2024-02-10T22:21:43.936529",
+    "__class__": "Amenity"
+  },
+  "Amenity.744ac753-da93-4288-b6a2-9e3aeee67a33": {
+    "id": "744ac753-da93-4288-b6a2-9e3aeee67a33",
+    "created_at": "2024-02-10T22:21:43.936647",
+    "updated_at": "2024-02-10T22:21:43.936647",
+    "__class__": "Amenity"
+  },
+  "Amenity.4d942a74-0ec5-4b76-bdd6-d27b27260a1b": {
+    "id": "4d942a74-0ec5-4b76-bdd6-d27b27260a1b",
+    "created_at": "2024-02-10T22:21:43.936714",
+    "updated_at": "2024-02-10T22:21:43.936717",
+    "__class__": "Amenity"
+  },
+  "Amenity.5b040f96-28ef-48d2-8c9d-9ae9bcc42b2b": {
+    "id": "5b040f96-28ef-48d2-8c9d-9ae9bcc42b2b",
+    "created_at": "2024-02-10T22:21:43.953133",
+    "updated_at": "2024-02-10T22:21:43.953133",
+    "__class__": "Amenity"
+  },
+  "Amenity.844f76b9-d923-4a79-9a2b-8f4f1ca45eda": {
+    "id": "844f76b9-d923-4a79-9a2b-8f4f1ca45eda",
+    "created_at": "2024-02-10T22:21:43.953319",
+    "updated_at": "2024-02-10T22:21:43.953319",
+    "name": "Wi-Fi",
+    "__class__": "Amenity"
+  },
+  "BaseModel.1f4530f8-423e-46a4-8aac-278f10f035fa": {
+    "id": "1f4530f8-423e-46a4-8aac-278f10f035fa",
+    "created_at": "2024-02-10T22:21:43.955093",
+    "updated_at": "2024-02-10T22:21:43.955093",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.5a155eb1-be83-4f1d-b5ca-7163a0386590": {
+    "id": "5a155eb1-be83-4f1d-b5ca-7163a0386590",
+    "created_at": "2024-02-10T22:21:43.955645",
+    "updated_at": "2024-02-10T22:21:43.955645",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.55320302-5ba0-4d98-866a-b2813c042209": {
+    "id": "55320302-5ba0-4d98-866a-b2813c042209",
+    "created_at": "2024-02-10T22:21:43.956366",
+    "updated_at": "2024-02-10T22:21:43.956875",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.b1c7a167-9678-418b-9097-037638517ad6": {
+    "id": "b1c7a167-9678-418b-9097-037638517ad6",
+    "created_at": "2024-02-10T22:21:43.957471",
+    "updated_at": "2024-02-10T22:21:43.957471",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.51993603-bdfb-4f61-ae20-de58f22f1518": {
+    "id": "51993603-bdfb-4f61-ae20-de58f22f1518",
+    "created_at": "2024-02-10T22:21:43.957559",
+    "updated_at": "2024-02-10T22:21:43.957559",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.b8a6ce6e-1d13-4708-ba89-f0c7eb3825e3": {
+    "id": "b8a6ce6e-1d13-4708-ba89-f0c7eb3825e3",
+    "created_at": "2024-02-10T22:21:43.957637",
+    "updated_at": "2024-02-10T22:21:43.957637",
+    "name": "Test Name",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.a3e02803-ce09-47ff-8c19-e839ffafb15b": {
+    "id": "a3e02803-ce09-47ff-8c19-e839ffafb15b",
+    "created_at": "2024-02-10T22:21:43.957749",
+    "updated_at": "2024-02-10T22:21:43.957749",
+    "__class__": "BaseModel"
+  },
+  "City.c90a4635-f0cf-497b-9fbc-d5ec8aa32142": {
+    "id": "c90a4635-f0cf-497b-9fbc-d5ec8aa32142",
+    "created_at": "2024-02-10T22:21:43.957820",
+    "updated_at": "2024-02-10T22:21:43.957820",
+    "__class__": "City"
+  },
+  "City.8784574a-4da9-4536-aac4-a51594de4d45": {
+    "id": "8784574a-4da9-4536-aac4-a51594de4d45",
+    "created_at": "2024-02-10T22:21:43.957880",
+    "updated_at": "2024-02-10T22:21:43.957880",
+    "__class__": "City"
+  },
+  "City.1febd8f8-102d-4ea9-8cef-3c679c096f6e": {
+    "id": "1febd8f8-102d-4ea9-8cef-3c679c096f6e",
+    "created_at": "2024-02-10T22:21:43.957939",
+    "updated_at": "2024-02-10T22:21:43.957943",
+    "custom_attr": "custom_val",
+    "__class__": "City"
+  },
+  "City.51240d5c-59a5-43fa-89ea-4873964be15d": {
+    "id": "51240d5c-59a5-43fa-89ea-4873964be15d",
+    "created_at": "2024-02-10T22:21:43.975154",
+    "updated_at": "2024-02-10T22:21:43.975154",
+    "__class__": "City"
+  },
+  "City.56c05ee5-0947-40ea-ad71-39749b81a197": {
+    "id": "56c05ee5-0947-40ea-ad71-39749b81a197",
+    "created_at": "2024-02-10T22:21:43.975334",
+    "updated_at": "2024-02-10T22:21:43.975334",
+    "__class__": "City"
+  },
+  "City.0b2169b9-8546-43ee-b576-c92db7068210": {
+    "id": "0b2169b9-8546-43ee-b576-c92db7068210",
+    "created_at": "2024-02-10T22:21:43.975453",
+    "updated_at": "2024-02-10T22:21:43.975456",
+    "__class__": "City"
+  },
+  "City.7a8c8b81-dc13-4ec1-8bae-4ff4c2837f56": {
+    "id": "7a8c8b81-dc13-4ec1-8bae-4ff4c2837f56",
+    "created_at": "2024-02-10T22:21:43.995833",
+    "updated_at": "2024-02-10T22:21:43.995833",
+    "__class__": "City"
+  },
+  "City.13f9dbd7-e2e1-4981-98dd-b44648cb0605": {
+    "id": "13f9dbd7-e2e1-4981-98dd-b44648cb0605",
+    "created_at": "2024-02-10T22:21:43.995935",
+    "updated_at": "2024-02-10T22:21:43.995935",
+    "__class__": "City"
+  },
+  "BaseModel.73d5343c-52bc-4fa6-a856-fc794d003d8f": {
+    "id": "73d5343c-52bc-4fa6-a856-fc794d003d8f",
+    "created_at": "2024-02-10T22:21:43.997282",
+    "updated_at": "2024-02-10T22:21:43.997282",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.887e7ddc-4e25-48bd-b49e-971a9da74530": {
+    "id": "887e7ddc-4e25-48bd-b49e-971a9da74530",
+    "created_at": "2024-02-10T22:21:43.997500",
+    "updated_at": "2024-02-10T22:21:43.997500",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.f4aca26b-e31c-447d-9c3c-ca8114e1b624": {
+    "id": "f4aca26b-e31c-447d-9c3c-ca8114e1b624",
+    "created_at": "2024-02-10T22:21:44.059157",
+    "updated_at": "2024-02-10T22:21:44.059157",
+    "__class__": "BaseModel"
+  },
+  "Place.e14d0405-46bf-4882-a3c0-95f6e91bca05": {
+    "id": "e14d0405-46bf-4882-a3c0-95f6e91bca05",
+    "created_at": "2024-02-10T22:21:44.074949",
+    "updated_at": "2024-02-10T22:21:44.074949",
+    "city_id": "12345",
+    "user_id": "abcde",
+    "name": "Test Place",
+    "description": "Test description",
+    "number_rooms": 1,
+    "number_bathrooms": 2,
+    "max_guest": 3,
+    "price_by_night": 100,
+    "latitude": 12.34,
+    "longitude": -56.78,
+    "amenity_ids": [
+      "pool",
+      "wifi"
+    ],
+    "__class__": "Place"
+  },
+  "Place.cd7aa110-6f17-49d9-abbd-a6f74873e3b7": {
+    "id": "cd7aa110-6f17-49d9-abbd-a6f74873e3b7",
+    "created_at": "2024-02-10T22:21:44.075040",
+    "updated_at": "2024-02-10T22:21:44.075040",
+    "__class__": "Place"
+  },
+  "Place.afd55b18-91bd-4f06-b297-d4d89f6372c2": {
+    "id": "afd55b18-91bd-4f06-b297-d4d89f6372c2",
+    "created_at": "2024-02-10T22:21:44.075120",
+    "updated_at": "2024-02-10T22:21:44.075120",
+    "city_id": "12345",
+    "user_id": "abcde",
+    "name": "Test Place",
+    "description": "Some new description",
+    "number_rooms": 5,
+    "number_bathrooms": 3,
+    "max_guest": 7,
+    "price_by_night": 300,
+    "latitude": 33.33,
+    "longitude": -44.44,
+    "amenity_ids": [
+      "sauna"
+    ],
+    "__class__": "Place"
+  },
+  "Review.db72efd7-ab0f-4321-b11d-97e300e7eac7": {
+    "id": "db72efd7-ab0f-4321-b11d-97e300e7eac7",
+    "created_at": "2024-02-10T22:21:44.075209",
+    "updated_at": "2024-02-10T22:21:44.075209",
+    "__class__": "Review"
+  },
+  "Review.99063486-21e1-464a-b9c0-5a0c53d701ed": {
+    "id": "99063486-21e1-464a-b9c0-5a0c53d701ed",
+    "created_at": "2024-02-10T22:21:44.075316",
+    "updated_at": "2024-02-10T22:21:44.075316",
+    "__class__": "Review"
+  },
+  "Review.0ad47bd7-e3cc-4631-b36b-7c424c8e0ecb": {
+    "id": "0ad47bd7-e3cc-4631-b36b-7c424c8e0ecb",
+    "created_at": "2024-02-10T22:21:44.075374",
+    "updated_at": "2024-02-10T22:21:44.075374",
+    "__class__": "Review"
+  },
+  "Review.6cfac9d7-9577-4010-9923-d8c773a6ee72": {
+    "id": "6cfac9d7-9577-4010-9923-d8c773a6ee72",
+    "created_at": "2024-02-10T22:21:44.075381",
+    "updated_at": "2024-02-10T22:21:44.075381",
+    "__class__": "Review"
+  },
+  "Review.1852b656-4f32-45b4-afa3-8ba79828b3b7": {
+    "id": "1852b656-4f32-45b4-afa3-8ba79828b3b7",
+    "created_at": "2024-02-10T22:21:44.075435",
+    "updated_at": "2024-02-10T22:21:44.075435",
+    "__class__": "Review"
+  },
+  "Review.6c72d04e-400b-4d19-a404-1b5f354a130d": {
+    "id": "6c72d04e-400b-4d19-a404-1b5f354a130d",
+    "created_at": "2024-02-10T22:21:44.075630",
+    "updated_at": "2024-02-10T22:21:44.075630",
+    "__class__": "Review"
+  },
+  "Review.5392bd6c-7485-4f0f-9bdd-72c1334fb539": {
+    "id": "5392bd6c-7485-4f0f-9bdd-72c1334fb539",
+    "created_at": "2024-02-10T22:21:44.075689",
+    "updated_at": "2024-02-10T22:21:44.075692",
+    "__class__": "Review"
+  },
+  "Review.699066ea-bd1d-4ef4-acad-09e5d05431a0": {
+    "id": "699066ea-bd1d-4ef4-acad-09e5d05431a0",
+    "created_at": "2024-02-10T22:21:44.094487",
+    "updated_at": "2024-02-10T22:21:44.094487",
+    "__class__": "Review"
+  },
+  "Review.bc2a9692-aa7b-4498-aa10-c1d68bacb9e2": {
+    "id": "bc2a9692-aa7b-4498-aa10-c1d68bacb9e2",
+    "created_at": "2024-02-10T22:21:44.094826",
+    "updated_at": "2024-02-10T22:21:44.094826",
+    "__class__": "Review"
+  },
+  "Review.c70c53d5-ab09-4bbd-bfc5-8317199eb1eb": {
+    "id": "c70c53d5-ab09-4bbd-bfc5-8317199eb1eb",
+    "created_at": "2024-02-10T22:21:44.094912",
+    "updated_at": "2024-02-10T22:21:44.094912",
+    "new_attribute": "value",
+    "__class__": "Review"
+  },
+  "Review.e2495285-e871-4235-869f-74ddf17084a6": {
+    "id": "e2495285-e871-4235-869f-74ddf17084a6",
+    "created_at": "2024-02-10T22:21:44.094982",
+    "updated_at": "2024-02-10T22:21:44.094982",
+    "__class__": "Review"
+  },
+  "Review.425b7546-afae-4576-bb5a-a1875cd7f4b3": {
+    "id": "425b7546-afae-4576-bb5a-a1875cd7f4b3",
+    "created_at": "2024-02-10T22:21:44.095046",
+    "updated_at": "2024-02-10T22:21:44.095046",
+    "__class__": "Review"
+  },
+  "State.904bfcdb-a864-4981-80a1-45e4eb9338c8": {
+    "id": "904bfcdb-a864-4981-80a1-45e4eb9338c8",
+    "created_at": "2024-02-10T22:21:44.095131",
+    "updated_at": "2024-02-10T22:21:44.095131",
+    "__class__": "State"
+  },
+  "State.78dac84d-ebb8-4c78-b3a9-5569d45d2397": {
+    "id": "78dac84d-ebb8-4c78-b3a9-5569d45d2397",
+    "created_at": "2024-02-10T22:21:44.095189",
+    "updated_at": "2024-02-10T22:21:44.095189",
+    "__class__": "State"
+  },
+  "State.2b0f165f-5b86-424a-a68f-8b1015dd0acf": {
+    "id": "2b0f165f-5b86-424a-a68f-8b1015dd0acf",
+    "created_at": "2024-02-10T22:21:44.095428",
+    "updated_at": "2024-02-10T22:21:44.095428",
+    "__class__": "State"
+  },
+  "State.2b2061b3-6fdd-47be-8574-6c29c1fe678d": {
+    "id": "2b2061b3-6fdd-47be-8574-6c29c1fe678d",
+    "created_at": "2024-02-10T22:21:44.095717",
+    "updated_at": "2024-02-10T22:21:44.095717",
+    "__class__": "State"
+  },
+  "State.953ac019-8a30-4c23-bea9-df8e3d4e8784": {
+    "id": "953ac019-8a30-4c23-bea9-df8e3d4e8784",
+    "created_at": "2024-02-10T22:21:44.095975",
+    "updated_at": "2024-02-10T22:21:44.095975",
+    "__class__": "State"
+  },
+  "State.d29a3fcf-4e27-499d-a6ce-a7394f58b3a5": {
+    "id": "d29a3fcf-4e27-499d-a6ce-a7394f58b3a5",
+    "created_at": "2024-02-10T22:21:44.096308",
+    "updated_at": "2024-02-10T22:21:44.096308",
+    "__class__": "State"
+  },
+  "User.47e48eae-0675-406c-bbee-0c3e982ad806": {
+    "id": "47e48eae-0675-406c-bbee-0c3e982ad806",
+    "created_at": "2024-02-10T22:21:44.096605",
+    "updated_at": "2024-02-10T22:21:44.096605",
+    "email": "test@example.com",
+    "password": "pass123",
+    "first_name": "John",
+    "last_name": "Doe",
+    "__class__": "User"
+  },
+  "User.b60aadfe-ccad-404c-9927-ee86a0e99e16": {
+    "id": "b60aadfe-ccad-404c-9927-ee86a0e99e16",
+    "created_at": "2024-02-10T22:21:44.096674",
+    "updated_at": "2024-02-10T22:21:44.096674",
+    "__class__": "User"
+  },
+  "User.d81c4d63-f03d-4354-9b71-d66c086391ef": {
+    "id": "d81c4d63-f03d-4354-9b71-d66c086391ef",
+    "created_at": "2024-02-10T22:21:44.096734",
+    "updated_at": "2024-02-10T22:21:44.096734",
+    "__class__": "User"
+  },
+  "User.b10ca0a2-fc88-46de-affc-db2c7fb0ccae": {
+    "id": "b10ca0a2-fc88-46de-affc-db2c7fb0ccae",
+    "created_at": "2024-02-10T22:21:44.096791",
+    "updated_at": "2024-02-10T22:21:44.096791",
+    "__class__": "User"
+  },
+  "User.f0e66426-10f4-4649-a5ec-d44f98f75ba9": {
+    "id": "f0e66426-10f4-4649-a5ec-d44f98f75ba9",
+    "created_at": "2024-02-10T22:21:44.096851",
+    "updated_at": "2024-02-10T22:21:44.096851",
+    "__class__": "User"
+  },
+  "User.14c8adf0-9b05-4c46-8091-6f90bff53e42": {
+    "id": "14c8adf0-9b05-4c46-8091-6f90bff53e42",
+    "created_at": "2024-02-10T22:21:44.096858",
+    "updated_at": "2024-02-10T22:21:44.096858",
+    "__class__": "User"
+  },
+  "User.39a49b81-ef5d-4b26-a7f7-a4dfffe592c2": {
+    "id": "39a49b81-ef5d-4b26-a7f7-a4dfffe592c2",
+    "created_at": "2024-02-10T22:21:44.096911",
+    "updated_at": "2024-02-10T22:21:44.096914",
+    "__class__": "User"
+  },
+  "Amenity.4638f4b7-8d4b-43b1-bd6e-7eb4df4c6ded": {
+    "id": "4638f4b7-8d4b-43b1-bd6e-7eb4df4c6ded",
+    "created_at": "2024-02-10T22:22:03.140467",
+    "updated_at": "2024-02-10T22:22:03.140467",
+    "__class__": "Amenity"
+  },
+  "Amenity.8fbf5a87-d90c-4932-bee1-7ba405e0d22f": {
+    "id": "8fbf5a87-d90c-4932-bee1-7ba405e0d22f",
+    "created_at": "2024-02-10T22:22:03.140587",
+    "updated_at": "2024-02-10T22:22:03.140587",
+    "__class__": "Amenity"
+  },
+  "Amenity.66359504-d87c-4dfb-8e08-c7cb76b2b8bf": {
+    "id": "66359504-d87c-4dfb-8e08-c7cb76b2b8bf",
+    "created_at": "2024-02-10T22:22:03.140751",
+    "updated_at": "2024-02-10T22:22:03.140755",
+    "__class__": "Amenity"
+  },
+  "Amenity.d1852365-fe38-41a0-9d46-9e8e9b938cdb": {
+    "id": "d1852365-fe38-41a0-9d46-9e8e9b938cdb",
+    "created_at": "2024-02-10T22:22:03.159417",
+    "updated_at": "2024-02-10T22:22:03.159417",
+    "__class__": "Amenity"
+  },
+  "Amenity.3e98747c-703d-4b38-b78b-58ee2c45679c": {
+    "id": "3e98747c-703d-4b38-b78b-58ee2c45679c",
+    "created_at": "2024-02-10T22:22:03.159601",
+    "updated_at": "2024-02-10T22:22:03.159601",
+    "name": "Wi-Fi",
+    "__class__": "Amenity"
+  },
+  "BaseModel.ae1139e0-939e-423e-81a2-591fdab67b09": {
+    "id": "ae1139e0-939e-423e-81a2-591fdab67b09",
+    "created_at": "2024-02-10T22:22:03.161311",
+    "updated_at": "2024-02-10T22:22:03.161311",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.37754382-79d1-418b-9eb2-0d3c925fe8a4": {
+    "id": "37754382-79d1-418b-9eb2-0d3c925fe8a4",
+    "created_at": "2024-02-10T22:22:03.161392",
+    "updated_at": "2024-02-10T22:22:03.161392",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.bb9d6f9a-595e-4d69-875e-b1f6e48f0fdc": {
+    "id": "bb9d6f9a-595e-4d69-875e-b1f6e48f0fdc",
+    "created_at": "2024-02-10T22:22:03.161534",
+    "updated_at": "2024-02-10T22:22:03.161742",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.04a0c4e8-1556-4942-8c0a-2e028e16be88": {
+    "id": "04a0c4e8-1556-4942-8c0a-2e028e16be88",
+    "created_at": "2024-02-10T22:22:03.162206",
+    "updated_at": "2024-02-10T22:22:03.162206",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.6eda8c91-af48-4eaf-9b5d-ac0802556432": {
+    "id": "6eda8c91-af48-4eaf-9b5d-ac0802556432",
+    "created_at": "2024-02-10T22:22:03.162350",
+    "updated_at": "2024-02-10T22:22:03.162350",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.455af3a2-3916-4cec-8881-e4f725bd8cb2": {
+    "id": "455af3a2-3916-4cec-8881-e4f725bd8cb2",
+    "created_at": "2024-02-10T22:22:03.162430",
+    "updated_at": "2024-02-10T22:22:03.162430",
+    "name": "Test Name",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.bcadc8cc-c496-4a9f-a43b-fe593276172f": {
+    "id": "bcadc8cc-c496-4a9f-a43b-fe593276172f",
+    "created_at": "2024-02-10T22:22:03.162525",
+    "updated_at": "2024-02-10T22:22:03.162525",
+    "__class__": "BaseModel"
+  },
+  "City.dd336968-973c-4b7c-9ed7-db872ddeb8db": {
+    "id": "dd336968-973c-4b7c-9ed7-db872ddeb8db",
+    "created_at": "2024-02-10T22:22:03.162591",
+    "updated_at": "2024-02-10T22:22:03.162591",
+    "__class__": "City"
+  },
+  "City.0802a51e-fa82-4d20-860f-e375882bccf5": {
+    "id": "0802a51e-fa82-4d20-860f-e375882bccf5",
+    "created_at": "2024-02-10T22:22:03.162648",
+    "updated_at": "2024-02-10T22:22:03.162648",
+    "__class__": "City"
+  },
+  "City.e1fc76ff-8df5-4e04-be80-ad36bef20880": {
+    "id": "e1fc76ff-8df5-4e04-be80-ad36bef20880",
+    "created_at": "2024-02-10T22:22:03.162706",
+    "updated_at": "2024-02-10T22:22:03.162709",
+    "custom_attr": "custom_val",
+    "__class__": "City"
+  },
+  "City.adb851c9-a008-44b3-afb2-5cda316aa9e9": {
+    "id": "adb851c9-a008-44b3-afb2-5cda316aa9e9",
+    "created_at": "2024-02-10T22:22:03.181738",
+    "updated_at": "2024-02-10T22:22:03.181738",
+    "__class__": "City"
+  },
+  "City.e00914a9-64ee-4914-b594-6d305c643332": {
+    "id": "e00914a9-64ee-4914-b594-6d305c643332",
+    "created_at": "2024-02-10T22:22:03.181947",
+    "updated_at": "2024-02-10T22:22:03.181947",
+    "__class__": "City"
+  },
+  "City.09d7307d-d560-4c98-a665-ee8d433c78be": {
+    "id": "09d7307d-d560-4c98-a665-ee8d433c78be",
+    "created_at": "2024-02-10T22:22:03.182076",
+    "updated_at": "2024-02-10T22:22:03.182079",
+    "__class__": "City"
+  },
+  "City.5f6124da-60c8-4911-bec5-fcc4fafd82a0": {
+    "id": "5f6124da-60c8-4911-bec5-fcc4fafd82a0",
+    "created_at": "2024-02-10T22:22:03.205162",
+    "updated_at": "2024-02-10T22:22:03.205162",
+    "__class__": "City"
+  },
+  "City.3b5b806c-2fec-4caa-942c-850ccb15f3d6": {
+    "id": "3b5b806c-2fec-4caa-942c-850ccb15f3d6",
+    "created_at": "2024-02-10T22:22:03.205314",
+    "updated_at": "2024-02-10T22:22:03.205314",
+    "__class__": "City"
+  },
+  "Place.ca816a9f-080a-47b5-af71-d4b9df1f7355": {
+    "id": "ca816a9f-080a-47b5-af71-d4b9df1f7355",
+    "created_at": "2024-02-10T22:22:03.205455",
+    "updated_at": "2024-02-10T22:22:03.205455",
+    "city_id": "12345",
+    "user_id": "abcde",
+    "name": "Test Place",
+    "description": "Test description",
+    "number_rooms": 1,
+    "number_bathrooms": 2,
+    "max_guest": 3,
+    "price_by_night": 100,
+    "latitude": 12.34,
+    "longitude": -56.78,
+    "amenity_ids": [
+      "pool",
+      "wifi"
+    ],
+    "__class__": "Place"
+  },
+  "Place.e7c53549-fc06-486e-98e4-afd603a4f155": {
+    "id": "e7c53549-fc06-486e-98e4-afd603a4f155",
+    "created_at": "2024-02-10T22:22:03.205532",
+    "updated_at": "2024-02-10T22:22:03.205532",
+    "__class__": "Place"
+  },
+  "Place.fb567d65-3e04-4ef0-922a-4f985af90922": {
+    "id": "fb567d65-3e04-4ef0-922a-4f985af90922",
+    "created_at": "2024-02-10T22:22:03.205622",
+    "updated_at": "2024-02-10T22:22:03.205622",
+    "city_id": "12345",
+    "user_id": "abcde",
+    "name": "Test Place",
+    "description": "Some new description",
+    "number_rooms": 5,
+    "number_bathrooms": 3,
+    "max_guest": 7,
+    "price_by_night": 300,
+    "latitude": 33.33,
+    "longitude": -44.44,
+    "amenity_ids": [
+      "sauna"
+    ],
+    "__class__": "Place"
+  },
+  "Review.53520f5a-0e58-4b6c-b32e-545cbb6bb3f1": {
+    "id": "53520f5a-0e58-4b6c-b32e-545cbb6bb3f1",
+    "created_at": "2024-02-10T22:22:03.205742",
+    "updated_at": "2024-02-10T22:22:03.205742",
+    "__class__": "Review"
+  },
+  "Review.5e35d83d-c160-4281-8781-709f97e1c746": {
+    "id": "5e35d83d-c160-4281-8781-709f97e1c746",
+    "created_at": "2024-02-10T22:22:03.205823",
+    "updated_at": "2024-02-10T22:22:03.205823",
+    "__class__": "Review"
+  },
+  "Review.249db2f3-72bd-4a40-ad91-c775f8c1a31c": {
+    "id": "249db2f3-72bd-4a40-ad91-c775f8c1a31c",
+    "created_at": "2024-02-10T22:22:03.205857",
+    "updated_at": "2024-02-10T22:22:03.205857",
+    "__class__": "Review"
+  },
+  "Review.32dcc8ef-9c9a-4bac-820f-db1fe88a479e": {
+    "id": "32dcc8ef-9c9a-4bac-820f-db1fe88a479e",
+    "created_at": "2024-02-10T22:22:03.205865",
+    "updated_at": "2024-02-10T22:22:03.205865",
+    "__class__": "Review"
+  },
+  "Review.f072cf15-2c86-447d-b2fb-3bfad39b2cfa": {
+    "id": "f072cf15-2c86-447d-b2fb-3bfad39b2cfa",
+    "created_at": "2024-02-10T22:22:03.205920",
+    "updated_at": "2024-02-10T22:22:03.205920",
+    "__class__": "Review"
+  },
+  "Review.594c5416-0e64-4e2f-93ec-fd89e2d5ca74": {
+    "id": "594c5416-0e64-4e2f-93ec-fd89e2d5ca74",
+    "created_at": "2024-02-10T22:22:03.206142",
+    "updated_at": "2024-02-10T22:22:03.206142",
+    "__class__": "Review"
+  },
+  "Review.761446ec-7c36-4bba-abf8-d5da2bf39083": {
+    "id": "761446ec-7c36-4bba-abf8-d5da2bf39083",
+    "created_at": "2024-02-10T22:22:03.206205",
+    "updated_at": "2024-02-10T22:22:03.206209",
+    "__class__": "Review"
+  },
+  "Review.a783cb7f-adec-457a-a2a2-98a16665e5f3": {
+    "id": "a783cb7f-adec-457a-a2a2-98a16665e5f3",
+    "created_at": "2024-02-10T22:22:03.229324",
+    "updated_at": "2024-02-10T22:22:03.229324",
+    "__class__": "Review"
+  },
+  "Review.98e07498-bb0f-44e6-b184-704de82843ae": {
+    "id": "98e07498-bb0f-44e6-b184-704de82843ae",
+    "created_at": "2024-02-10T22:22:03.229665",
+    "updated_at": "2024-02-10T22:22:03.229665",
+    "__class__": "Review"
+  },
+  "Review.d60106f9-a62d-4d62-95f5-7542c6a05db3": {
+    "id": "d60106f9-a62d-4d62-95f5-7542c6a05db3",
+    "created_at": "2024-02-10T22:22:03.229757",
+    "updated_at": "2024-02-10T22:22:03.229757",
+    "new_attribute": "value",
+    "__class__": "Review"
+  },
+  "Review.cc0790bb-8e46-4833-94e5-13cca1523b06": {
+    "id": "cc0790bb-8e46-4833-94e5-13cca1523b06",
+    "created_at": "2024-02-10T22:22:03.229827",
+    "updated_at": "2024-02-10T22:22:03.229827",
+    "__class__": "Review"
+  },
+  "Review.367355d6-e23b-4600-8e8e-3146ae0c8888": {
+    "id": "367355d6-e23b-4600-8e8e-3146ae0c8888",
+    "created_at": "2024-02-10T22:22:03.229890",
+    "updated_at": "2024-02-10T22:22:03.229890",
+    "__class__": "Review"
+  },
+  "State.3d11629d-fcec-44aa-8201-cf00c5df1245": {
+    "id": "3d11629d-fcec-44aa-8201-cf00c5df1245",
+    "created_at": "2024-02-10T22:22:03.229985",
+    "updated_at": "2024-02-10T22:22:03.229985",
+    "__class__": "State"
+  },
+  "State.b85af335-2409-4c1b-92f3-60cb112f56d8": {
+    "id": "b85af335-2409-4c1b-92f3-60cb112f56d8",
+    "created_at": "2024-02-10T22:22:03.230044",
+    "updated_at": "2024-02-10T22:22:03.230044",
+    "__class__": "State"
+  },
+  "State.871cd03e-788a-4b7d-a450-5261a6645f76": {
+    "id": "871cd03e-788a-4b7d-a450-5261a6645f76",
+    "created_at": "2024-02-10T22:22:03.230300",
+    "updated_at": "2024-02-10T22:22:03.230300",
+    "__class__": "State"
+  },
+  "State.36cf08f0-b6e4-4089-9e8d-bc5e9e870970": {
+    "id": "36cf08f0-b6e4-4089-9e8d-bc5e9e870970",
+    "created_at": "2024-02-10T22:22:03.230585",
+    "updated_at": "2024-02-10T22:22:03.230585",
+    "__class__": "State"
+  },
+  "State.9ef11997-27e4-4463-9246-9eb08ac824f4": {
+    "id": "9ef11997-27e4-4463-9246-9eb08ac824f4",
+    "created_at": "2024-02-10T22:22:03.230902",
+    "updated_at": "2024-02-10T22:22:03.230902",
+    "__class__": "State"
+  },
+  "State.f994b7d5-20f5-4183-ba6d-385bc1f81d87": {
+    "id": "f994b7d5-20f5-4183-ba6d-385bc1f81d87",
+    "created_at": "2024-02-10T22:22:03.231322",
+    "updated_at": "2024-02-10T22:22:03.231322",
+    "__class__": "State"
+  },
+  "User.7979fb05-d7a1-4aef-a59a-f18cb8f32357": {
+    "id": "7979fb05-d7a1-4aef-a59a-f18cb8f32357",
+    "created_at": "2024-02-10T22:22:03.231713",
+    "updated_at": "2024-02-10T22:22:03.231713",
+    "email": "test@example.com",
+    "password": "pass123",
+    "first_name": "John",
+    "last_name": "Doe",
+    "__class__": "User"
+  },
+  "User.05b01d34-6bc6-4115-a1e4-b2f59f1501d2": {
+    "id": "05b01d34-6bc6-4115-a1e4-b2f59f1501d2",
+    "created_at": "2024-02-10T22:22:03.231804",
+    "updated_at": "2024-02-10T22:22:03.231804",
+    "__class__": "User"
+  },
+  "User.d975b63b-781a-4817-84f7-1ebc1fd26c37": {
+    "id": "d975b63b-781a-4817-84f7-1ebc1fd26c37",
+    "created_at": "2024-02-10T22:22:03.231869",
+    "updated_at": "2024-02-10T22:22:03.231869",
+    "__class__": "User"
+  },
+  "User.1bebf838-84f8-48e6-8289-bc806d874af6": {
+    "id": "1bebf838-84f8-48e6-8289-bc806d874af6",
+    "created_at": "2024-02-10T22:22:03.231929",
+    "updated_at": "2024-02-10T22:22:03.231929",
+    "__class__": "User"
+  },
+  "User.d0dfa2ae-bdb4-4cd1-a15e-c1a3129610f4": {
+    "id": "d0dfa2ae-bdb4-4cd1-a15e-c1a3129610f4",
+    "created_at": "2024-02-10T22:22:03.231990",
+    "updated_at": "2024-02-10T22:22:03.231990",
+    "__class__": "User"
+  },
+  "User.63b4f66e-6a91-4782-a4a5-c2eea0f1409b": {
+    "id": "63b4f66e-6a91-4782-a4a5-c2eea0f1409b",
+    "created_at": "2024-02-10T22:22:03.231997",
+    "updated_at": "2024-02-10T22:22:03.231997",
+    "__class__": "User"
+  },
+  "User.a6294b5c-2764-4ff2-bdf3-f513cddbb936": {
+    "id": "a6294b5c-2764-4ff2-bdf3-f513cddbb936",
+    "created_at": "2024-02-10T22:22:03.232052",
+    "updated_at": "2024-02-10T22:22:03.232056",
+    "__class__": "User"
+  },
+  "Amenity.238b3462-3a6b-4516-8262-2dc1541f812e": {
+    "id": "238b3462-3a6b-4516-8262-2dc1541f812e",
+    "created_at": "2024-02-10T22:22:18.377612",
+    "updated_at": "2024-02-10T22:22:18.377612",
+    "__class__": "Amenity"
+  },
+  "Amenity.50217836-55d2-4be7-8003-3cb940146a67": {
+    "id": "50217836-55d2-4be7-8003-3cb940146a67",
+    "created_at": "2024-02-10T22:22:18.377775",
+    "updated_at": "2024-02-10T22:22:18.377775",
+    "__class__": "Amenity"
+  },
+  "Amenity.02d1c24a-7493-466a-a608-47ec15c01b73": {
+    "id": "02d1c24a-7493-466a-a608-47ec15c01b73",
+    "created_at": "2024-02-10T22:22:18.377842",
+    "updated_at": "2024-02-10T22:22:18.377845",
+    "__class__": "Amenity"
+  },
+  "Amenity.739c1661-f3e3-4cba-b11f-0e4cac060467": {
+    "id": "739c1661-f3e3-4cba-b11f-0e4cac060467",
+    "created_at": "2024-02-10T22:22:18.402916",
+    "updated_at": "2024-02-10T22:22:18.402916",
+    "__class__": "Amenity"
+  },
+  "Amenity.e3c2041f-7c94-4e5f-81ee-ddef60746409": {
+    "id": "e3c2041f-7c94-4e5f-81ee-ddef60746409",
+    "created_at": "2024-02-10T22:22:18.403071",
+    "updated_at": "2024-02-10T22:22:18.403071",
+    "name": "Wi-Fi",
+    "__class__": "Amenity"
+  },
+  "BaseModel.fbd66a87-315f-44b2-9e60-5e2bb8a3b1a2": {
+    "id": "fbd66a87-315f-44b2-9e60-5e2bb8a3b1a2",
+    "created_at": "2024-02-10T22:22:18.405489",
+    "updated_at": "2024-02-10T22:22:18.405489",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.786847f9-bba9-4c24-ab2a-9bcc1f193aa1": {
+    "id": "786847f9-bba9-4c24-ab2a-9bcc1f193aa1",
+    "created_at": "2024-02-10T22:22:18.405595",
+    "updated_at": "2024-02-10T22:22:18.405595",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.91838700-bfec-45de-9df2-81859d218e1b": {
+    "id": "91838700-bfec-45de-9df2-81859d218e1b",
+    "created_at": "2024-02-10T22:22:18.405844",
+    "updated_at": "2024-02-10T22:22:18.406114",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.0a294d67-bc2e-44c5-ab73-fd8d0e70ec73": {
+    "id": "0a294d67-bc2e-44c5-ab73-fd8d0e70ec73",
+    "created_at": "2024-02-10T22:22:18.406568",
+    "updated_at": "2024-02-10T22:22:18.406568",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.7ed7f105-ef7c-4fbb-9ac0-30d23a99d713": {
+    "id": "7ed7f105-ef7c-4fbb-9ac0-30d23a99d713",
+    "created_at": "2024-02-10T22:22:18.406688",
+    "updated_at": "2024-02-10T22:22:18.406688",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.56de1475-8391-4d65-b8a1-599fa53cc239": {
+    "id": "56de1475-8391-4d65-b8a1-599fa53cc239",
+    "created_at": "2024-02-10T22:22:18.406766",
+    "updated_at": "2024-02-10T22:22:18.406766",
+    "name": "Test Name",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.4f22dca1-7412-4ff2-8552-8ff8eb1895bf": {
+    "id": "4f22dca1-7412-4ff2-8552-8ff8eb1895bf",
+    "created_at": "2024-02-10T22:22:18.406878",
+    "updated_at": "2024-02-10T22:22:18.406878",
+    "__class__": "BaseModel"
+  },
+  "City.f7f1a760-1080-4c8b-8374-13d09c3132dc": {
+    "id": "f7f1a760-1080-4c8b-8374-13d09c3132dc",
+    "created_at": "2024-02-10T22:22:18.406997",
+    "updated_at": "2024-02-10T22:22:18.406997",
+    "__class__": "City"
+  },
+  "City.1b12d493-34a0-4c4c-8367-d2f544fe5434": {
+    "id": "1b12d493-34a0-4c4c-8367-d2f544fe5434",
+    "created_at": "2024-02-10T22:22:18.407065",
+    "updated_at": "2024-02-10T22:22:18.407065",
+    "__class__": "City"
+  },
+  "City.26391a45-4d31-4cfa-b8de-2eadcf29cf84": {
+    "id": "26391a45-4d31-4cfa-b8de-2eadcf29cf84",
+    "created_at": "2024-02-10T22:22:18.407141",
+    "updated_at": "2024-02-10T22:22:18.407145",
+    "custom_attr": "custom_val",
+    "__class__": "City"
+  },
+  "City.060a3333-2e9e-4111-b405-7a0a97b618d1": {
+    "id": "060a3333-2e9e-4111-b405-7a0a97b618d1",
+    "created_at": "2024-02-10T22:22:18.427744",
+    "updated_at": "2024-02-10T22:22:18.427744",
+    "__class__": "City"
+  },
+  "City.77ff3447-ead2-4ffa-b76d-e8053db49c8c": {
+    "id": "77ff3447-ead2-4ffa-b76d-e8053db49c8c",
+    "created_at": "2024-02-10T22:22:18.427912",
+    "updated_at": "2024-02-10T22:22:18.427912",
+    "__class__": "City"
+  },
+  "City.7902ab41-ab32-47f7-b502-1ee4c39bc781": {
+    "id": "7902ab41-ab32-47f7-b502-1ee4c39bc781",
+    "created_at": "2024-02-10T22:22:18.427983",
+    "updated_at": "2024-02-10T22:22:18.427986",
+    "__class__": "City"
+  },
+  "City.bc05429b-1ebc-461c-b66e-844eace752af": {
+    "id": "bc05429b-1ebc-461c-b66e-844eace752af",
+    "created_at": "2024-02-10T22:22:18.450484",
+    "updated_at": "2024-02-10T22:22:18.450484",
+    "__class__": "City"
+  },
+  "City.aba766ed-d70c-4448-8a10-2b400958b505": {
+    "id": "aba766ed-d70c-4448-8a10-2b400958b505",
+    "created_at": "2024-02-10T22:22:18.450588",
+    "updated_at": "2024-02-10T22:22:18.450588",
+    "__class__": "City"
+  },
+  "Place.e6faa2c0-f376-49a6-91fa-4fdf785da9dc": {
+    "id": "e6faa2c0-f376-49a6-91fa-4fdf785da9dc",
+    "created_at": "2024-02-10T22:22:18.450705",
+    "updated_at": "2024-02-10T22:22:18.450705",
+    "city_id": "12345",
+    "user_id": "abcde",
+    "name": "Test Place",
+    "description": "Test description",
+    "number_rooms": 1,
+    "number_bathrooms": 2,
+    "max_guest": 3,
+    "price_by_night": 100,
+    "latitude": 12.34,
+    "longitude": -56.78,
+    "amenity_ids": [
+      "pool",
+      "wifi"
+    ],
+    "__class__": "Place"
+  },
+  "Place.c9e450c8-1f9b-42c2-849b-d7585113e59f": {
+    "id": "c9e450c8-1f9b-42c2-849b-d7585113e59f",
+    "created_at": "2024-02-10T22:22:18.450800",
+    "updated_at": "2024-02-10T22:22:18.450800",
+    "__class__": "Place"
+  },
+  "Place.d90d378c-26d2-471c-93d9-40d328b11487": {
+    "id": "d90d378c-26d2-471c-93d9-40d328b11487",
+    "created_at": "2024-02-10T22:22:18.450899",
+    "updated_at": "2024-02-10T22:22:18.450899",
+    "city_id": "12345",
+    "user_id": "abcde",
+    "name": "Test Place",
+    "description": "Some new description",
+    "number_rooms": 5,
+    "number_bathrooms": 3,
+    "max_guest": 7,
+    "price_by_night": 300,
+    "latitude": 33.33,
+    "longitude": -44.44,
+    "amenity_ids": [
+      "sauna"
+    ],
+    "__class__": "Place"
+  },
+  "Review.93ab2e9b-f884-4b50-a756-2b9fe48e91b7": {
+    "id": "93ab2e9b-f884-4b50-a756-2b9fe48e91b7",
+    "created_at": "2024-02-10T22:22:18.451051",
+    "updated_at": "2024-02-10T22:22:18.451051",
+    "__class__": "Review"
+  },
+  "Review.0b71ab12-9e13-4b63-a237-3b277b17e2b0": {
+    "id": "0b71ab12-9e13-4b63-a237-3b277b17e2b0",
+    "created_at": "2024-02-10T22:22:18.451121",
+    "updated_at": "2024-02-10T22:22:18.451121",
+    "__class__": "Review"
+  },
+  "Review.53a163b9-bc17-4abe-863b-287d73282b55": {
+    "id": "53a163b9-bc17-4abe-863b-287d73282b55",
+    "created_at": "2024-02-10T22:22:18.451194",
+    "updated_at": "2024-02-10T22:22:18.451194",
+    "__class__": "Review"
+  },
+  "Review.5f926da7-750d-4760-a819-643419d6d49d": {
+    "id": "5f926da7-750d-4760-a819-643419d6d49d",
+    "created_at": "2024-02-10T22:22:18.451203",
+    "updated_at": "2024-02-10T22:22:18.451203",
+    "__class__": "Review"
+  },
+  "Review.6b947789-565f-44d7-878c-f483430fe25b": {
+    "id": "6b947789-565f-44d7-878c-f483430fe25b",
+    "created_at": "2024-02-10T22:22:18.451259",
+    "updated_at": "2024-02-10T22:22:18.451259",
+    "__class__": "Review"
+  },
+  "Review.0967cc98-8843-4335-a2f5-2ef8cd6ae964": {
+    "id": "0967cc98-8843-4335-a2f5-2ef8cd6ae964",
+    "created_at": "2024-02-10T22:22:18.451437",
+    "updated_at": "2024-02-10T22:22:18.451437",
+    "__class__": "Review"
+  },
+  "Review.acee4862-b861-4cc4-a11f-eba9f7dd4ad9": {
+    "id": "acee4862-b861-4cc4-a11f-eba9f7dd4ad9",
+    "created_at": "2024-02-10T22:22:18.451529",
+    "updated_at": "2024-02-10T22:22:18.451533",
+    "__class__": "Review"
+  },
+  "Review.89924e5a-a7ea-4f87-8624-923db1537716": {
+    "id": "89924e5a-a7ea-4f87-8624-923db1537716",
+    "created_at": "2024-02-10T22:22:18.472146",
+    "updated_at": "2024-02-10T22:22:18.472146",
+    "__class__": "Review"
+  },
+  "Review.7ccd728d-dbd5-4a3e-b815-4bb836405e0f": {
+    "id": "7ccd728d-dbd5-4a3e-b815-4bb836405e0f",
+    "created_at": "2024-02-10T22:22:18.472496",
+    "updated_at": "2024-02-10T22:22:18.472496",
+    "__class__": "Review"
+  },
+  "Review.9452955c-3b21-42d3-ac12-a07b896c6cd5": {
+    "id": "9452955c-3b21-42d3-ac12-a07b896c6cd5",
+    "created_at": "2024-02-10T22:22:18.472584",
+    "updated_at": "2024-02-10T22:22:18.472584",
+    "new_attribute": "value",
+    "__class__": "Review"
+  },
+  "Review.ff554f17-7553-4b66-9105-4f0c35d57977": {
+    "id": "ff554f17-7553-4b66-9105-4f0c35d57977",
+    "created_at": "2024-02-10T22:22:18.472651",
+    "updated_at": "2024-02-10T22:22:18.472651",
+    "__class__": "Review"
+  },
+  "Review.9292475f-341a-4225-836e-c38d004c646f": {
+    "id": "9292475f-341a-4225-836e-c38d004c646f",
+    "created_at": "2024-02-10T22:22:18.472714",
+    "updated_at": "2024-02-10T22:22:18.472714",
+    "__class__": "Review"
+  },
+  "State.7664da9b-1eb2-404c-a6e3-b8b39262eefb": {
+    "id": "7664da9b-1eb2-404c-a6e3-b8b39262eefb",
+    "created_at": "2024-02-10T22:22:18.472802",
+    "updated_at": "2024-02-10T22:22:18.472802",
+    "__class__": "State"
+  },
+  "State.48ef304b-5fb0-4291-bd90-cb625563d542": {
+    "id": "48ef304b-5fb0-4291-bd90-cb625563d542",
+    "created_at": "2024-02-10T22:22:18.472861",
+    "updated_at": "2024-02-10T22:22:18.472861",
+    "__class__": "State"
+  },
+  "State.c1eae08f-d14b-46e5-9057-72deab3e570b": {
+    "id": "c1eae08f-d14b-46e5-9057-72deab3e570b",
+    "created_at": "2024-02-10T22:22:18.473104",
+    "updated_at": "2024-02-10T22:22:18.473104",
+    "__class__": "State"
+  },
+  "State.84cff84b-b2c2-49ed-a38f-34fdaa714bd8": {
+    "id": "84cff84b-b2c2-49ed-a38f-34fdaa714bd8",
+    "created_at": "2024-02-10T22:22:18.473379",
+    "updated_at": "2024-02-10T22:22:18.473379",
+    "__class__": "State"
+  },
+  "State.85831efd-243a-4766-b0ac-e1a9d8c4c2b4": {
+    "id": "85831efd-243a-4766-b0ac-e1a9d8c4c2b4",
+    "created_at": "2024-02-10T22:22:18.473730",
+    "updated_at": "2024-02-10T22:22:18.473730",
+    "__class__": "State"
+  },
+  "State.552d84ba-cb2c-47c9-98b5-2a83bcdc6063": {
+    "id": "552d84ba-cb2c-47c9-98b5-2a83bcdc6063",
+    "created_at": "2024-02-10T22:22:18.474095",
+    "updated_at": "2024-02-10T22:22:18.474095",
+    "__class__": "State"
+  },
+  "User.e0b09a41-b499-4e80-b8bf-9659cba6cfbf": {
+    "id": "e0b09a41-b499-4e80-b8bf-9659cba6cfbf",
+    "created_at": "2024-02-10T22:22:18.474375",
+    "updated_at": "2024-02-10T22:22:18.474375",
+    "email": "test@example.com",
+    "password": "pass123",
+    "first_name": "John",
+    "last_name": "Doe",
+    "__class__": "User"
+  },
+  "User.08a7b250-53b8-4f60-9165-05adfbc6303d": {
+    "id": "08a7b250-53b8-4f60-9165-05adfbc6303d",
+    "created_at": "2024-02-10T22:22:18.474450",
+    "updated_at": "2024-02-10T22:22:18.474450",
+    "__class__": "User"
+  },
+  "User.ad39ffee-8d51-41fb-ac69-5d6418ebbc6f": {
+    "id": "ad39ffee-8d51-41fb-ac69-5d6418ebbc6f",
+    "created_at": "2024-02-10T22:22:18.474509",
+    "updated_at": "2024-02-10T22:22:18.474509",
+    "__class__": "User"
+  },
+  "User.e5158b11-685a-46d1-bcf2-eaf06fda36fd": {
+    "id": "e5158b11-685a-46d1-bcf2-eaf06fda36fd",
+    "created_at": "2024-02-10T22:22:18.474566",
+    "updated_at": "2024-02-10T22:22:18.474566",
+    "__class__": "User"
+  },
+  "User.3037f2c7-2ad6-4ce3-a1d8-9db497873bc9": {
+    "id": "3037f2c7-2ad6-4ce3-a1d8-9db497873bc9",
+    "created_at": "2024-02-10T22:22:18.474624",
+    "updated_at": "2024-02-10T22:22:18.474624",
+    "__class__": "User"
+  },
+  "User.5aa60262-803d-4a6b-a246-c91380c62bec": {
+    "id": "5aa60262-803d-4a6b-a246-c91380c62bec",
+    "created_at": "2024-02-10T22:22:18.474632",
+    "updated_at": "2024-02-10T22:22:18.474632",
+    "__class__": "User"
+  },
+  "User.243eca55-693a-4544-9463-6cfb832a1556": {
+    "id": "243eca55-693a-4544-9463-6cfb832a1556",
+    "created_at": "2024-02-10T22:22:18.474685",
+    "updated_at": "2024-02-10T22:22:18.474688",
+    "__class__": "User"
+  },
+  "Amenity.64dc0880-874b-4408-8749-cb1046aa1864": {
+    "id": "64dc0880-874b-4408-8749-cb1046aa1864",
+    "created_at": "2024-02-10T22:22:24.782262",
+    "updated_at": "2024-02-10T22:22:24.782262",
+    "__class__": "Amenity"
+  },
+  "Amenity.85d6f64a-11ce-4dca-aa46-07ab08de2d39": {
+    "id": "85d6f64a-11ce-4dca-aa46-07ab08de2d39",
+    "created_at": "2024-02-10T22:22:24.782461",
+    "updated_at": "2024-02-10T22:22:24.782461",
+    "__class__": "Amenity"
+  },
+  "Amenity.3810d615-566b-4009-9223-d269fdb2ba88": {
+    "id": "3810d615-566b-4009-9223-d269fdb2ba88",
+    "created_at": "2024-02-10T22:22:24.782550",
+    "updated_at": "2024-02-10T22:22:24.782554",
+    "__class__": "Amenity"
+  },
+  "Amenity.77d21e6e-5e48-44d6-bf38-7ae98ebf1941": {
+    "id": "77d21e6e-5e48-44d6-bf38-7ae98ebf1941",
+    "created_at": "2024-02-10T22:22:24.807460",
+    "updated_at": "2024-02-10T22:22:24.807460",
+    "__class__": "Amenity"
+  },
+  "Amenity.4da9631c-a4ef-428b-9157-5d247956e02a": {
+    "id": "4da9631c-a4ef-428b-9157-5d247956e02a",
+    "created_at": "2024-02-10T22:22:24.807636",
+    "updated_at": "2024-02-10T22:22:24.807636",
+    "name": "Wi-Fi",
+    "__class__": "Amenity"
+  },
+  "BaseModel.e08ecac5-a8f0-4071-8d57-7f6a00669006": {
+    "id": "e08ecac5-a8f0-4071-8d57-7f6a00669006",
+    "created_at": "2024-02-10T22:22:24.809238",
+    "updated_at": "2024-02-10T22:22:24.809238",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.7687e58d-b12f-4ee6-a171-e9021719a0fc": {
+    "id": "7687e58d-b12f-4ee6-a171-e9021719a0fc",
+    "created_at": "2024-02-10T22:22:24.809328",
+    "updated_at": "2024-02-10T22:22:24.809328",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.1ea973d0-d53b-4682-bd09-3d17d71bd47b": {
+    "id": "1ea973d0-d53b-4682-bd09-3d17d71bd47b",
+    "created_at": "2024-02-10T22:22:24.809469",
+    "updated_at": "2024-02-10T22:22:24.809697",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.102548b3-702b-4bc2-86f1-29f5509ab4dd": {
+    "id": "102548b3-702b-4bc2-86f1-29f5509ab4dd",
+    "created_at": "2024-02-10T22:22:24.810419",
+    "updated_at": "2024-02-10T22:22:24.810419",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.2e7079b4-6bed-44e1-ab21-7c46de2ace3e": {
+    "id": "2e7079b4-6bed-44e1-ab21-7c46de2ace3e",
+    "created_at": "2024-02-10T22:22:24.810567",
+    "updated_at": "2024-02-10T22:22:24.810567",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.dd7d4786-bf6a-4db9-8074-93b22c6c37bb": {
+    "id": "dd7d4786-bf6a-4db9-8074-93b22c6c37bb",
+    "created_at": "2024-02-10T22:22:24.810783",
+    "updated_at": "2024-02-10T22:22:24.810783",
+    "name": "Test Name",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.67eac4f5-5337-4857-815a-06ea65e7805e": {
+    "id": "67eac4f5-5337-4857-815a-06ea65e7805e",
+    "created_at": "2024-02-10T22:22:24.811007",
+    "updated_at": "2024-02-10T22:22:24.811007",
+    "__class__": "BaseModel"
+  },
+  "City.2dee41f4-17cc-4e83-a0b8-4f5096e58424": {
+    "id": "2dee41f4-17cc-4e83-a0b8-4f5096e58424",
+    "created_at": "2024-02-10T22:22:24.811092",
+    "updated_at": "2024-02-10T22:22:24.811092",
+    "__class__": "City"
+  },
+  "City.20935ede-a9bb-4d59-a89e-8828a96e6741": {
+    "id": "20935ede-a9bb-4d59-a89e-8828a96e6741",
+    "created_at": "2024-02-10T22:22:24.811178",
+    "updated_at": "2024-02-10T22:22:24.811178",
+    "__class__": "City"
+  },
+  "City.d04c5ad5-1504-468b-901b-83b13e62804b": {
+    "id": "d04c5ad5-1504-468b-901b-83b13e62804b",
+    "created_at": "2024-02-10T22:22:24.811300",
+    "updated_at": "2024-02-10T22:22:24.811305",
+    "custom_attr": "custom_val",
+    "__class__": "City"
+  },
+  "City.18a21ca1-7b0b-4c65-ad66-6cebeeb9b7e5": {
+    "id": "18a21ca1-7b0b-4c65-ad66-6cebeeb9b7e5",
+    "created_at": "2024-02-10T22:22:24.834670",
+    "updated_at": "2024-02-10T22:22:24.834670",
+    "__class__": "City"
+  },
+  "City.38f8b14f-bd55-4165-a866-f881f3fbc5f1": {
+    "id": "38f8b14f-bd55-4165-a866-f881f3fbc5f1",
+    "created_at": "2024-02-10T22:22:24.835098",
+    "updated_at": "2024-02-10T22:22:24.835098",
+    "__class__": "City"
+  },
+  "City.a02953ee-09fa-4462-8c04-3d51e33823b8": {
+    "id": "a02953ee-09fa-4462-8c04-3d51e33823b8",
+    "created_at": "2024-02-10T22:22:24.835272",
+    "updated_at": "2024-02-10T22:22:24.835277",
+    "__class__": "City"
+  },
+  "City.679e67a8-b755-4a3d-820f-8a88e65af434": {
+    "id": "679e67a8-b755-4a3d-820f-8a88e65af434",
+    "created_at": "2024-02-10T22:22:24.858420",
+    "updated_at": "2024-02-10T22:22:24.858420",
+    "__class__": "City"
+  },
+  "City.85c111ba-1e46-4434-9719-6c1e759a2d44": {
+    "id": "85c111ba-1e46-4434-9719-6c1e759a2d44",
+    "created_at": "2024-02-10T22:22:24.858603",
+    "updated_at": "2024-02-10T22:22:24.858603",
+    "__class__": "City"
+  },
+  "Place.9d5ebfd7-6ff4-4a81-bfb4-5f00116d64cb": {
+    "id": "9d5ebfd7-6ff4-4a81-bfb4-5f00116d64cb",
+    "created_at": "2024-02-10T22:22:24.858780",
+    "updated_at": "2024-02-10T22:22:24.858780",
+    "city_id": "12345",
+    "user_id": "abcde",
+    "name": "Test Place",
+    "description": "Test description",
+    "number_rooms": 1,
+    "number_bathrooms": 2,
+    "max_guest": 3,
+    "price_by_night": 100,
+    "latitude": 12.34,
+    "longitude": -56.78,
+    "amenity_ids": [
+      "pool",
+      "wifi"
+    ],
+    "__class__": "Place"
+  },
+  "Place.8a8c731e-30a3-4379-b62d-73b47364b13b": {
+    "id": "8a8c731e-30a3-4379-b62d-73b47364b13b",
+    "created_at": "2024-02-10T22:22:24.858866",
+    "updated_at": "2024-02-10T22:22:24.858866",
+    "__class__": "Place"
+  },
+  "Place.65e8b1c6-5274-4ee4-8314-b19d4a74d45b": {
+    "id": "65e8b1c6-5274-4ee4-8314-b19d4a74d45b",
+    "created_at": "2024-02-10T22:22:24.858991",
+    "updated_at": "2024-02-10T22:22:24.858991",
+    "city_id": "12345",
+    "user_id": "abcde",
+    "name": "Test Place",
+    "description": "Some new description",
+    "number_rooms": 5,
+    "number_bathrooms": 3,
+    "max_guest": 7,
+    "price_by_night": 300,
+    "latitude": 33.33,
+    "longitude": -44.44,
+    "amenity_ids": [
+      "sauna"
+    ],
+    "__class__": "Place"
+  },
+  "Review.cb3268c1-7372-4b80-8334-73f920418f4d": {
+    "id": "cb3268c1-7372-4b80-8334-73f920418f4d",
+    "created_at": "2024-02-10T22:22:24.859107",
+    "updated_at": "2024-02-10T22:22:24.859107",
+    "__class__": "Review"
+  },
+  "Review.a5b7c4c3-c890-45ab-b319-52ce2d721869": {
+    "id": "a5b7c4c3-c890-45ab-b319-52ce2d721869",
+    "created_at": "2024-02-10T22:22:24.859175",
+    "updated_at": "2024-02-10T22:22:24.859175",
+    "__class__": "Review"
+  },
+  "Review.07c88086-c204-4939-99eb-02e591eb7298": {
+    "id": "07c88086-c204-4939-99eb-02e591eb7298",
+    "created_at": "2024-02-10T22:22:24.859249",
+    "updated_at": "2024-02-10T22:22:24.859249",
+    "__class__": "Review"
+  },
+  "Review.8a97c801-e277-4f24-bb6b-a58c9bd9ec02": {
+    "id": "8a97c801-e277-4f24-bb6b-a58c9bd9ec02",
+    "created_at": "2024-02-10T22:22:24.859257",
+    "updated_at": "2024-02-10T22:22:24.859257",
+    "__class__": "Review"
+  },
+  "Review.427e35e9-ad84-4588-aaf4-27a7acf1459e": {
+    "id": "427e35e9-ad84-4588-aaf4-27a7acf1459e",
+    "created_at": "2024-02-10T22:22:24.859312",
+    "updated_at": "2024-02-10T22:22:24.859312",
+    "__class__": "Review"
+  },
+  "Review.8f318264-3df2-4d47-82fb-6bc28318a99c": {
+    "id": "8f318264-3df2-4d47-82fb-6bc28318a99c",
+    "created_at": "2024-02-10T22:22:24.859470",
+    "updated_at": "2024-02-10T22:22:24.859470",
+    "__class__": "Review"
+  },
+  "Review.12c89a74-1006-411e-8d02-d7f831cf54bc": {
+    "id": "12c89a74-1006-411e-8d02-d7f831cf54bc",
+    "created_at": "2024-02-10T22:22:24.859527",
+    "updated_at": "2024-02-10T22:22:24.859530",
+    "__class__": "Review"
+  },
+  "Review.c2a4cfe7-3cd7-4eaa-a354-486309ee3cc4": {
+    "id": "c2a4cfe7-3cd7-4eaa-a354-486309ee3cc4",
+    "created_at": "2024-02-10T22:22:24.877931",
+    "updated_at": "2024-02-10T22:22:24.877931",
+    "__class__": "Review"
+  },
+  "Review.afb2f549-6ec5-4f20-b450-b5ba66388b2f": {
+    "id": "afb2f549-6ec5-4f20-b450-b5ba66388b2f",
+    "created_at": "2024-02-10T22:22:24.878236",
+    "updated_at": "2024-02-10T22:22:24.878236",
+    "__class__": "Review"
+  },
+  "Review.92464f75-cc2e-4686-b6c1-dbf24a015c93": {
+    "id": "92464f75-cc2e-4686-b6c1-dbf24a015c93",
+    "created_at": "2024-02-10T22:22:24.878319",
+    "updated_at": "2024-02-10T22:22:24.878319",
+    "new_attribute": "value",
+    "__class__": "Review"
+  },
+  "Review.eec861e7-753f-4d9e-b00e-c559fb522fe8": {
+    "id": "eec861e7-753f-4d9e-b00e-c559fb522fe8",
+    "created_at": "2024-02-10T22:22:24.878385",
+    "updated_at": "2024-02-10T22:22:24.878385",
+    "__class__": "Review"
+  },
+  "Review.ccc35fe4-7e9d-4084-887e-2d60fa7fbd5c": {
+    "id": "ccc35fe4-7e9d-4084-887e-2d60fa7fbd5c",
+    "created_at": "2024-02-10T22:22:24.878448",
+    "updated_at": "2024-02-10T22:22:24.878448",
+    "__class__": "Review"
+  },
+  "State.ce0f1317-6064-431a-93b1-5e23cf7bfc88": {
+    "id": "ce0f1317-6064-431a-93b1-5e23cf7bfc88",
+    "created_at": "2024-02-10T22:22:24.878529",
+    "updated_at": "2024-02-10T22:22:24.878529",
+    "__class__": "State"
+  },
+  "State.25f74a29-2570-4bbf-9105-990239555d22": {
+    "id": "25f74a29-2570-4bbf-9105-990239555d22",
+    "created_at": "2024-02-10T22:22:24.878585",
+    "updated_at": "2024-02-10T22:22:24.878585",
+    "__class__": "State"
+  },
+  "State.c5549af9-12b8-41e1-830a-c5dd5fbe4368": {
+    "id": "c5549af9-12b8-41e1-830a-c5dd5fbe4368",
+    "created_at": "2024-02-10T22:22:24.878815",
+    "updated_at": "2024-02-10T22:22:24.878815",
+    "__class__": "State"
+  },
+  "State.7fbda79e-eee1-4d04-ad18-c2efc1d941c6": {
+    "id": "7fbda79e-eee1-4d04-ad18-c2efc1d941c6",
+    "created_at": "2024-02-10T22:22:24.879091",
+    "updated_at": "2024-02-10T22:22:24.879091",
+    "__class__": "State"
+  },
+  "State.79eff4e0-33ce-4a7a-ae69-d6819b904977": {
+    "id": "79eff4e0-33ce-4a7a-ae69-d6819b904977",
+    "created_at": "2024-02-10T22:22:24.879349",
+    "updated_at": "2024-02-10T22:22:24.879349",
+    "__class__": "State"
+  },
+  "State.41aa15b9-1e8d-45ff-bd6d-e217eadf02ac": {
+    "id": "41aa15b9-1e8d-45ff-bd6d-e217eadf02ac",
+    "created_at": "2024-02-10T22:22:24.879692",
+    "updated_at": "2024-02-10T22:22:24.879692",
+    "__class__": "State"
+  },
+  "User.f39b0f3c-aace-42b8-9164-210c44fa0b4a": {
+    "id": "f39b0f3c-aace-42b8-9164-210c44fa0b4a",
+    "created_at": "2024-02-10T22:22:24.879960",
+    "updated_at": "2024-02-10T22:22:24.879960",
+    "email": "test@example.com",
+    "password": "pass123",
+    "first_name": "John",
+    "last_name": "Doe",
+    "__class__": "User"
+  },
+  "User.3bf24f1f-baba-4da2-93fd-8a75c88ddc3d": {
+    "id": "3bf24f1f-baba-4da2-93fd-8a75c88ddc3d",
+    "created_at": "2024-02-10T22:22:24.880029",
+    "updated_at": "2024-02-10T22:22:24.880029",
+    "__class__": "User"
+  },
+  "User.b090c9fd-ced5-4a49-840d-09072fe611b7": {
+    "id": "b090c9fd-ced5-4a49-840d-09072fe611b7",
+    "created_at": "2024-02-10T22:22:24.880160",
+    "updated_at": "2024-02-10T22:22:24.880160",
+    "__class__": "User"
+  },
+  "User.f1b0be70-1151-4b14-91b9-fc54249f5fc9": {
+    "id": "f1b0be70-1151-4b14-91b9-fc54249f5fc9",
+    "created_at": "2024-02-10T22:22:24.880227",
+    "updated_at": "2024-02-10T22:22:24.880227",
+    "__class__": "User"
+  },
+  "User.8ee6d4c7-4c14-4352-a456-ce25338490f7": {
+    "id": "8ee6d4c7-4c14-4352-a456-ce25338490f7",
+    "created_at": "2024-02-10T22:22:24.880290",
+    "updated_at": "2024-02-10T22:22:24.880290",
+    "__class__": "User"
+  },
+  "User.788ab375-7403-4042-afa3-9f2e137d60ae": {
+    "id": "788ab375-7403-4042-afa3-9f2e137d60ae",
+    "created_at": "2024-02-10T22:22:24.880298",
+    "updated_at": "2024-02-10T22:22:24.880298",
+    "__class__": "User"
+  },
+  "User.61bcea4f-9446-4d34-93bf-4dfdfe147ca8": {
+    "id": "61bcea4f-9446-4d34-93bf-4dfdfe147ca8",
+    "created_at": "2024-02-10T22:22:24.880353",
+    "updated_at": "2024-02-10T22:22:24.880356",
+    "__class__": "User"
+  },
+  "Amenity.f18384a2-036a-4a8d-8010-b3c45d8897aa": {
+    "id": "f18384a2-036a-4a8d-8010-b3c45d8897aa",
+    "created_at": "2024-02-10T22:22:29.456494",
+    "updated_at": "2024-02-10T22:22:29.456494",
+    "__class__": "Amenity"
+  },
+  "Amenity.80b19da9-8679-4eda-b4b5-3e51c8da0282": {
+    "id": "80b19da9-8679-4eda-b4b5-3e51c8da0282",
+    "created_at": "2024-02-10T22:22:29.456609",
+    "updated_at": "2024-02-10T22:22:29.456609",
+    "__class__": "Amenity"
+  },
+  "Amenity.3a343563-78b6-41c5-b12c-626192a18b4b": {
+    "id": "3a343563-78b6-41c5-b12c-626192a18b4b",
+    "created_at": "2024-02-10T22:22:29.456678",
+    "updated_at": "2024-02-10T22:22:29.456681",
+    "__class__": "Amenity"
+  },
+  "Amenity.04322daf-e982-4948-96fb-5ae5a8a9af52": {
+    "id": "04322daf-e982-4948-96fb-5ae5a8a9af52",
+    "created_at": "2024-02-10T22:22:29.474303",
+    "updated_at": "2024-02-10T22:22:29.474303",
+    "__class__": "Amenity"
+  },
+  "Amenity.7a25b519-a618-4da6-a3a9-fc4a666a2f9c": {
+    "id": "7a25b519-a618-4da6-a3a9-fc4a666a2f9c",
+    "created_at": "2024-02-10T22:22:29.474451",
+    "updated_at": "2024-02-10T22:22:29.474451",
+    "name": "Wi-Fi",
+    "__class__": "Amenity"
+  },
+  "BaseModel.54d12983-3ec3-48c0-8227-55a3d4380906": {
+    "id": "54d12983-3ec3-48c0-8227-55a3d4380906",
+    "created_at": "2024-02-10T22:22:29.475925",
+    "updated_at": "2024-02-10T22:22:29.475925",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.1621b8a0-d1b7-43f9-8671-8d14f56e1513": {
+    "id": "1621b8a0-d1b7-43f9-8671-8d14f56e1513",
+    "created_at": "2024-02-10T22:22:29.476006",
+    "updated_at": "2024-02-10T22:22:29.476006",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.8e98d71c-577b-47fc-976e-e4dc12f5d140": {
+    "id": "8e98d71c-577b-47fc-976e-e4dc12f5d140",
+    "created_at": "2024-02-10T22:22:29.476145",
+    "updated_at": "2024-02-10T22:22:29.476365",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.df04686d-49ff-4e66-a060-c2c6a31d52e0": {
+    "id": "df04686d-49ff-4e66-a060-c2c6a31d52e0",
+    "created_at": "2024-02-10T22:22:29.476807",
+    "updated_at": "2024-02-10T22:22:29.476807",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.082c2ef3-b3f0-4f21-a0a3-b674e2f3850c": {
+    "id": "082c2ef3-b3f0-4f21-a0a3-b674e2f3850c",
+    "created_at": "2024-02-10T22:22:29.476884",
+    "updated_at": "2024-02-10T22:22:29.476884",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.814edaf9-fa1e-49c3-adc0-1d5c3a53fcc6": {
+    "id": "814edaf9-fa1e-49c3-adc0-1d5c3a53fcc6",
+    "created_at": "2024-02-10T22:22:29.476957",
+    "updated_at": "2024-02-10T22:22:29.476957",
+    "name": "Test Name",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.7ee675ea-76b9-4eea-bfb7-8f087b890fe6": {
+    "id": "7ee675ea-76b9-4eea-bfb7-8f087b890fe6",
+    "created_at": "2024-02-10T22:22:29.477041",
+    "updated_at": "2024-02-10T22:22:29.477041",
+    "__class__": "BaseModel"
+  },
+  "City.2ad41442-6d93-4d39-9203-f8091af0fd99": {
+    "id": "2ad41442-6d93-4d39-9203-f8091af0fd99",
+    "created_at": "2024-02-10T22:22:29.477110",
+    "updated_at": "2024-02-10T22:22:29.477110",
+    "__class__": "City"
+  },
+  "City.5fd0e9cc-79b1-44ec-8e3f-aaec35440f64": {
+    "id": "5fd0e9cc-79b1-44ec-8e3f-aaec35440f64",
+    "created_at": "2024-02-10T22:22:29.477168",
+    "updated_at": "2024-02-10T22:22:29.477168",
+    "__class__": "City"
+  },
+  "City.6d1816df-076a-4106-97c7-df98b2fc6590": {
+    "id": "6d1816df-076a-4106-97c7-df98b2fc6590",
+    "created_at": "2024-02-10T22:22:29.477227",
+    "updated_at": "2024-02-10T22:22:29.477230",
+    "custom_attr": "custom_val",
+    "__class__": "City"
+  },
+  "City.f0fd8216-5d40-4cbd-be91-09be6875f595": {
+    "id": "f0fd8216-5d40-4cbd-be91-09be6875f595",
+    "created_at": "2024-02-10T22:22:29.496841",
+    "updated_at": "2024-02-10T22:22:29.496841",
+    "__class__": "City"
+  },
+  "City.3a5c8570-961c-4278-8aba-96b710819cd2": {
+    "id": "3a5c8570-961c-4278-8aba-96b710819cd2",
+    "created_at": "2024-02-10T22:22:29.497017",
+    "updated_at": "2024-02-10T22:22:29.497017",
+    "__class__": "City"
+  },
+  "City.9f965f19-b7c5-425b-9bbc-6820eb359d37": {
+    "id": "9f965f19-b7c5-425b-9bbc-6820eb359d37",
+    "created_at": "2024-02-10T22:22:29.497126",
+    "updated_at": "2024-02-10T22:22:29.497130",
+    "__class__": "City"
+  },
+  "City.5a5fba4a-7806-4532-aba5-f7602e4ec7b9": {
+    "id": "5a5fba4a-7806-4532-aba5-f7602e4ec7b9",
+    "created_at": "2024-02-10T22:22:29.516848",
+    "updated_at": "2024-02-10T22:22:29.516848",
+    "__class__": "City"
+  },
+  "City.7362637c-828f-4ecf-95e3-ef6c4b1a728b": {
+    "id": "7362637c-828f-4ecf-95e3-ef6c4b1a728b",
+    "created_at": "2024-02-10T22:22:29.516962",
+    "updated_at": "2024-02-10T22:22:29.516962",
+    "__class__": "City"
+  },
+  "Place.903e94f3-b367-4919-a355-5f9833140749": {
+    "id": "903e94f3-b367-4919-a355-5f9833140749",
+    "created_at": "2024-02-10T22:22:29.517087",
+    "updated_at": "2024-02-10T22:22:29.517087",
+    "city_id": "12345",
+    "user_id": "abcde",
+    "name": "Test Place",
+    "description": "Test description",
+    "number_rooms": 1,
+    "number_bathrooms": 2,
+    "max_guest": 3,
+    "price_by_night": 100,
+    "latitude": 12.34,
+    "longitude": -56.78,
+    "amenity_ids": [
+      "pool",
+      "wifi"
+    ],
+    "__class__": "Place"
+  },
+  "Place.a282b1d6-8685-41a6-a208-6c1311cedb29": {
+    "id": "a282b1d6-8685-41a6-a208-6c1311cedb29",
+    "created_at": "2024-02-10T22:22:29.517161",
+    "updated_at": "2024-02-10T22:22:29.517161",
+    "__class__": "Place"
+  },
+  "Place.e5a6cb84-7d5c-4c7d-8d2a-deaaf4ec0557": {
+    "id": "e5a6cb84-7d5c-4c7d-8d2a-deaaf4ec0557",
+    "created_at": "2024-02-10T22:22:29.517252",
+    "updated_at": "2024-02-10T22:22:29.517252",
+    "city_id": "12345",
+    "user_id": "abcde",
+    "name": "Test Place",
+    "description": "Some new description",
+    "number_rooms": 5,
+    "number_bathrooms": 3,
+    "max_guest": 7,
+    "price_by_night": 300,
+    "latitude": 33.33,
+    "longitude": -44.44,
+    "amenity_ids": [
+      "sauna"
+    ],
+    "__class__": "Place"
+  },
+  "Review.05c11a58-99ba-48d4-83b7-479be028b6cd": {
+    "id": "05c11a58-99ba-48d4-83b7-479be028b6cd",
+    "created_at": "2024-02-10T22:22:29.517386",
+    "updated_at": "2024-02-10T22:22:29.517386",
+    "__class__": "Review"
+  },
+  "Review.169c445c-12fd-4611-99e6-d023acac131c": {
+    "id": "169c445c-12fd-4611-99e6-d023acac131c",
+    "created_at": "2024-02-10T22:22:29.517539",
+    "updated_at": "2024-02-10T22:22:29.517539",
+    "__class__": "Review"
+  },
+  "Review.5cb9677a-b76b-4f80-af33-297e12293410": {
+    "id": "5cb9677a-b76b-4f80-af33-297e12293410",
+    "created_at": "2024-02-10T22:22:29.517609",
+    "updated_at": "2024-02-10T22:22:29.517609",
+    "__class__": "Review"
+  },
+  "Review.a5d7f6be-5201-49d0-b649-d3ae4d0192a6": {
+    "id": "a5d7f6be-5201-49d0-b649-d3ae4d0192a6",
+    "created_at": "2024-02-10T22:22:29.517619",
+    "updated_at": "2024-02-10T22:22:29.517619",
+    "__class__": "Review"
+  },
+  "Review.2736418c-cdca-4f4b-a91a-9abe7d685b85": {
+    "id": "2736418c-cdca-4f4b-a91a-9abe7d685b85",
+    "created_at": "2024-02-10T22:22:29.517711",
+    "updated_at": "2024-02-10T22:22:29.517711",
+    "__class__": "Review"
+  },
+  "Review.170678d0-c5d8-4838-96f1-e4e1273d0cf1": {
+    "id": "170678d0-c5d8-4838-96f1-e4e1273d0cf1",
+    "created_at": "2024-02-10T22:22:29.517898",
+    "updated_at": "2024-02-10T22:22:29.517898",
+    "__class__": "Review"
+  },
+  "Review.601f84b7-7e99-4e70-858e-06fee264cf36": {
+    "id": "601f84b7-7e99-4e70-858e-06fee264cf36",
+    "created_at": "2024-02-10T22:22:29.517957",
+    "updated_at": "2024-02-10T22:22:29.517961",
+    "__class__": "Review"
+  },
+  "Review.c9b664c2-87c9-4a64-8f85-f63cad509c58": {
+    "id": "c9b664c2-87c9-4a64-8f85-f63cad509c58",
+    "created_at": "2024-02-10T22:22:29.540653",
+    "updated_at": "2024-02-10T22:22:29.540653",
+    "__class__": "Review"
+  },
+  "Review.1f6f5353-4b32-42bb-8d58-61b83c749eb7": {
+    "id": "1f6f5353-4b32-42bb-8d58-61b83c749eb7",
+    "created_at": "2024-02-10T22:22:29.541170",
+    "updated_at": "2024-02-10T22:22:29.541170",
+    "__class__": "Review"
+  },
+  "Review.40c9a8c8-1831-4c82-8b01-2b36a8dcda2a": {
+    "id": "40c9a8c8-1831-4c82-8b01-2b36a8dcda2a",
+    "created_at": "2024-02-10T22:22:29.541267",
+    "updated_at": "2024-02-10T22:22:29.541267",
+    "new_attribute": "value",
+    "__class__": "Review"
+  },
+  "Review.54ca7aca-c288-4892-a458-f34522749594": {
+    "id": "54ca7aca-c288-4892-a458-f34522749594",
+    "created_at": "2024-02-10T22:22:29.541333",
+    "updated_at": "2024-02-10T22:22:29.541333",
+    "__class__": "Review"
+  },
+  "Review.6c673335-3ed2-458b-abe1-ae21f32f2d82": {
+    "id": "6c673335-3ed2-458b-abe1-ae21f32f2d82",
+    "created_at": "2024-02-10T22:22:29.541397",
+    "updated_at": "2024-02-10T22:22:29.541397",
+    "__class__": "Review"
+  },
+  "State.b3e7605b-63d5-4969-90c9-bba6fecae91c": {
+    "id": "b3e7605b-63d5-4969-90c9-bba6fecae91c",
+    "created_at": "2024-02-10T22:22:29.541482",
+    "updated_at": "2024-02-10T22:22:29.541482",
+    "__class__": "State"
+  },
+  "State.421f079b-3eca-454c-8392-8f7366234648": {
+    "id": "421f079b-3eca-454c-8392-8f7366234648",
+    "created_at": "2024-02-10T22:22:29.541541",
+    "updated_at": "2024-02-10T22:22:29.541541",
+    "__class__": "State"
+  },
+  "State.642a53af-93be-4a29-9b5c-4b15d1cfbed4": {
+    "id": "642a53af-93be-4a29-9b5c-4b15d1cfbed4",
+    "created_at": "2024-02-10T22:22:29.541786",
+    "updated_at": "2024-02-10T22:22:29.541786",
+    "__class__": "State"
+  },
+  "State.abb02452-f21c-45ce-9f0f-12a029fa0d69": {
+    "id": "abb02452-f21c-45ce-9f0f-12a029fa0d69",
+    "created_at": "2024-02-10T22:22:29.542085",
+    "updated_at": "2024-02-10T22:22:29.542085",
+    "__class__": "State"
+  },
+  "State.c083d0c5-620c-44d2-8328-686491e0c3a8": {
+    "id": "c083d0c5-620c-44d2-8328-686491e0c3a8",
+    "created_at": "2024-02-10T22:22:29.542428",
+    "updated_at": "2024-02-10T22:22:29.542428",
+    "__class__": "State"
+  },
+  "State.a5e9ed11-3f34-4a6b-a228-bce184eaa702": {
+    "id": "a5e9ed11-3f34-4a6b-a228-bce184eaa702",
+    "created_at": "2024-02-10T22:22:29.542947",
+    "updated_at": "2024-02-10T22:22:29.542947",
+    "__class__": "State"
+  },
+  "User.7b9c17b6-6010-4751-8e92-c7f26deee3e4": {
+    "id": "7b9c17b6-6010-4751-8e92-c7f26deee3e4",
+    "created_at": "2024-02-10T22:22:29.543378",
+    "updated_at": "2024-02-10T22:22:29.543378",
+    "email": "test@example.com",
+    "password": "pass123",
+    "first_name": "John",
+    "last_name": "Doe",
+    "__class__": "User"
+  },
+  "User.cab38d5a-c83f-4218-bbe3-d6dd3f620a38": {
+    "id": "cab38d5a-c83f-4218-bbe3-d6dd3f620a38",
+    "created_at": "2024-02-10T22:22:29.543475",
+    "updated_at": "2024-02-10T22:22:29.543475",
+    "__class__": "User"
+  },
+  "User.0c88116e-a870-424e-8959-17686a9df1d7": {
+    "id": "0c88116e-a870-424e-8959-17686a9df1d7",
+    "created_at": "2024-02-10T22:22:29.543554",
+    "updated_at": "2024-02-10T22:22:29.543554",
+    "__class__": "User"
+  },
+  "User.73301360-851f-412f-971d-2ffe8a1292ec": {
+    "id": "73301360-851f-412f-971d-2ffe8a1292ec",
+    "created_at": "2024-02-10T22:22:29.543618",
+    "updated_at": "2024-02-10T22:22:29.543618",
+    "__class__": "User"
+  },
+  "User.718becde-97e4-44f8-ba66-2d7a925f1da3": {
+    "id": "718becde-97e4-44f8-ba66-2d7a925f1da3",
+    "created_at": "2024-02-10T22:22:29.543679",
+    "updated_at": "2024-02-10T22:22:29.543679",
+    "__class__": "User"
+  },
+  "User.264c8a66-eec6-4dae-bac1-17a861d3e5f5": {
+    "id": "264c8a66-eec6-4dae-bac1-17a861d3e5f5",
+    "created_at": "2024-02-10T22:22:29.543686",
+    "updated_at": "2024-02-10T22:22:29.543686",
+    "__class__": "User"
+  },
+  "User.6f0856df-e78d-4888-8c62-f7070ea4d6b1": {
+    "id": "6f0856df-e78d-4888-8c62-f7070ea4d6b1",
+    "created_at": "2024-02-10T22:22:29.543740",
+    "updated_at": "2024-02-10T22:22:29.543743",
+    "__class__": "User"
+  },
+  "Amenity.9b3b19fb-dc66-44ed-8b2c-1af2a35d3d70": {
+    "id": "9b3b19fb-dc66-44ed-8b2c-1af2a35d3d70",
+    "created_at": "2024-02-10T22:22:48.836864",
+    "updated_at": "2024-02-10T22:22:48.836864",
+    "__class__": "Amenity"
+  },
+  "Amenity.43fd9f55-48ce-4955-8825-8e894f7e3f07": {
+    "id": "43fd9f55-48ce-4955-8825-8e894f7e3f07",
+    "created_at": "2024-02-10T22:22:48.836970",
+    "updated_at": "2024-02-10T22:22:48.836970",
+    "__class__": "Amenity"
+  },
+  "Amenity.fe1b3a39-1e8a-4913-bfba-a01a42b11f2d": {
+    "id": "fe1b3a39-1e8a-4913-bfba-a01a42b11f2d",
+    "created_at": "2024-02-10T22:22:48.837060",
+    "updated_at": "2024-02-10T22:22:48.837064",
+    "__class__": "Amenity"
+  },
+  "Amenity.956f92db-af25-4c84-b843-0c1030f0c1a0": {
+    "id": "956f92db-af25-4c84-b843-0c1030f0c1a0",
+    "created_at": "2024-02-10T22:22:48.859505",
+    "updated_at": "2024-02-10T22:22:48.859505",
+    "__class__": "Amenity"
+  },
+  "Amenity.b0ce95e7-cb84-4860-a4d1-9ce18c879905": {
+    "id": "b0ce95e7-cb84-4860-a4d1-9ce18c879905",
+    "created_at": "2024-02-10T22:22:48.859679",
+    "updated_at": "2024-02-10T22:22:48.859679",
+    "name": "Wi-Fi",
+    "__class__": "Amenity"
+  },
+  "BaseModel.8219cf4a-c77a-4664-8669-9a6f0e40b796": {
+    "id": "8219cf4a-c77a-4664-8669-9a6f0e40b796",
+    "created_at": "2024-02-10T22:22:48.861145",
+    "updated_at": "2024-02-10T22:22:48.861145",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.9392b59f-c6ee-44a6-9442-bee6464e734e": {
+    "id": "9392b59f-c6ee-44a6-9442-bee6464e734e",
+    "created_at": "2024-02-10T22:22:48.861273",
+    "updated_at": "2024-02-10T22:22:48.861273",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.4fd3ce30-3835-401f-bc85-c6cfc53dc8b0": {
+    "id": "4fd3ce30-3835-401f-bc85-c6cfc53dc8b0",
+    "created_at": "2024-02-10T22:22:48.861460",
+    "updated_at": "2024-02-10T22:22:48.861770",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.f6214299-3c3e-432c-8c30-d8293f62bb2c": {
+    "id": "f6214299-3c3e-432c-8c30-d8293f62bb2c",
+    "created_at": "2024-02-10T22:22:48.862419",
+    "updated_at": "2024-02-10T22:22:48.862419",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.3339d617-b849-421b-890f-8a54e8e9b7f8": {
+    "id": "3339d617-b849-421b-890f-8a54e8e9b7f8",
+    "created_at": "2024-02-10T22:22:48.862522",
+    "updated_at": "2024-02-10T22:22:48.862522",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.14b192f6-d1f9-4bb8-afc3-25fed6e12ca1": {
+    "id": "14b192f6-d1f9-4bb8-afc3-25fed6e12ca1",
+    "created_at": "2024-02-10T22:22:48.862627",
+    "updated_at": "2024-02-10T22:22:48.862627",
+    "name": "Test Name",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.92c30abd-3f43-4f7b-93b8-94797b6c55c8": {
+    "id": "92c30abd-3f43-4f7b-93b8-94797b6c55c8",
+    "created_at": "2024-02-10T22:22:48.862726",
+    "updated_at": "2024-02-10T22:22:48.862726",
+    "__class__": "BaseModel"
+  },
+  "City.ca30d25a-0752-42e3-9288-2c6710f5af8b": {
+    "id": "ca30d25a-0752-42e3-9288-2c6710f5af8b",
+    "created_at": "2024-02-10T22:22:48.862796",
+    "updated_at": "2024-02-10T22:22:48.862796",
+    "__class__": "City"
+  },
+  "City.0bda2cdc-d2ba-490b-b880-3ffeb10da944": {
+    "id": "0bda2cdc-d2ba-490b-b880-3ffeb10da944",
+    "created_at": "2024-02-10T22:22:48.862857",
+    "updated_at": "2024-02-10T22:22:48.862857",
+    "__class__": "City"
+  },
+  "City.9c427caf-e2b0-44c0-b494-d07fd6ba9840": {
+    "id": "9c427caf-e2b0-44c0-b494-d07fd6ba9840",
+    "created_at": "2024-02-10T22:22:48.862917",
+    "updated_at": "2024-02-10T22:22:48.862921",
+    "custom_attr": "custom_val",
+    "__class__": "City"
+  },
+  "City.a07e9e2b-09a1-4fe3-941c-8a3877a7d37f": {
+    "id": "a07e9e2b-09a1-4fe3-941c-8a3877a7d37f",
+    "created_at": "2024-02-10T22:22:48.883977",
+    "updated_at": "2024-02-10T22:22:48.883977",
+    "__class__": "City"
+  },
+  "City.c890b854-6e0e-4b04-8606-e81f99a1e5f6": {
+    "id": "c890b854-6e0e-4b04-8606-e81f99a1e5f6",
+    "created_at": "2024-02-10T22:22:48.884120",
+    "updated_at": "2024-02-10T22:22:48.884120",
+    "__class__": "City"
+  },
+  "City.af9c6cea-fee9-4269-b063-45462654fcc5": {
+    "id": "af9c6cea-fee9-4269-b063-45462654fcc5",
+    "created_at": "2024-02-10T22:22:48.884230",
+    "updated_at": "2024-02-10T22:22:48.884233",
+    "__class__": "City"
+  },
+  "City.a2a816ae-a406-4204-a714-07879a91322c": {
+    "id": "a2a816ae-a406-4204-a714-07879a91322c",
+    "created_at": "2024-02-10T22:22:48.904807",
+    "updated_at": "2024-02-10T22:22:48.904807",
+    "__class__": "City"
+  },
+  "City.9a2fd0f1-a750-4217-b9b9-6539dd54c378": {
+    "id": "9a2fd0f1-a750-4217-b9b9-6539dd54c378",
+    "created_at": "2024-02-10T22:22:48.904915",
+    "updated_at": "2024-02-10T22:22:48.904915",
+    "__class__": "City"
+  },
+  "Place.2f0b20ed-cd6a-4a8a-9e7f-8dec81efccce": {
+    "id": "2f0b20ed-cd6a-4a8a-9e7f-8dec81efccce",
+    "created_at": "2024-02-10T22:22:48.905021",
+    "updated_at": "2024-02-10T22:22:48.905021",
+    "city_id": "12345",
+    "user_id": "abcde",
+    "name": "Test Place",
+    "description": "Test description",
+    "number_rooms": 1,
+    "number_bathrooms": 2,
+    "max_guest": 3,
+    "price_by_night": 100,
+    "latitude": 12.34,
+    "longitude": -56.78,
+    "amenity_ids": [
+      "pool",
+      "wifi"
+    ],
+    "__class__": "Place"
+  },
+  "Place.4c83aadc-a24a-4c01-bff5-11575ba107b7": {
+    "id": "4c83aadc-a24a-4c01-bff5-11575ba107b7",
+    "created_at": "2024-02-10T22:22:48.905098",
+    "updated_at": "2024-02-10T22:22:48.905098",
+    "__class__": "Place"
+  },
+  "Place.4c948212-ebe8-45f8-a065-f5e76f7765e8": {
+    "id": "4c948212-ebe8-45f8-a065-f5e76f7765e8",
+    "created_at": "2024-02-10T22:22:48.905180",
+    "updated_at": "2024-02-10T22:22:48.905180",
+    "city_id": "12345",
+    "user_id": "abcde",
+    "name": "Test Place",
+    "description": "Some new description",
+    "number_rooms": 5,
+    "number_bathrooms": 3,
+    "max_guest": 7,
+    "price_by_night": 300,
+    "latitude": 33.33,
+    "longitude": -44.44,
+    "amenity_ids": [
+      "sauna"
+    ],
+    "__class__": "Place"
+  },
+  "Review.bbf7e5c6-e1f7-433c-ba1b-e2ef486a6062": {
+    "id": "bbf7e5c6-e1f7-433c-ba1b-e2ef486a6062",
+    "created_at": "2024-02-10T22:22:48.905341",
+    "updated_at": "2024-02-10T22:22:48.905341",
+    "__class__": "Review"
+  },
+  "Review.c93aa567-5773-44e8-b67c-6e700ca0b5f1": {
+    "id": "c93aa567-5773-44e8-b67c-6e700ca0b5f1",
+    "created_at": "2024-02-10T22:22:48.905418",
+    "updated_at": "2024-02-10T22:22:48.905418",
+    "__class__": "Review"
+  },
+  "Review.548f99d1-1284-4826-98c7-2d69709f0c6a": {
+    "id": "548f99d1-1284-4826-98c7-2d69709f0c6a",
+    "created_at": "2024-02-10T22:22:48.905476",
+    "updated_at": "2024-02-10T22:22:48.905476",
+    "__class__": "Review"
+  },
+  "Review.febeb8d1-321a-4a14-bd10-6d39b078894b": {
+    "id": "febeb8d1-321a-4a14-bd10-6d39b078894b",
+    "created_at": "2024-02-10T22:22:48.905485",
+    "updated_at": "2024-02-10T22:22:48.905485",
+    "__class__": "Review"
+  },
+  "Review.bb460ea0-81e8-4c50-a3af-6736a3fd1915": {
+    "id": "bb460ea0-81e8-4c50-a3af-6736a3fd1915",
+    "created_at": "2024-02-10T22:22:48.905540",
+    "updated_at": "2024-02-10T22:22:48.905540",
+    "__class__": "Review"
+  },
+  "Review.79aba598-b95b-4588-bce0-74288b6eab8d": {
+    "id": "79aba598-b95b-4588-bce0-74288b6eab8d",
+    "created_at": "2024-02-10T22:22:48.905705",
+    "updated_at": "2024-02-10T22:22:48.905705",
+    "__class__": "Review"
+  },
+  "Review.4b874469-5801-4d70-b418-580bf149a09a": {
+    "id": "4b874469-5801-4d70-b418-580bf149a09a",
+    "created_at": "2024-02-10T22:22:48.905760",
+    "updated_at": "2024-02-10T22:22:48.905764",
+    "__class__": "Review"
+  },
+  "Review.103eed86-1a05-45f1-8aa9-999f38402ff8": {
+    "id": "103eed86-1a05-45f1-8aa9-999f38402ff8",
+    "created_at": "2024-02-10T22:22:48.927415",
+    "updated_at": "2024-02-10T22:22:48.927415",
+    "__class__": "Review"
+  },
+  "Review.8aca6f89-8394-4d1f-9ff6-73415aa46421": {
+    "id": "8aca6f89-8394-4d1f-9ff6-73415aa46421",
+    "created_at": "2024-02-10T22:22:48.927786",
+    "updated_at": "2024-02-10T22:22:48.927786",
+    "__class__": "Review"
+  },
+  "Review.b8af85b0-a717-409b-8cb9-91c86d2cf68a": {
+    "id": "b8af85b0-a717-409b-8cb9-91c86d2cf68a",
+    "created_at": "2024-02-10T22:22:48.927871",
+    "updated_at": "2024-02-10T22:22:48.927871",
+    "new_attribute": "value",
+    "__class__": "Review"
+  },
+  "Review.282a5bbc-d188-4188-b6c3-4c2b9a496364": {
+    "id": "282a5bbc-d188-4188-b6c3-4c2b9a496364",
+    "created_at": "2024-02-10T22:22:48.927936",
+    "updated_at": "2024-02-10T22:22:48.927936",
+    "__class__": "Review"
+  },
+  "Review.6bcd79f2-3fed-4932-99f6-774c4ca0ce1f": {
+    "id": "6bcd79f2-3fed-4932-99f6-774c4ca0ce1f",
+    "created_at": "2024-02-10T22:22:48.927999",
+    "updated_at": "2024-02-10T22:22:48.927999",
+    "__class__": "Review"
+  },
+  "State.471a018d-658e-4be4-9654-9d7662656401": {
+    "id": "471a018d-658e-4be4-9654-9d7662656401",
+    "created_at": "2024-02-10T22:22:48.928087",
+    "updated_at": "2024-02-10T22:22:48.928087",
+    "__class__": "State"
+  },
+  "State.9831e185-ceeb-440a-a9fd-f2290f16cdf5": {
+    "id": "9831e185-ceeb-440a-a9fd-f2290f16cdf5",
+    "created_at": "2024-02-10T22:22:48.928147",
+    "updated_at": "2024-02-10T22:22:48.928147",
+    "__class__": "State"
+  },
+  "State.857a691d-ca50-4ec3-9486-f17c7f322652": {
+    "id": "857a691d-ca50-4ec3-9486-f17c7f322652",
+    "created_at": "2024-02-10T22:22:48.928547",
+    "updated_at": "2024-02-10T22:22:48.928547",
+    "__class__": "State"
+  },
+  "State.c33fd2ed-1239-4461-bc3d-ceef99da80d7": {
+    "id": "c33fd2ed-1239-4461-bc3d-ceef99da80d7",
+    "created_at": "2024-02-10T22:22:48.928834",
+    "updated_at": "2024-02-10T22:22:48.928834",
+    "__class__": "State"
+  },
+  "State.b2e80865-fbba-4569-933f-eaafe97b9f4d": {
+    "id": "b2e80865-fbba-4569-933f-eaafe97b9f4d",
+    "created_at": "2024-02-10T22:22:48.929158",
+    "updated_at": "2024-02-10T22:22:48.929158",
+    "__class__": "State"
+  },
+  "State.75c9cc9e-dafc-4269-8a6f-fb4ea304d639": {
+    "id": "75c9cc9e-dafc-4269-8a6f-fb4ea304d639",
+    "created_at": "2024-02-10T22:22:48.929526",
+    "updated_at": "2024-02-10T22:22:48.929526",
+    "__class__": "State"
+  },
+  "User.0eae8959-5713-4a47-be33-13f19dad8957": {
+    "id": "0eae8959-5713-4a47-be33-13f19dad8957",
+    "created_at": "2024-02-10T22:22:48.929853",
+    "updated_at": "2024-02-10T22:22:48.929853",
+    "email": "test@example.com",
+    "password": "pass123",
+    "first_name": "John",
+    "last_name": "Doe",
+    "__class__": "User"
+  },
+  "User.060e2077-07a5-417d-bded-2e6d236ba015": {
+    "id": "060e2077-07a5-417d-bded-2e6d236ba015",
+    "created_at": "2024-02-10T22:22:48.929928",
+    "updated_at": "2024-02-10T22:22:48.929928",
+    "__class__": "User"
+  },
+  "User.a8932270-2204-4dc0-92b7-a4237539875b": {
+    "id": "a8932270-2204-4dc0-92b7-a4237539875b",
+    "created_at": "2024-02-10T22:22:48.929987",
+    "updated_at": "2024-02-10T22:22:48.929987",
+    "__class__": "User"
+  },
+  "User.eea744ec-d7e0-4ad1-ba42-c25d6d79ed3a": {
+    "id": "eea744ec-d7e0-4ad1-ba42-c25d6d79ed3a",
+    "created_at": "2024-02-10T22:22:48.930047",
+    "updated_at": "2024-02-10T22:22:48.930047",
+    "__class__": "User"
+  },
+  "User.9dd2a784-668b-4349-be61-c0646f8c7ceb": {
+    "id": "9dd2a784-668b-4349-be61-c0646f8c7ceb",
+    "created_at": "2024-02-10T22:22:48.930153",
+    "updated_at": "2024-02-10T22:22:48.930153",
+    "__class__": "User"
+  },
+  "User.a066ce1d-c089-4219-87f1-e77f998b52fa": {
+    "id": "a066ce1d-c089-4219-87f1-e77f998b52fa",
+    "created_at": "2024-02-10T22:22:48.930162",
+    "updated_at": "2024-02-10T22:22:48.930162",
+    "__class__": "User"
+  },
+  "User.c17a0651-c80a-45fb-a00f-b2b6b6b218d4": {
+    "id": "c17a0651-c80a-45fb-a00f-b2b6b6b218d4",
+    "created_at": "2024-02-10T22:22:48.930255",
+    "updated_at": "2024-02-10T22:22:48.930260",
+    "__class__": "User"
+  },
+  "Amenity.2d402273-d3d0-4ce1-b265-1fde72012e61": {
+    "id": "2d402273-d3d0-4ce1-b265-1fde72012e61",
+    "created_at": "2024-02-10T22:22:54.223839",
+    "updated_at": "2024-02-10T22:22:54.223839",
+    "__class__": "Amenity"
+  },
+  "Amenity.1730c479-000f-46fe-8804-fb2fea825f90": {
+    "id": "1730c479-000f-46fe-8804-fb2fea825f90",
+    "created_at": "2024-02-10T22:22:54.223962",
+    "updated_at": "2024-02-10T22:22:54.223962",
+    "__class__": "Amenity"
+  },
+  "Amenity.d31fdcd7-2ff8-492f-a106-29358b8ac648": {
+    "id": "d31fdcd7-2ff8-492f-a106-29358b8ac648",
+    "created_at": "2024-02-10T22:22:54.224036",
+    "updated_at": "2024-02-10T22:22:54.224040",
+    "__class__": "Amenity"
+  },
+  "Amenity.35b02d7c-4a4d-4bce-bfd3-cabe572dbfad": {
+    "id": "35b02d7c-4a4d-4bce-bfd3-cabe572dbfad",
+    "created_at": "2024-02-10T22:22:54.244326",
+    "updated_at": "2024-02-10T22:22:54.244326",
+    "__class__": "Amenity"
+  },
+  "Amenity.22b4c321-f5db-4e33-9cf3-3272a29a3c2c": {
+    "id": "22b4c321-f5db-4e33-9cf3-3272a29a3c2c",
+    "created_at": "2024-02-10T22:22:54.244453",
+    "updated_at": "2024-02-10T22:22:54.244453",
+    "name": "Wi-Fi",
+    "__class__": "Amenity"
+  },
+  "BaseModel.2f934d7c-ea3f-4205-ac90-b2c9fb0cb031": {
+    "id": "2f934d7c-ea3f-4205-ac90-b2c9fb0cb031",
+    "created_at": "2024-02-10T22:22:54.245856",
+    "updated_at": "2024-02-10T22:22:54.245856",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.4a8f6cf2-67e9-4968-8b13-49eb4a019b28": {
+    "id": "4a8f6cf2-67e9-4968-8b13-49eb4a019b28",
+    "created_at": "2024-02-10T22:22:54.245954",
+    "updated_at": "2024-02-10T22:22:54.245954",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.a15b87fd-38ab-4cb4-8f4c-69783202a7d9": {
+    "id": "a15b87fd-38ab-4cb4-8f4c-69783202a7d9",
+    "created_at": "2024-02-10T22:22:54.246100",
+    "updated_at": "2024-02-10T22:22:54.246328",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.433af1d7-e997-4bb6-826d-4e63421746f8": {
+    "id": "433af1d7-e997-4bb6-826d-4e63421746f8",
+    "created_at": "2024-02-10T22:22:54.246802",
+    "updated_at": "2024-02-10T22:22:54.246802",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.0d919e3b-609d-4479-93b5-894c77b87ad0": {
+    "id": "0d919e3b-609d-4479-93b5-894c77b87ad0",
+    "created_at": "2024-02-10T22:22:54.246888",
+    "updated_at": "2024-02-10T22:22:54.246888",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.6af45b28-7a28-43bd-8d79-bca4b5f10bb8": {
+    "id": "6af45b28-7a28-43bd-8d79-bca4b5f10bb8",
+    "created_at": "2024-02-10T22:22:54.246944",
+    "updated_at": "2024-02-10T22:22:54.246944",
+    "name": "Test Name",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.033ec0c1-7fb2-488e-b58b-d3683a21e897": {
+    "id": "033ec0c1-7fb2-488e-b58b-d3683a21e897",
+    "created_at": "2024-02-10T22:22:54.247128",
+    "updated_at": "2024-02-10T22:22:54.247128",
+    "__class__": "BaseModel"
+  },
+  "City.b43e4885-a881-4c74-9e01-d160c61eb6be": {
+    "id": "b43e4885-a881-4c74-9e01-d160c61eb6be",
+    "created_at": "2024-02-10T22:22:54.247214",
+    "updated_at": "2024-02-10T22:22:54.247214",
+    "__class__": "City"
+  },
+  "City.23028b7a-f80d-4f99-ac00-1889fb531075": {
+    "id": "23028b7a-f80d-4f99-ac00-1889fb531075",
+    "created_at": "2024-02-10T22:22:54.247282",
+    "updated_at": "2024-02-10T22:22:54.247282",
+    "__class__": "City"
+  },
+  "City.f1270ecb-8572-4dc2-a9d8-7fbfff26e92d": {
+    "id": "f1270ecb-8572-4dc2-a9d8-7fbfff26e92d",
+    "created_at": "2024-02-10T22:22:54.247351",
+    "updated_at": "2024-02-10T22:22:54.247355",
+    "custom_attr": "custom_val",
+    "__class__": "City"
+  },
+  "City.dafacd47-7d2e-49da-a36b-2178eb74fba7": {
+    "id": "dafacd47-7d2e-49da-a36b-2178eb74fba7",
+    "created_at": "2024-02-10T22:22:54.268844",
+    "updated_at": "2024-02-10T22:22:54.268844",
+    "__class__": "City"
+  },
+  "City.df573fc7-b995-4993-8f3a-61fe6f373ac5": {
+    "id": "df573fc7-b995-4993-8f3a-61fe6f373ac5",
+    "created_at": "2024-02-10T22:22:54.269018",
+    "updated_at": "2024-02-10T22:22:54.269018",
+    "__class__": "City"
+  },
+  "City.5fb74c31-90ce-4dd0-9e1d-06246310dd92": {
+    "id": "5fb74c31-90ce-4dd0-9e1d-06246310dd92",
+    "created_at": "2024-02-10T22:22:54.269142",
+    "updated_at": "2024-02-10T22:22:54.269146",
+    "__class__": "City"
+  },
+  "City.e7a556cb-fe93-4b3d-aea4-f242a801cddf": {
+    "id": "e7a556cb-fe93-4b3d-aea4-f242a801cddf",
+    "created_at": "2024-02-10T22:22:54.291535",
+    "updated_at": "2024-02-10T22:22:54.291535",
+    "__class__": "City"
+  },
+  "City.1e60a903-fdaa-4e83-abcc-20656519df51": {
+    "id": "1e60a903-fdaa-4e83-abcc-20656519df51",
+    "created_at": "2024-02-10T22:22:54.291633",
+    "updated_at": "2024-02-10T22:22:54.291633",
+    "__class__": "City"
+  },
+  "Place.c7991b52-82e9-4c1b-a36f-520a36b47fa3": {
+    "id": "c7991b52-82e9-4c1b-a36f-520a36b47fa3",
+    "created_at": "2024-02-10T22:22:54.291725",
+    "updated_at": "2024-02-10T22:22:54.291725",
+    "city_id": "12345",
+    "user_id": "abcde",
+    "name": "Test Place",
+    "description": "Test description",
+    "number_rooms": 1,
+    "number_bathrooms": 2,
+    "max_guest": 3,
+    "price_by_night": 100,
+    "latitude": 12.34,
+    "longitude": -56.78,
+    "amenity_ids": [
+      "pool",
+      "wifi"
+    ],
+    "__class__": "Place"
+  },
+  "Place.0ed58cf8-82ef-45a4-8cb9-341f2f7c4a24": {
+    "id": "0ed58cf8-82ef-45a4-8cb9-341f2f7c4a24",
+    "created_at": "2024-02-10T22:22:54.291795",
+    "updated_at": "2024-02-10T22:22:54.291795",
+    "__class__": "Place"
+  },
+  "Place.b2d5ed64-88ce-4f80-8ef6-885f62345d92": {
+    "id": "b2d5ed64-88ce-4f80-8ef6-885f62345d92",
+    "created_at": "2024-02-10T22:22:54.291911",
+    "updated_at": "2024-02-10T22:22:54.291911",
+    "city_id": "12345",
+    "user_id": "abcde",
+    "name": "Test Place",
+    "description": "Some new description",
+    "number_rooms": 5,
+    "number_bathrooms": 3,
+    "max_guest": 7,
+    "price_by_night": 300,
+    "latitude": 33.33,
+    "longitude": -44.44,
+    "amenity_ids": [
+      "sauna"
+    ],
+    "__class__": "Place"
+  },
+  "Review.4889a975-375a-4b2f-ab21-d2dbbb67a350": {
+    "id": "4889a975-375a-4b2f-ab21-d2dbbb67a350",
+    "created_at": "2024-02-10T22:22:54.292061",
+    "updated_at": "2024-02-10T22:22:54.292061",
+    "__class__": "Review"
+  },
+  "Review.4839cb39-e26e-4650-855d-8e056ef66034": {
+    "id": "4839cb39-e26e-4650-855d-8e056ef66034",
+    "created_at": "2024-02-10T22:22:54.292139",
+    "updated_at": "2024-02-10T22:22:54.292139",
+    "__class__": "Review"
+  },
+  "Review.fcb7b6bc-2b93-47cd-8132-0d89d739d660": {
+    "id": "fcb7b6bc-2b93-47cd-8132-0d89d739d660",
+    "created_at": "2024-02-10T22:22:54.292197",
+    "updated_at": "2024-02-10T22:22:54.292197",
+    "__class__": "Review"
+  },
+  "Review.3374a45f-3de2-42f5-b753-cf0ee4b2844e": {
+    "id": "3374a45f-3de2-42f5-b753-cf0ee4b2844e",
+    "created_at": "2024-02-10T22:22:54.292205",
+    "updated_at": "2024-02-10T22:22:54.292205",
+    "__class__": "Review"
+  },
+  "Review.064f462f-e379-4ed9-95cd-73af9afd9cdc": {
+    "id": "064f462f-e379-4ed9-95cd-73af9afd9cdc",
+    "created_at": "2024-02-10T22:22:54.292259",
+    "updated_at": "2024-02-10T22:22:54.292259",
+    "__class__": "Review"
+  },
+  "Review.90b69272-1447-4905-9cb7-e7841ca46201": {
+    "id": "90b69272-1447-4905-9cb7-e7841ca46201",
+    "created_at": "2024-02-10T22:22:54.292425",
+    "updated_at": "2024-02-10T22:22:54.292425",
+    "__class__": "Review"
+  },
+  "Review.97da05a5-b326-4d85-ba90-2c35b922c7c9": {
+    "id": "97da05a5-b326-4d85-ba90-2c35b922c7c9",
+    "created_at": "2024-02-10T22:22:54.292484",
+    "updated_at": "2024-02-10T22:22:54.292487",
+    "__class__": "Review"
+  },
+  "Review.a61dba4a-a1db-40d9-a9d1-76c2029f8e3c": {
+    "id": "a61dba4a-a1db-40d9-a9d1-76c2029f8e3c",
+    "created_at": "2024-02-10T22:22:54.312811",
+    "updated_at": "2024-02-10T22:22:54.312811",
+    "__class__": "Review"
+  },
+  "Review.a5b30e5b-5cbc-4191-bb8e-5ec9c314e8a6": {
+    "id": "a5b30e5b-5cbc-4191-bb8e-5ec9c314e8a6",
+    "created_at": "2024-02-10T22:22:54.313108",
+    "updated_at": "2024-02-10T22:22:54.313108",
+    "__class__": "Review"
+  },
+  "Review.4be9a4a8-59e3-4b0e-a5ba-4082b78b9662": {
+    "id": "4be9a4a8-59e3-4b0e-a5ba-4082b78b9662",
+    "created_at": "2024-02-10T22:22:54.313193",
+    "updated_at": "2024-02-10T22:22:54.313193",
+    "new_attribute": "value",
+    "__class__": "Review"
+  },
+  "Review.65950f66-5baa-4be8-ab1d-8c6bcc6f757e": {
+    "id": "65950f66-5baa-4be8-ab1d-8c6bcc6f757e",
+    "created_at": "2024-02-10T22:22:54.313260",
+    "updated_at": "2024-02-10T22:22:54.313260",
+    "__class__": "Review"
+  },
+  "Review.c6177b3c-8482-4a02-b126-046a86d45f14": {
+    "id": "c6177b3c-8482-4a02-b126-046a86d45f14",
+    "created_at": "2024-02-10T22:22:54.313325",
+    "updated_at": "2024-02-10T22:22:54.313325",
+    "__class__": "Review"
+  },
+  "State.b5513056-c7f6-4b06-a793-9c07a0d42f6f": {
+    "id": "b5513056-c7f6-4b06-a793-9c07a0d42f6f",
+    "created_at": "2024-02-10T22:22:54.313413",
+    "updated_at": "2024-02-10T22:22:54.313413",
+    "__class__": "State"
+  },
+  "State.be5ee888-eabd-44ff-abd1-eca98b415aad": {
+    "id": "be5ee888-eabd-44ff-abd1-eca98b415aad",
+    "created_at": "2024-02-10T22:22:54.313473",
+    "updated_at": "2024-02-10T22:22:54.313473",
+    "__class__": "State"
+  },
+  "State.e8de4497-e73e-4f93-91c3-8e9fb2887c54": {
+    "id": "e8de4497-e73e-4f93-91c3-8e9fb2887c54",
+    "created_at": "2024-02-10T22:22:54.313777",
+    "updated_at": "2024-02-10T22:22:54.313777",
+    "__class__": "State"
+  },
+  "State.8b60a2b3-430c-4ce8-ad32-2cd1308e3616": {
+    "id": "8b60a2b3-430c-4ce8-ad32-2cd1308e3616",
+    "created_at": "2024-02-10T22:22:54.314364",
+    "updated_at": "2024-02-10T22:22:54.314364",
+    "__class__": "State"
+  },
+  "State.9102b673-db74-4882-b3c9-85f4a2ffb077": {
+    "id": "9102b673-db74-4882-b3c9-85f4a2ffb077",
+    "created_at": "2024-02-10T22:22:54.314800",
+    "updated_at": "2024-02-10T22:22:54.314800",
+    "__class__": "State"
+  },
+  "State.1e4db49c-0dfe-4779-b3b4-58078f546085": {
+    "id": "1e4db49c-0dfe-4779-b3b4-58078f546085",
+    "created_at": "2024-02-10T22:22:54.316443",
+    "updated_at": "2024-02-10T22:22:54.316443",
+    "__class__": "State"
+  },
+  "User.a542e1e2-27ef-4f10-aa00-8c4bdd92c809": {
+    "id": "a542e1e2-27ef-4f10-aa00-8c4bdd92c809",
+    "created_at": "2024-02-10T22:22:54.317190",
+    "updated_at": "2024-02-10T22:22:54.317190",
+    "email": "test@example.com",
+    "password": "pass123",
+    "first_name": "John",
+    "last_name": "Doe",
+    "__class__": "User"
+  },
+  "User.3f15afb1-edc1-4396-980a-9afdbb1809b3": {
+    "id": "3f15afb1-edc1-4396-980a-9afdbb1809b3",
+    "created_at": "2024-02-10T22:22:54.317390",
+    "updated_at": "2024-02-10T22:22:54.317390",
+    "__class__": "User"
+  },
+  "User.a452a47f-24e9-410e-a433-f2dbc7a76f6b": {
+    "id": "a452a47f-24e9-410e-a433-f2dbc7a76f6b",
+    "created_at": "2024-02-10T22:22:54.317470",
+    "updated_at": "2024-02-10T22:22:54.317470",
+    "__class__": "User"
+  },
+  "User.d79ed412-6706-45b6-9b04-9eb979cf5bc9": {
+    "id": "d79ed412-6706-45b6-9b04-9eb979cf5bc9",
+    "created_at": "2024-02-10T22:22:54.317631",
+    "updated_at": "2024-02-10T22:22:54.317631",
+    "__class__": "User"
+  },
+  "User.23c9be84-c9c8-4823-ba08-d5bc440213a5": {
+    "id": "23c9be84-c9c8-4823-ba08-d5bc440213a5",
+    "created_at": "2024-02-10T22:22:54.317819",
+    "updated_at": "2024-02-10T22:22:54.317819",
+    "__class__": "User"
+  },
+  "User.d1757151-f44b-4675-802b-6d63eb1339ca": {
+    "id": "d1757151-f44b-4675-802b-6d63eb1339ca",
+    "created_at": "2024-02-10T22:22:54.317829",
+    "updated_at": "2024-02-10T22:22:54.317829",
+    "__class__": "User"
+  },
+  "User.17e362e9-82c5-40be-b575-23bf5702ff03": {
+    "id": "17e362e9-82c5-40be-b575-23bf5702ff03",
+    "created_at": "2024-02-10T22:22:54.317892",
+    "updated_at": "2024-02-10T22:22:54.317895",
+    "__class__": "User"
+  },
+  "Amenity.81aafb76-7ca5-42ed-a238-1ae25379ea4b": {
+    "id": "81aafb76-7ca5-42ed-a238-1ae25379ea4b",
+    "created_at": "2024-02-10T22:23:05.577037",
+    "updated_at": "2024-02-10T22:23:05.577037",
+    "__class__": "Amenity"
+  },
+  "Amenity.386be83c-2d5a-465a-8d47-ebdea5d6ef16": {
+    "id": "386be83c-2d5a-465a-8d47-ebdea5d6ef16",
+    "created_at": "2024-02-10T22:23:05.577160",
+    "updated_at": "2024-02-10T22:23:05.577160",
+    "__class__": "Amenity"
+  },
+  "Amenity.2c3788b8-7217-448c-90a5-01675199ba50": {
+    "id": "2c3788b8-7217-448c-90a5-01675199ba50",
+    "created_at": "2024-02-10T22:23:05.577316",
+    "updated_at": "2024-02-10T22:23:05.577321",
+    "__class__": "Amenity"
+  },
+  "Amenity.27856353-2475-4b61-883b-182dc8ba1b7f": {
+    "id": "27856353-2475-4b61-883b-182dc8ba1b7f",
+    "created_at": "2024-02-10T22:23:05.599893",
+    "updated_at": "2024-02-10T22:23:05.599893",
+    "__class__": "Amenity"
+  },
+  "Amenity.74f4ab3d-7bc3-4139-b8f9-0119f64603ca": {
+    "id": "74f4ab3d-7bc3-4139-b8f9-0119f64603ca",
+    "created_at": "2024-02-10T22:23:05.600055",
+    "updated_at": "2024-02-10T22:23:05.600055",
+    "name": "Wi-Fi",
+    "__class__": "Amenity"
+  },
+  "BaseModel.1538a7e4-da8f-4985-9f94-85b9201a7b71": {
+    "id": "1538a7e4-da8f-4985-9f94-85b9201a7b71",
+    "created_at": "2024-02-10T22:23:05.601725",
+    "updated_at": "2024-02-10T22:23:05.601725",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.21f7f088-1490-4dd0-9e7a-f79b79abb7c2": {
+    "id": "21f7f088-1490-4dd0-9e7a-f79b79abb7c2",
+    "created_at": "2024-02-10T22:23:05.601823",
+    "updated_at": "2024-02-10T22:23:05.601823",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.6d9732d8-1328-4a06-bd23-d90160a09c29": {
+    "id": "6d9732d8-1328-4a06-bd23-d90160a09c29",
+    "created_at": "2024-02-10T22:23:05.602009",
+    "updated_at": "2024-02-10T22:23:05.602361",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.7892530d-fcc2-48d1-ac67-404835edcb30": {
+    "id": "7892530d-fcc2-48d1-ac67-404835edcb30",
+    "created_at": "2024-02-10T22:23:05.603310",
+    "updated_at": "2024-02-10T22:23:05.603310",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.193db8bd-61be-4327-b99f-f2fb6be4f24c": {
+    "id": "193db8bd-61be-4327-b99f-f2fb6be4f24c",
+    "created_at": "2024-02-10T22:23:05.603480",
+    "updated_at": "2024-02-10T22:23:05.603480",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.e89a4876-5cf5-454e-a2c7-11edc000994b": {
+    "id": "e89a4876-5cf5-454e-a2c7-11edc000994b",
+    "created_at": "2024-02-10T22:23:05.604352",
+    "updated_at": "2024-02-10T22:23:05.604352",
+    "name": "Test Name",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.697f5eb3-6cc6-4b73-a8f7-cd26ab210363": {
+    "id": "697f5eb3-6cc6-4b73-a8f7-cd26ab210363",
+    "created_at": "2024-02-10T22:23:05.604671",
+    "updated_at": "2024-02-10T22:23:05.604671",
+    "__class__": "BaseModel"
+  },
+  "City.82d933f8-58e0-4673-bfa0-3cd77b99de57": {
+    "id": "82d933f8-58e0-4673-bfa0-3cd77b99de57",
+    "created_at": "2024-02-10T22:23:05.604807",
+    "updated_at": "2024-02-10T22:23:05.604807",
+    "__class__": "City"
+  },
+  "City.3f676394-1818-4808-9c44-90ed0cebf9e5": {
+    "id": "3f676394-1818-4808-9c44-90ed0cebf9e5",
+    "created_at": "2024-02-10T22:23:05.604856",
+    "updated_at": "2024-02-10T22:23:05.604856",
+    "__class__": "City"
+  },
+  "City.c6ddc1f1-e184-407a-bd8f-70bfd82bd7fb": {
+    "id": "c6ddc1f1-e184-407a-bd8f-70bfd82bd7fb",
+    "created_at": "2024-02-10T22:23:05.604903",
+    "updated_at": "2024-02-10T22:23:05.604907",
+    "custom_attr": "custom_val",
+    "__class__": "City"
+  },
+  "City.76897353-40df-44d6-84f8-113f898cf744": {
+    "id": "76897353-40df-44d6-84f8-113f898cf744",
+    "created_at": "2024-02-10T22:23:05.627034",
+    "updated_at": "2024-02-10T22:23:05.627034",
+    "__class__": "City"
+  },
+  "City.d6fad8bd-e631-431f-861a-0094737269d3": {
+    "id": "d6fad8bd-e631-431f-861a-0094737269d3",
+    "created_at": "2024-02-10T22:23:05.627221",
+    "updated_at": "2024-02-10T22:23:05.627221",
+    "__class__": "City"
+  },
+  "City.0b370ac6-fcf2-4f8e-a58d-9b6ca00e189a": {
+    "id": "0b370ac6-fcf2-4f8e-a58d-9b6ca00e189a",
+    "created_at": "2024-02-10T22:23:05.627334",
+    "updated_at": "2024-02-10T22:23:05.627338",
+    "__class__": "City"
+  },
+  "City.24dca188-f583-4655-b8d7-6514e9303912": {
+    "id": "24dca188-f583-4655-b8d7-6514e9303912",
+    "created_at": "2024-02-10T22:23:05.654297",
+    "updated_at": "2024-02-10T22:23:05.654297",
+    "__class__": "City"
+  },
+  "City.03a9f88d-b8df-4bd8-9aa1-4bf2b8a397b9": {
+    "id": "03a9f88d-b8df-4bd8-9aa1-4bf2b8a397b9",
+    "created_at": "2024-02-10T22:23:05.654426",
+    "updated_at": "2024-02-10T22:23:05.654426",
+    "__class__": "City"
+  },
+  "Place.1b2c92ed-9216-4230-814d-d8b0f5f289f1": {
+    "id": "1b2c92ed-9216-4230-814d-d8b0f5f289f1",
+    "created_at": "2024-02-10T22:23:05.654554",
+    "updated_at": "2024-02-10T22:23:05.654554",
+    "city_id": "12345",
+    "user_id": "abcde",
+    "name": "Test Place",
+    "description": "Test description",
+    "number_rooms": 1,
+    "number_bathrooms": 2,
+    "max_guest": 3,
+    "price_by_night": 100,
+    "latitude": 12.34,
+    "longitude": -56.78,
+    "amenity_ids": [
+      "pool",
+      "wifi"
+    ],
+    "__class__": "Place"
+  },
+  "Place.bd1b2ffb-a988-4b4a-b07f-cc5f02df0dc1": {
+    "id": "bd1b2ffb-a988-4b4a-b07f-cc5f02df0dc1",
+    "created_at": "2024-02-10T22:23:05.654629",
+    "updated_at": "2024-02-10T22:23:05.654629",
+    "__class__": "Place"
+  },
+  "Place.0e94b832-d474-4ded-8f4e-526f615fac03": {
+    "id": "0e94b832-d474-4ded-8f4e-526f615fac03",
+    "created_at": "2024-02-10T22:23:05.654843",
+    "updated_at": "2024-02-10T22:23:05.654843",
+    "city_id": "12345",
+    "user_id": "abcde",
+    "name": "Test Place",
+    "description": "Some new description",
+    "number_rooms": 5,
+    "number_bathrooms": 3,
+    "max_guest": 7,
+    "price_by_night": 300,
+    "latitude": 33.33,
+    "longitude": -44.44,
+    "amenity_ids": [
+      "sauna"
+    ],
+    "__class__": "Place"
+  },
+  "Review.76eef9f7-c9bf-4fc9-aabc-387710dc091e": {
+    "id": "76eef9f7-c9bf-4fc9-aabc-387710dc091e",
+    "created_at": "2024-02-10T22:23:05.655107",
+    "updated_at": "2024-02-10T22:23:05.655107",
+    "__class__": "Review"
+  },
+  "Review.47a0975c-abc0-4735-8b91-d9ee91ae3382": {
+    "id": "47a0975c-abc0-4735-8b91-d9ee91ae3382",
+    "created_at": "2024-02-10T22:23:05.655190",
+    "updated_at": "2024-02-10T22:23:05.655190",
+    "__class__": "Review"
+  },
+  "Review.2ec429f0-5ce7-45e1-9d0c-44b86f6c35e1": {
+    "id": "2ec429f0-5ce7-45e1-9d0c-44b86f6c35e1",
+    "created_at": "2024-02-10T22:23:05.655251",
+    "updated_at": "2024-02-10T22:23:05.655251",
+    "__class__": "Review"
+  },
+  "Review.a27f71d9-cbd2-4ecc-95be-c2ae5948b487": {
+    "id": "a27f71d9-cbd2-4ecc-95be-c2ae5948b487",
+    "created_at": "2024-02-10T22:23:05.655259",
+    "updated_at": "2024-02-10T22:23:05.655259",
+    "__class__": "Review"
+  },
+  "Review.908e9a53-567f-4449-bb0f-c92c47c9911a": {
+    "id": "908e9a53-567f-4449-bb0f-c92c47c9911a",
+    "created_at": "2024-02-10T22:23:05.655318",
+    "updated_at": "2024-02-10T22:23:05.655318",
+    "__class__": "Review"
+  },
+  "Review.60baacbc-7099-48ff-b068-565a9d7ab360": {
+    "id": "60baacbc-7099-48ff-b068-565a9d7ab360",
+    "created_at": "2024-02-10T22:23:05.655539",
+    "updated_at": "2024-02-10T22:23:05.655539",
+    "__class__": "Review"
+  },
+  "Review.7602f71b-4982-4e5f-a823-5e08e299ed82": {
+    "id": "7602f71b-4982-4e5f-a823-5e08e299ed82",
+    "created_at": "2024-02-10T22:23:05.655600",
+    "updated_at": "2024-02-10T22:23:05.655609",
+    "__class__": "Review"
+  },
+  "Review.5b355f54-a066-4a7e-b962-b976949f0909": {
+    "id": "5b355f54-a066-4a7e-b962-b976949f0909",
+    "created_at": "2024-02-10T22:23:05.678717",
+    "updated_at": "2024-02-10T22:23:05.678717",
+    "__class__": "Review"
+  },
+  "Review.e2e9720d-276b-41cd-95a7-349fad57d781": {
+    "id": "e2e9720d-276b-41cd-95a7-349fad57d781",
+    "created_at": "2024-02-10T22:23:05.679088",
+    "updated_at": "2024-02-10T22:23:05.679088",
+    "__class__": "Review"
+  },
+  "Review.989ee44a-6461-496c-9d16-1d2b1d8570f7": {
+    "id": "989ee44a-6461-496c-9d16-1d2b1d8570f7",
+    "created_at": "2024-02-10T22:23:05.679195",
+    "updated_at": "2024-02-10T22:23:05.679195",
+    "new_attribute": "value",
+    "__class__": "Review"
+  },
+  "Review.0572f63e-cab1-4889-9f25-53ffa71b23db": {
+    "id": "0572f63e-cab1-4889-9f25-53ffa71b23db",
+    "created_at": "2024-02-10T22:23:05.679264",
+    "updated_at": "2024-02-10T22:23:05.679264",
+    "__class__": "Review"
+  },
+  "Review.72a39b16-4821-4e3d-a24c-e33f4a609b9a": {
+    "id": "72a39b16-4821-4e3d-a24c-e33f4a609b9a",
+    "created_at": "2024-02-10T22:23:05.679330",
+    "updated_at": "2024-02-10T22:23:05.679330",
+    "__class__": "Review"
+  },
+  "State.a279dc3f-25d6-4af2-b944-21be6afc0b08": {
+    "id": "a279dc3f-25d6-4af2-b944-21be6afc0b08",
+    "created_at": "2024-02-10T22:23:05.679422",
+    "updated_at": "2024-02-10T22:23:05.679422",
+    "__class__": "State"
+  },
+  "State.7e379e0a-9d2e-4f73-a170-fac70bf50f5f": {
+    "id": "7e379e0a-9d2e-4f73-a170-fac70bf50f5f",
+    "created_at": "2024-02-10T22:23:05.679483",
+    "updated_at": "2024-02-10T22:23:05.679483",
+    "__class__": "State"
+  },
+  "State.c9dbce6d-fc99-4074-95b2-72a3a4015613": {
+    "id": "c9dbce6d-fc99-4074-95b2-72a3a4015613",
+    "created_at": "2024-02-10T22:23:05.679723",
+    "updated_at": "2024-02-10T22:23:05.679723",
+    "__class__": "State"
+  },
+  "State.2d2b23e4-68ee-47cf-8bce-781dfe630071": {
+    "id": "2d2b23e4-68ee-47cf-8bce-781dfe630071",
+    "created_at": "2024-02-10T22:23:05.680057",
+    "updated_at": "2024-02-10T22:23:05.680057",
+    "__class__": "State"
+  },
+  "State.c31b6556-fdcd-4078-8d4d-cbba19a38c75": {
+    "id": "c31b6556-fdcd-4078-8d4d-cbba19a38c75",
+    "created_at": "2024-02-10T22:23:05.680360",
+    "updated_at": "2024-02-10T22:23:05.680360",
+    "__class__": "State"
+  },
+  "State.27523dcc-47d7-4c7f-9b9a-86e757601ff5": {
+    "id": "27523dcc-47d7-4c7f-9b9a-86e757601ff5",
+    "created_at": "2024-02-10T22:23:05.680756",
+    "updated_at": "2024-02-10T22:23:05.680756",
+    "__class__": "State"
+  },
+  "User.cb6b0baf-7912-4293-9821-86d067b075fa": {
+    "id": "cb6b0baf-7912-4293-9821-86d067b075fa",
+    "created_at": "2024-02-10T22:23:05.681125",
+    "updated_at": "2024-02-10T22:23:05.681125",
+    "email": "test@example.com",
+    "password": "pass123",
+    "first_name": "John",
+    "last_name": "Doe",
+    "__class__": "User"
+  },
+  "User.b7bc7b58-5613-41bf-a0de-ce004ac08043": {
+    "id": "b7bc7b58-5613-41bf-a0de-ce004ac08043",
+    "created_at": "2024-02-10T22:23:05.681220",
+    "updated_at": "2024-02-10T22:23:05.681220",
+    "__class__": "User"
+  },
+  "User.9bc45217-6f5b-4663-afdb-f8074ecfb26f": {
+    "id": "9bc45217-6f5b-4663-afdb-f8074ecfb26f",
+    "created_at": "2024-02-10T22:23:05.681285",
+    "updated_at": "2024-02-10T22:23:05.681285",
+    "__class__": "User"
+  },
+  "User.18294e1a-b49a-4029-99a5-85533518476c": {
+    "id": "18294e1a-b49a-4029-99a5-85533518476c",
+    "created_at": "2024-02-10T22:23:05.681348",
+    "updated_at": "2024-02-10T22:23:05.681348",
+    "__class__": "User"
+  },
+  "User.225b985f-4706-48dd-8f01-6849ace39109": {
+    "id": "225b985f-4706-48dd-8f01-6849ace39109",
+    "created_at": "2024-02-10T22:23:05.681413",
+    "updated_at": "2024-02-10T22:23:05.681413",
+    "__class__": "User"
+  },
+  "User.0dd15a80-e7c7-4602-a609-1e24a5419fad": {
+    "id": "0dd15a80-e7c7-4602-a609-1e24a5419fad",
+    "created_at": "2024-02-10T22:23:05.681422",
+    "updated_at": "2024-02-10T22:23:05.681422",
+    "__class__": "User"
+  },
+  "User.4f0b20a7-6ced-4229-9a09-d236f83553ec": {
+    "id": "4f0b20a7-6ced-4229-9a09-d236f83553ec",
+    "created_at": "2024-02-10T22:23:05.681483",
+    "updated_at": "2024-02-10T22:23:05.681487",
+    "__class__": "User"
+  },
+  "Amenity.0544517f-cd1c-4897-aa6d-3769f0d25f36": {
+    "id": "0544517f-cd1c-4897-aa6d-3769f0d25f36",
+    "created_at": "2024-02-10T22:23:10.387302",
+    "updated_at": "2024-02-10T22:23:10.387302",
+    "__class__": "Amenity"
+  },
+  "Amenity.df5a92ef-1eeb-4ceb-859b-ecb373abfa80": {
+    "id": "df5a92ef-1eeb-4ceb-859b-ecb373abfa80",
+    "created_at": "2024-02-10T22:23:10.387432",
+    "updated_at": "2024-02-10T22:23:10.387432",
+    "__class__": "Amenity"
+  },
+  "Amenity.28d3e7ca-74a1-4867-a801-aa9b31e695ef": {
+    "id": "28d3e7ca-74a1-4867-a801-aa9b31e695ef",
+    "created_at": "2024-02-10T22:23:10.387518",
+    "updated_at": "2024-02-10T22:23:10.387522",
+    "__class__": "Amenity"
+  },
+  "Amenity.abb64897-48cb-4b0b-a6f7-2792eb12a4bb": {
+    "id": "abb64897-48cb-4b0b-a6f7-2792eb12a4bb",
+    "created_at": "2024-02-10T22:23:10.409294",
+    "updated_at": "2024-02-10T22:23:10.409294",
+    "__class__": "Amenity"
+  },
+  "Amenity.e81e5647-f562-4cc5-8e17-8aa7a6fb8844": {
+    "id": "e81e5647-f562-4cc5-8e17-8aa7a6fb8844",
+    "created_at": "2024-02-10T22:23:10.409418",
+    "updated_at": "2024-02-10T22:23:10.409418",
+    "name": "Wi-Fi",
+    "__class__": "Amenity"
+  },
+  "BaseModel.897b515b-fff3-4a38-8f18-57d3c79ad5d7": {
+    "id": "897b515b-fff3-4a38-8f18-57d3c79ad5d7",
+    "created_at": "2024-02-10T22:23:10.410970",
+    "updated_at": "2024-02-10T22:23:10.410970",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.38b0b44f-2e61-4c12-bbc7-a3b0e9c8114a": {
+    "id": "38b0b44f-2e61-4c12-bbc7-a3b0e9c8114a",
+    "created_at": "2024-02-10T22:23:10.411045",
+    "updated_at": "2024-02-10T22:23:10.411045",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.0485a6ad-7032-4696-9bff-c8272a016077": {
+    "id": "0485a6ad-7032-4696-9bff-c8272a016077",
+    "created_at": "2024-02-10T22:23:10.411201",
+    "updated_at": "2024-02-10T22:23:10.411420",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.8a3f7307-85e3-4c96-9d67-87514d43ebe0": {
+    "id": "8a3f7307-85e3-4c96-9d67-87514d43ebe0",
+    "created_at": "2024-02-10T22:23:10.411864",
+    "updated_at": "2024-02-10T22:23:10.411864",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.236f806f-9d71-4dc3-a4d5-bfbaf02e188a": {
+    "id": "236f806f-9d71-4dc3-a4d5-bfbaf02e188a",
+    "created_at": "2024-02-10T22:23:10.411942",
+    "updated_at": "2024-02-10T22:23:10.411942",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.6e0d91d3-24a5-47cd-a297-1dbb89188d80": {
+    "id": "6e0d91d3-24a5-47cd-a297-1dbb89188d80",
+    "created_at": "2024-02-10T22:23:10.412024",
+    "updated_at": "2024-02-10T22:23:10.412024",
+    "name": "Test Name",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.216222b4-c1c6-449f-80c6-7445bee78bc6": {
+    "id": "216222b4-c1c6-449f-80c6-7445bee78bc6",
+    "created_at": "2024-02-10T22:23:10.412120",
+    "updated_at": "2024-02-10T22:23:10.412120",
+    "__class__": "BaseModel"
+  },
+  "City.02d263be-db13-448a-b232-72fc25d1dbd7": {
+    "id": "02d263be-db13-448a-b232-72fc25d1dbd7",
+    "created_at": "2024-02-10T22:23:10.412191",
+    "updated_at": "2024-02-10T22:23:10.412191",
+    "__class__": "City"
+  },
+  "City.e4b0e1c1-f352-4ce2-bdf7-1aa7878dc6d3": {
+    "id": "e4b0e1c1-f352-4ce2-bdf7-1aa7878dc6d3",
+    "created_at": "2024-02-10T22:23:10.412251",
+    "updated_at": "2024-02-10T22:23:10.412251",
+    "__class__": "City"
+  },
+  "City.1b909ccc-b057-4df0-baaa-d612602bddd4": {
+    "id": "1b909ccc-b057-4df0-baaa-d612602bddd4",
+    "created_at": "2024-02-10T22:23:10.412310",
+    "updated_at": "2024-02-10T22:23:10.412313",
+    "custom_attr": "custom_val",
+    "__class__": "City"
+  },
+  "City.a12c6a3c-f370-4580-a96b-3ef7a0e7de0f": {
+    "id": "a12c6a3c-f370-4580-a96b-3ef7a0e7de0f",
+    "created_at": "2024-02-10T22:23:10.433208",
+    "updated_at": "2024-02-10T22:23:10.433208",
+    "__class__": "City"
+  },
+  "City.fd4bbf74-0a85-4ceb-a18f-816a8f999835": {
+    "id": "fd4bbf74-0a85-4ceb-a18f-816a8f999835",
+    "created_at": "2024-02-10T22:23:10.433377",
+    "updated_at": "2024-02-10T22:23:10.433377",
+    "__class__": "City"
+  },
+  "City.17b48aa3-aa33-4550-a4e8-0e9f108537c1": {
+    "id": "17b48aa3-aa33-4550-a4e8-0e9f108537c1",
+    "created_at": "2024-02-10T22:23:10.433489",
+    "updated_at": "2024-02-10T22:23:10.433492",
+    "__class__": "City"
+  },
+  "City.4c236adb-a2f4-4cce-95c2-c0968be20c34": {
+    "id": "4c236adb-a2f4-4cce-95c2-c0968be20c34",
+    "created_at": "2024-02-10T22:23:10.458317",
+    "updated_at": "2024-02-10T22:23:10.458317",
+    "__class__": "City"
+  },
+  "City.c7b4b649-029f-4b71-9b1e-e90383bb7910": {
+    "id": "c7b4b649-029f-4b71-9b1e-e90383bb7910",
+    "created_at": "2024-02-10T22:23:10.458415",
+    "updated_at": "2024-02-10T22:23:10.458415",
+    "__class__": "City"
+  },
+  "Place.6f42b6ab-2ae2-4121-9773-9ee815676522": {
+    "id": "6f42b6ab-2ae2-4121-9773-9ee815676522",
+    "created_at": "2024-02-10T22:23:10.458536",
+    "updated_at": "2024-02-10T22:23:10.458536",
+    "city_id": "12345",
+    "user_id": "abcde",
+    "name": "Test Place",
+    "description": "Test description",
+    "number_rooms": 1,
+    "number_bathrooms": 2,
+    "max_guest": 3,
+    "price_by_night": 100,
+    "latitude": 12.34,
+    "longitude": -56.78,
+    "amenity_ids": [
+      "pool",
+      "wifi"
+    ],
+    "__class__": "Place"
+  },
+  "Place.7a83d12e-4366-4d7e-a08d-87e9f389dd4b": {
+    "id": "7a83d12e-4366-4d7e-a08d-87e9f389dd4b",
+    "created_at": "2024-02-10T22:23:10.458614",
+    "updated_at": "2024-02-10T22:23:10.458614",
+    "__class__": "Place"
+  },
+  "Place.34737a79-7c42-4657-8d11-ee94a7521fe3": {
+    "id": "34737a79-7c42-4657-8d11-ee94a7521fe3",
+    "created_at": "2024-02-10T22:23:10.458695",
+    "updated_at": "2024-02-10T22:23:10.458695",
+    "city_id": "12345",
+    "user_id": "abcde",
+    "name": "Test Place",
+    "description": "Some new description",
+    "number_rooms": 5,
+    "number_bathrooms": 3,
+    "max_guest": 7,
+    "price_by_night": 300,
+    "latitude": 33.33,
+    "longitude": -44.44,
+    "amenity_ids": [
+      "sauna"
+    ],
+    "__class__": "Place"
+  },
+  "Review.18ffc694-6173-4b6a-9b28-a0dea537a8a5": {
+    "id": "18ffc694-6173-4b6a-9b28-a0dea537a8a5",
+    "created_at": "2024-02-10T22:23:10.458790",
+    "updated_at": "2024-02-10T22:23:10.458790",
+    "__class__": "Review"
+  },
+  "Review.b42ccae8-df0f-40ad-af9a-10d2a82b5008": {
+    "id": "b42ccae8-df0f-40ad-af9a-10d2a82b5008",
+    "created_at": "2024-02-10T22:23:10.458854",
+    "updated_at": "2024-02-10T22:23:10.458854",
+    "__class__": "Review"
+  },
+  "Review.9b1760ef-6832-424b-bed9-a3385482d554": {
+    "id": "9b1760ef-6832-424b-bed9-a3385482d554",
+    "created_at": "2024-02-10T22:23:10.458910",
+    "updated_at": "2024-02-10T22:23:10.458910",
+    "__class__": "Review"
+  },
+  "Review.81c21b93-ec82-404f-88ed-954fd8d7bf33": {
+    "id": "81c21b93-ec82-404f-88ed-954fd8d7bf33",
+    "created_at": "2024-02-10T22:23:10.458926",
+    "updated_at": "2024-02-10T22:23:10.458926",
+    "__class__": "Review"
+  },
+  "Review.0cfb310a-2a9e-4f0d-992d-3df35662e2b0": {
+    "id": "0cfb310a-2a9e-4f0d-992d-3df35662e2b0",
+    "created_at": "2024-02-10T22:23:10.458992",
+    "updated_at": "2024-02-10T22:23:10.458992",
+    "__class__": "Review"
+  },
+  "Review.e0a42bba-6277-4c91-b129-ccff20a5114d": {
+    "id": "e0a42bba-6277-4c91-b129-ccff20a5114d",
+    "created_at": "2024-02-10T22:23:10.459191",
+    "updated_at": "2024-02-10T22:23:10.459191",
+    "__class__": "Review"
+  },
+  "Review.7182a284-4d82-48f2-a8a1-ebcdcf4e11cb": {
+    "id": "7182a284-4d82-48f2-a8a1-ebcdcf4e11cb",
+    "created_at": "2024-02-10T22:23:10.459250",
+    "updated_at": "2024-02-10T22:23:10.459254",
+    "__class__": "Review"
+  },
+  "Review.f018c800-8fb6-4199-9f4d-755f41644449": {
+    "id": "f018c800-8fb6-4199-9f4d-755f41644449",
+    "created_at": "2024-02-10T22:23:10.486279",
+    "updated_at": "2024-02-10T22:23:10.486279",
+    "__class__": "Review"
+  },
+  "Review.a86ecd7f-7eb5-4582-8ad0-e663b370aee2": {
+    "id": "a86ecd7f-7eb5-4582-8ad0-e663b370aee2",
+    "created_at": "2024-02-10T22:23:10.488074",
+    "updated_at": "2024-02-10T22:23:10.488074",
+    "__class__": "Review"
+  },
+  "Review.650f9531-c990-4f8e-82dd-5eccf55e07e2": {
+    "id": "650f9531-c990-4f8e-82dd-5eccf55e07e2",
+    "created_at": "2024-02-10T22:23:10.490259",
+    "updated_at": "2024-02-10T22:23:10.490259",
+    "new_attribute": "value",
+    "__class__": "Review"
+  },
+  "Review.7884f9b6-0fb1-4a98-b93d-efeecd020d89": {
+    "id": "7884f9b6-0fb1-4a98-b93d-efeecd020d89",
+    "created_at": "2024-02-10T22:23:10.490420",
+    "updated_at": "2024-02-10T22:23:10.490420",
+    "__class__": "Review"
+  },
+  "Review.0e2d1027-b724-4325-b8d0-176451c9718f": {
+    "id": "0e2d1027-b724-4325-b8d0-176451c9718f",
+    "created_at": "2024-02-10T22:23:10.490502",
+    "updated_at": "2024-02-10T22:23:10.490502",
+    "__class__": "Review"
+  },
+  "State.216e76f8-b5bc-4d43-bb46-1d9ca4cbb918": {
+    "id": "216e76f8-b5bc-4d43-bb46-1d9ca4cbb918",
+    "created_at": "2024-02-10T22:23:10.490625",
+    "updated_at": "2024-02-10T22:23:10.490625",
+    "__class__": "State"
+  },
+  "State.72b5d97b-7b46-4cbc-9daf-09e7cc76c1ed": {
+    "id": "72b5d97b-7b46-4cbc-9daf-09e7cc76c1ed",
+    "created_at": "2024-02-10T22:23:10.490686",
+    "updated_at": "2024-02-10T22:23:10.490686",
+    "__class__": "State"
+  },
+  "State.35a10235-3c17-4f3a-9d94-c3776471cb51": {
+    "id": "35a10235-3c17-4f3a-9d94-c3776471cb51",
+    "created_at": "2024-02-10T22:23:10.490938",
+    "updated_at": "2024-02-10T22:23:10.490938",
+    "__class__": "State"
+  },
+  "State.078371e8-e360-4a25-8d6b-9aae011dceee": {
+    "id": "078371e8-e360-4a25-8d6b-9aae011dceee",
+    "created_at": "2024-02-10T22:23:10.491380",
+    "updated_at": "2024-02-10T22:23:10.491380",
+    "__class__": "State"
+  },
+  "State.59b6e30e-15c8-44dc-a3c0-cf764bb403e5": {
+    "id": "59b6e30e-15c8-44dc-a3c0-cf764bb403e5",
+    "created_at": "2024-02-10T22:23:10.491685",
+    "updated_at": "2024-02-10T22:23:10.491685",
+    "__class__": "State"
+  },
+  "State.3a27bd28-eb90-45b1-9545-9f78cfb01408": {
+    "id": "3a27bd28-eb90-45b1-9545-9f78cfb01408",
+    "created_at": "2024-02-10T22:23:10.492113",
+    "updated_at": "2024-02-10T22:23:10.492113",
+    "__class__": "State"
+  },
+  "User.fd7bec8b-68df-4c59-97fb-701a052887a4": {
+    "id": "fd7bec8b-68df-4c59-97fb-701a052887a4",
+    "created_at": "2024-02-10T22:23:10.492560",
+    "updated_at": "2024-02-10T22:23:10.492560",
+    "email": "test@example.com",
+    "password": "pass123",
+    "first_name": "John",
+    "last_name": "Doe",
+    "__class__": "User"
+  },
+  "User.b6050d5b-b7d7-4495-9773-15d1c6a0fb0a": {
+    "id": "b6050d5b-b7d7-4495-9773-15d1c6a0fb0a",
+    "created_at": "2024-02-10T22:23:10.492643",
+    "updated_at": "2024-02-10T22:23:10.492643",
+    "__class__": "User"
+  },
+  "User.1914e365-378f-411e-9e19-0ba87469f623": {
+    "id": "1914e365-378f-411e-9e19-0ba87469f623",
+    "created_at": "2024-02-10T22:23:10.492706",
+    "updated_at": "2024-02-10T22:23:10.492706",
+    "__class__": "User"
+  },
+  "User.3bbfee8b-e4ec-4e2c-b194-2571749f7cac": {
+    "id": "3bbfee8b-e4ec-4e2c-b194-2571749f7cac",
+    "created_at": "2024-02-10T22:23:10.492791",
+    "updated_at": "2024-02-10T22:23:10.492791",
+    "__class__": "User"
+  },
+  "User.75059450-9828-4b06-ba5a-d95d050ca2cc": {
+    "id": "75059450-9828-4b06-ba5a-d95d050ca2cc",
+    "created_at": "2024-02-10T22:23:10.492852",
+    "updated_at": "2024-02-10T22:23:10.492852",
+    "__class__": "User"
+  },
+  "User.eb654e63-21d3-4651-9884-2a69206a33c5": {
+    "id": "eb654e63-21d3-4651-9884-2a69206a33c5",
+    "created_at": "2024-02-10T22:23:10.492860",
+    "updated_at": "2024-02-10T22:23:10.492860",
+    "__class__": "User"
+  },
+  "User.a362762f-f2a6-42d0-b2e9-ef6184da8d60": {
+    "id": "a362762f-f2a6-42d0-b2e9-ef6184da8d60",
+    "created_at": "2024-02-10T22:23:10.492918",
+    "updated_at": "2024-02-10T22:23:10.492921",
+    "__class__": "User"
+  },
+  "Amenity.cf3d6093-59bc-4451-b61c-fab18fd6a843": {
+    "id": "cf3d6093-59bc-4451-b61c-fab18fd6a843",
+    "created_at": "2024-02-10T22:23:18.828372",
+    "updated_at": "2024-02-10T22:23:18.828372",
+    "__class__": "Amenity"
+  },
+  "Amenity.622e2e49-6390-4a83-a440-7a9c98836f1d": {
+    "id": "622e2e49-6390-4a83-a440-7a9c98836f1d",
+    "created_at": "2024-02-10T22:23:18.828494",
+    "updated_at": "2024-02-10T22:23:18.828494",
+    "__class__": "Amenity"
+  },
+  "Amenity.1ef2a789-ccc8-4eb2-9443-574aa80114e6": {
+    "id": "1ef2a789-ccc8-4eb2-9443-574aa80114e6",
+    "created_at": "2024-02-10T22:23:18.828572",
+    "updated_at": "2024-02-10T22:23:18.828577",
+    "__class__": "Amenity"
+  },
+  "Amenity.709ac9f8-9346-482d-8e3d-43b474950946": {
+    "id": "709ac9f8-9346-482d-8e3d-43b474950946",
+    "created_at": "2024-02-10T22:23:18.854027",
+    "updated_at": "2024-02-10T22:23:18.854027",
+    "__class__": "Amenity"
+  },
+  "Amenity.d58ea071-7d97-4d65-b712-6e764967ca3c": {
+    "id": "d58ea071-7d97-4d65-b712-6e764967ca3c",
+    "created_at": "2024-02-10T22:23:18.854232",
+    "updated_at": "2024-02-10T22:23:18.854232",
+    "name": "Wi-Fi",
+    "__class__": "Amenity"
+  },
+  "BaseModel.60e5f154-27db-4931-8cf4-35736c318274": {
+    "id": "60e5f154-27db-4931-8cf4-35736c318274",
+    "created_at": "2024-02-10T22:23:18.856471",
+    "updated_at": "2024-02-10T22:23:18.856471",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.916f8eea-2e8e-44ef-a163-6dad23ff1189": {
+    "id": "916f8eea-2e8e-44ef-a163-6dad23ff1189",
+    "created_at": "2024-02-10T22:23:18.856567",
+    "updated_at": "2024-02-10T22:23:18.856567",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.3f4c0ffb-efe1-44d8-aa99-2a31a7eee5b9": {
+    "id": "3f4c0ffb-efe1-44d8-aa99-2a31a7eee5b9",
+    "created_at": "2024-02-10T22:23:18.856832",
+    "updated_at": "2024-02-10T22:23:18.858012",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.ad6220a0-cec2-4918-ba34-d565aee0a032": {
+    "id": "ad6220a0-cec2-4918-ba34-d565aee0a032",
+    "created_at": "2024-02-10T22:23:18.859255",
+    "updated_at": "2024-02-10T22:23:18.859255",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.f4c034d1-957e-4c7e-a158-4bbfd79fe6fe": {
+    "id": "f4c034d1-957e-4c7e-a158-4bbfd79fe6fe",
+    "created_at": "2024-02-10T22:23:18.859436",
+    "updated_at": "2024-02-10T22:23:18.859436",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.b32792f7-d871-4535-a9fc-7728a3a4cdb6": {
+    "id": "b32792f7-d871-4535-a9fc-7728a3a4cdb6",
+    "created_at": "2024-02-10T22:23:18.859545",
+    "updated_at": "2024-02-10T22:23:18.859545",
+    "name": "Test Name",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.0922b464-bed1-48ed-b157-dd11ea2b4b91": {
+    "id": "0922b464-bed1-48ed-b157-dd11ea2b4b91",
+    "created_at": "2024-02-10T22:23:18.859730",
+    "updated_at": "2024-02-10T22:23:18.859730",
+    "__class__": "BaseModel"
+  },
+  "City.c8770b25-ec29-4106-b0b7-84ed937c0c56": {
+    "id": "c8770b25-ec29-4106-b0b7-84ed937c0c56",
+    "created_at": "2024-02-10T22:23:18.859850",
+    "updated_at": "2024-02-10T22:23:18.859850",
+    "__class__": "City"
+  },
+  "City.362356f0-52b0-4547-8ac9-6a91876532fd": {
+    "id": "362356f0-52b0-4547-8ac9-6a91876532fd",
+    "created_at": "2024-02-10T22:23:18.859925",
+    "updated_at": "2024-02-10T22:23:18.859925",
+    "__class__": "City"
+  },
+  "City.867bf73d-c26b-4d32-83f4-3c7c1041019e": {
+    "id": "867bf73d-c26b-4d32-83f4-3c7c1041019e",
+    "created_at": "2024-02-10T22:23:18.859995",
+    "updated_at": "2024-02-10T22:23:18.859999",
+    "custom_attr": "custom_val",
+    "__class__": "City"
+  },
+  "City.98235fb1-9b60-43f3-9ed6-c7113de3586b": {
+    "id": "98235fb1-9b60-43f3-9ed6-c7113de3586b",
+    "created_at": "2024-02-10T22:23:18.889418",
+    "updated_at": "2024-02-10T22:23:18.889418",
+    "__class__": "City"
+  },
+  "City.e586d29f-7820-4011-80e0-31a452d143f7": {
+    "id": "e586d29f-7820-4011-80e0-31a452d143f7",
+    "created_at": "2024-02-10T22:23:18.889664",
+    "updated_at": "2024-02-10T22:23:18.889664",
+    "__class__": "City"
+  },
+  "City.c212db93-16cf-4cdd-aa97-aedf9e3ffd58": {
+    "id": "c212db93-16cf-4cdd-aa97-aedf9e3ffd58",
+    "created_at": "2024-02-10T22:23:18.889742",
+    "updated_at": "2024-02-10T22:23:18.889746",
+    "__class__": "City"
+  },
+  "City.c2de2b55-2871-45ac-b58b-1cc00a3bcfa8": {
+    "id": "c2de2b55-2871-45ac-b58b-1cc00a3bcfa8",
+    "created_at": "2024-02-10T22:23:18.914541",
+    "updated_at": "2024-02-10T22:23:18.914541",
+    "__class__": "City"
+  },
+  "City.8de5c521-2a70-4331-b850-5a8f3b062d23": {
+    "id": "8de5c521-2a70-4331-b850-5a8f3b062d23",
+    "created_at": "2024-02-10T22:23:18.914680",
+    "updated_at": "2024-02-10T22:23:18.914680",
+    "__class__": "City"
+  },
+  "BaseModel.cac39168-c2e9-47d5-9963-f326305b1d9c": {
+    "id": "cac39168-c2e9-47d5-9963-f326305b1d9c",
+    "created_at": "2024-02-10T22:23:18.916428",
+    "updated_at": "2024-02-10T22:23:18.916428",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.4998b944-f0ab-4a35-9da8-fa681cb09bfd": {
+    "id": "4998b944-f0ab-4a35-9da8-fa681cb09bfd",
+    "created_at": "2024-02-10T22:23:18.916772",
+    "updated_at": "2024-02-10T22:23:18.916772",
+    "__class__": "BaseModel"
+  },
+  "BaseModel.8b341857-8ad2-44e0-a1d3-0024c19f3a13": {
+    "id": "8b341857-8ad2-44e0-a1d3-0024c19f3a13",
+    "created_at": "2024-02-10T22:23:18.995741",
+    "updated_at": "2024-02-10T22:23:18.995741",
+    "__class__": "BaseModel"
+  },
+  "Place.f4148306-e201-4548-b67b-1d18a7e10f5a": {
+    "id": "f4148306-e201-4548-b67b-1d18a7e10f5a",
+    "created_at": "2024-02-10T22:23:19.015062",
+    "updated_at": "2024-02-10T22:23:19.015062",
+    "city_id": "12345",
+    "user_id": "abcde",
+    "name": "Test Place",
+    "description": "Test description",
+    "number_rooms": 1,
+    "number_bathrooms": 2,
+    "max_guest": 3,
+    "price_by_night": 100,
+    "latitude": 12.34,
+    "longitude": -56.78,
+    "amenity_ids": [
+      "pool",
+      "wifi"
+    ],
+    "__class__": "Place"
+  },
+  "Place.8ac23210-c0c2-4f6e-b11d-f1913ede0a93": {
+    "id": "8ac23210-c0c2-4f6e-b11d-f1913ede0a93",
+    "created_at": "2024-02-10T22:23:19.015178",
+    "updated_at": "2024-02-10T22:23:19.015178",
+    "__class__": "Place"
+  },
+  "Place.64d86207-fc9e-4a5d-af79-12204f1322ba": {
+    "id": "64d86207-fc9e-4a5d-af79-12204f1322ba",
+    "created_at": "2024-02-10T22:23:19.015326",
+    "updated_at": "2024-02-10T22:23:19.015326",
+    "city_id": "12345",
+    "user_id": "abcde",
+    "name": "Test Place",
+    "description": "Some new description",
+    "number_rooms": 5,
+    "number_bathrooms": 3,
+    "max_guest": 7,
+    "price_by_night": 300,
+    "latitude": 33.33,
+    "longitude": -44.44,
+    "amenity_ids": [
+      "sauna"
+    ],
+    "__class__": "Place"
+  },
+  "Review.0905eaa3-f723-4d46-ad12-7411802541b6": {
+    "id": "0905eaa3-f723-4d46-ad12-7411802541b6",
+    "created_at": "2024-02-10T22:23:19.015636",
+    "updated_at": "2024-02-10T22:23:19.015636",
+    "__class__": "Review"
+  },
+  "Review.3dc69ec1-1ffd-4c60-9e65-647947d28569": {
+    "id": "3dc69ec1-1ffd-4c60-9e65-647947d28569",
+    "created_at": "2024-02-10T22:23:19.015784",
+    "updated_at": "2024-02-10T22:23:19.015784",
+    "__class__": "Review"
+  },
+  "Review.af7d5a85-fb05-4686-a693-a9a9e5aead1c": {
+    "id": "af7d5a85-fb05-4686-a693-a9a9e5aead1c",
+    "created_at": "2024-02-10T22:23:19.016082",
+    "updated_at": "2024-02-10T22:23:19.016082",
+    "__class__": "Review"
+  },
+  "Review.19d02798-5d0f-433c-8a4d-dc325ece0821": {
+    "id": "19d02798-5d0f-433c-8a4d-dc325ece0821",
+    "created_at": "2024-02-10T22:23:19.016101",
+    "updated_at": "2024-02-10T22:23:19.016101",
+    "__class__": "Review"
+  },
+  "Review.5e046775-9bad-421f-8593-5ae8ef33b1d4": {
+    "id": "5e046775-9bad-421f-8593-5ae8ef33b1d4",
+    "created_at": "2024-02-10T22:23:19.016241",
+    "updated_at": "2024-02-10T22:23:19.016241",
+    "__class__": "Review"
+  },
+  "Review.564fffc1-401e-41d1-a9b0-10e0f7b9534c": {
+    "id": "564fffc1-401e-41d1-a9b0-10e0f7b9534c",
+    "created_at": "2024-02-10T22:23:19.016519",
+    "updated_at": "2024-02-10T22:23:19.016519",
+    "__class__": "Review"
+  },
+  "Review.b142cc19-7001-4c41-b914-d8008807b2a6": {
+    "id": "b142cc19-7001-4c41-b914-d8008807b2a6",
+    "created_at": "2024-02-10T22:23:19.016619",
+    "updated_at": "2024-02-10T22:23:19.016624",
+    "__class__": "Review"
+  },
+  "Review.ce3d1763-6059-4416-97c1-677e1e5979a3": {
+    "id": "ce3d1763-6059-4416-97c1-677e1e5979a3",
+    "created_at": "2024-02-10T22:23:19.045137",
+    "updated_at": "2024-02-10T22:23:19.045137",
+    "__class__": "Review"
+  },
+  "Review.9d357cda-b3bb-41e3-a44d-26ba9c70dde9": {
+    "id": "9d357cda-b3bb-41e3-a44d-26ba9c70dde9",
+    "created_at": "2024-02-10T22:23:19.045882",
+    "updated_at": "2024-02-10T22:23:19.045882",
+    "__class__": "Review"
+  },
+  "Review.0fc8554e-8a95-4fc8-8b0d-78fd95b3b0a6": {
+    "id": "0fc8554e-8a95-4fc8-8b0d-78fd95b3b0a6",
+    "created_at": "2024-02-10T22:23:19.046007",
+    "updated_at": "2024-02-10T22:23:19.046007",
+    "new_attribute": "value",
+    "__class__": "Review"
+  },
+  "Review.09df685a-b7cf-4d8f-8a13-e86790fb40f0": {
+    "id": "09df685a-b7cf-4d8f-8a13-e86790fb40f0",
+    "created_at": "2024-02-10T22:23:19.046093",
+    "updated_at": "2024-02-10T22:23:19.046093",
+    "__class__": "Review"
+  },
+  "Review.96a83473-4643-47f8-99f0-cf177c4d695d": {
+    "id": "96a83473-4643-47f8-99f0-cf177c4d695d",
+    "created_at": "2024-02-10T22:23:19.046170",
+    "updated_at": "2024-02-10T22:23:19.046170",
+    "__class__": "Review"
+  },
+  "State.ec8dc319-a2b6-4e54-8a68-2a7d2b851019": {
+    "id": "ec8dc319-a2b6-4e54-8a68-2a7d2b851019",
+    "created_at": "2024-02-10T22:23:19.046282",
+    "updated_at": "2024-02-10T22:23:19.046282",
+    "__class__": "State"
+  },
+  "State.33afbf1e-48c2-4c71-9e63-ce33c42e73c8": {
+    "id": "33afbf1e-48c2-4c71-9e63-ce33c42e73c8",
+    "created_at": "2024-02-10T22:23:19.046342",
+    "updated_at": "2024-02-10T22:23:19.046342",
+    "__class__": "State"
+  },
+  "State.02a29721-1084-4e55-bdc1-f3bbe3b51285": {
+    "id": "02a29721-1084-4e55-bdc1-f3bbe3b51285",
+    "created_at": "2024-02-10T22:23:19.046581",
+    "updated_at": "2024-02-10T22:23:19.046581",
+    "__class__": "State"
+  },
+  "State.4e41c4a3-46b8-4496-b5d1-d9c1b1674269": {
+    "id": "4e41c4a3-46b8-4496-b5d1-d9c1b1674269",
+    "created_at": "2024-02-10T22:23:19.046964",
+    "updated_at": "2024-02-10T22:23:19.046964",
+    "__class__": "State"
+  },
+  "State.695290f2-ce31-4183-81bd-0d54dd517582": {
+    "id": "695290f2-ce31-4183-81bd-0d54dd517582",
+    "created_at": "2024-02-10T22:23:19.047327",
+    "updated_at": "2024-02-10T22:23:19.047327",
+    "__class__": "State"
+  },
+  "State.3389775f-0151-4904-b34e-4b9599b23a58": {
+    "id": "3389775f-0151-4904-b34e-4b9599b23a58",
+    "created_at": "2024-02-10T22:23:19.047827",
+    "updated_at": "2024-02-10T22:23:19.047827",
+    "__class__": "State"
+  },
+  "User.aba864da-ab75-4b86-a686-d10a6c5a4036": {
+    "id": "aba864da-ab75-4b86-a686-d10a6c5a4036",
+    "created_at": "2024-02-10T22:23:19.048227",
+    "updated_at": "2024-02-10T22:23:19.048227",
+    "email": "test@example.com",
+    "password": "pass123",
+    "first_name": "John",
+    "last_name": "Doe",
+    "__class__": "User"
+  },
+  "User.3db6f48a-bc36-4378-a0c4-524a13682de9": {
+    "id": "3db6f48a-bc36-4378-a0c4-524a13682de9",
+    "created_at": "2024-02-10T22:23:19.048322",
+    "updated_at": "2024-02-10T22:23:19.048322",
+    "__class__": "User"
+  },
+  "User.dcf1ca00-0919-4e83-be62-2436693c0998": {
+    "id": "dcf1ca00-0919-4e83-be62-2436693c0998",
+    "created_at": "2024-02-10T22:23:19.048392",
+    "updated_at": "2024-02-10T22:23:19.048392",
+    "__class__": "User"
+  },
+  "User.37b61f95-564d-4940-8c47-924685929957": {
+    "id": "37b61f95-564d-4940-8c47-924685929957",
+    "created_at": "2024-02-10T22:23:19.048460",
+    "updated_at": "2024-02-10T22:23:19.048460",
+    "__class__": "User"
+  },
+  "User.f5af8207-f2bf-4e40-b284-9213ce1bbba8": {
+    "id": "f5af8207-f2bf-4e40-b284-9213ce1bbba8",
+    "created_at": "2024-02-10T22:23:19.048535",
+    "updated_at": "2024-02-10T22:23:19.048535",
+    "__class__": "User"
+  },
+  "User.9a9f28e7-79bc-44c6-9fc0-602686c33cb3": {
+    "id": "9a9f28e7-79bc-44c6-9fc0-602686c33cb3",
+    "created_at": "2024-02-10T22:23:19.048545",
+    "updated_at": "2024-02-10T22:23:19.048545",
+    "__class__": "User"
+  },
+  "User.13e36717-6585-4496-a1d5-df3d4236580a": {
+    "id": "13e36717-6585-4496-a1d5-df3d4236580a",
+    "created_at": "2024-02-10T22:23:19.048609",
+    "updated_at": "2024-02-10T22:23:19.048614",
+    "__class__": "User"
   }
 }
