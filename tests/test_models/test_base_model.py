@@ -8,7 +8,7 @@ import sys
 sys.path.append('../')
 import uuid
 from models.base_model import BaseModel
-import datetime
+from datetime import datetime
 
 
 class TestBaseModel(unittest.TestCase):
