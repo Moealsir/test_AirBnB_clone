@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+import unittest
 import sys
 sys.path.append('../')
-import unittest
 from models.user import User
 class TestUser(unittest.TestCase):
 
