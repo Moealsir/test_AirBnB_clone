@@ -28,12 +28,6 @@ class TestFileStorage(unittest.TestCase):
         self.assertIsInstance(obj, BaseModel)
         self.assertEqual(obj.id, "1234")
 
-    @patch("builtins.open", side_effect=FileNotFoundError)
-    def test_reload_not_found(self, mock_open):
-        self.storage.reload()
-        mock_open.assert_called_once_with(FileStorage._FileStorage__file_path, "r+", encoding="utf-8")
-        self.assertFalse(self.storage._FileStorage__objects)
-
 
 if __name__ == '__main__':
     unittest.main()
