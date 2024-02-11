@@ -75,7 +75,6 @@ class HBNBCommand(cmd.Cmd):
         else:
             print("** invalid command **")
 
-
     def emptyline(self):
         """empty input"""
         pass
