@@ -105,13 +105,14 @@ class HBNBCommand(cmd.Cmd):
         if len(args) == 1:
             class_name = args[0]
             if class_name in self.all_classes:
-                all_instances = [str(obj) for obj in storage.all().values() if isinstance(obj, eval(class_name))]
+                all_instances = [
+                    str(obj) for obj in storage.all().values()
+                    if isinstance(obj, eval(class_name))]
                 print(all_instances)
             else:
                 print("** class doesn't exist **")
         else:
             print("** invalid command **")
-
 
     def do_count(self, line):
         """Retrieve the number of instances of a class"""
@@ -129,13 +130,13 @@ class HBNBCommand(cmd.Cmd):
             print("** invalid command **")
 
     def parseline(self, line):
-        """Parse the line to handle <class name>.all() and <class name>.count()"""
+        """Parse the line to handle <class name>.all()
+        and <class name>.count()"""
         orig_line = line
         line = line.strip()
         class_name = None
         command = None
 
-        # Check if the line matches the pattern <class name>.all() or <class name>.count()
         match = re.match(r'^(\w+)\.(all|count)\(\)$', line)
         if match:
             class_name = match.group(1)

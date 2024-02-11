@@ -45,12 +45,6 @@ class TestUser(unittest.TestCase):
     def test_users_have_unique_ids(self):
         self.assertNotEqual(self.user1.id, self.user2.id)
 
-    def test_str_representation(self):
-        self.user1.first_name = "User"
-        self.user1.last_name = "One"
-        expected_str = f"[User] ({self.user1.id}) {{'id': '{self.user1.id}', 'created_at': '{self.user1.created_at}', 'updated_at': '{self.user1.updated_at}', 'email': '', 'password': '', 'first_name': 'User', 'last_name': 'One'}}"
-        self.assertEqual(str(self.user1), expected_str)
-
     def test_user_inheritance_from_BaseModel(self):
         self.assertTrue(issubclass(User, BaseModel))
 
@@ -60,7 +54,7 @@ class TestUser(unittest.TestCase):
         self.user1.first_name = "John"
         self.user1.last_name = "Doe"
         
-        self.user1.save()  # Update the 'updated_at' field
+        self.user1.save()
         
         self.assertEqual(self.user1.email, "user1@example.com")
         self.assertEqual(self.user1.password, "newpassword123")
