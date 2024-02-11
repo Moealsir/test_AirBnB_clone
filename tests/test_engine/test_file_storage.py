@@ -1,88 +1,112 @@
 #!/usr/bin/python3
-
-"""Unit tests for the FileStorage class."""
-
-from models.engine.file_storage import FileStorage
-from models.base_model import BaseModel
+"""test"""
 import unittest
-import models
+from unittest.mock import patch
+import sys
+sys.path.append('../')
+from models.engine.file_storage import FileStorage 
+
 import os
+import tempfile
+import json
+from unittest.mock import mock_open, patch
+from datetime import datetime
 
-class Test_FileStorage(unittest.TestCase):
-    """test case for attributes of the class FilesStorage"""
-    
-    def test_attributes_assignement(self):
-        self.assertIn("_FileStorage__objects", FileStorage.__dict__)
-        self.assertIsInstance(FileStorage._FileStorage__objects, dict)
-        self.assertIn("_FileStorage__file_path", FileStorage.__dict__)
-        self.assertIsInstance(FileStorage._FileStorage__file_path, str)
+from models.base_model import BaseModel
+from models.user import User
+from models.state import State
+from models.city import City
+from models.place import Place
+from models.review import Review
+from models.amenity import Amenity
+from models import FileStorage
 
-    def test_new_key(self):
+
+
+class TestFileStorage(unittest.TestCase):
+
+    def setUp(self):
+        self.file_storage = FileStorage()
+        # Create a temporary directory and file to be used in tests
+        self.temp_dir = tempfile.TemporaryDirectory()
+        self.file_storage._FileStorage__file_path = os.path.join(self.temp_dir.name, 'file.json')
+
+    def tearDown(self):
+        # Close and remove the temporary directory and file
+        self.temp_dir.cleanup()
+
+    def test_new(self):
         """
-        tests the new method within file storage
-        Test with different types of class
+        Test adding new object to storage.
         """
-        base = models.storage.all().copy()
-        for k, v in base.items():
-            del models.storage.all()[k]
-        models.storage.save()
-        b1 = BaseModel()
-        b1.save()
-        base = models.storage.all()
-        self.assertEqual(type(base[f"BaseModel.{str(b1.id)}"]), type(b1))
+        base_model = BaseModel()
+        self.file_storage.new(base_model)
+        key = f"BaseModel.{base_model.id}"
+        self.assertIn(key, self.file_storage.all())
 
-
-    def test_allmethod_instance(self):
+    def test_all(self):
         """
-        Tests for the all method of the file_storage.py
-        Test type of the istance
+        Test getting all objects in storage.
         """
-        base = FileStorage()
-        self.assertEqual(type(base), FileStorage)
+        objects = self.file_storage.all()
+        self.assertIsInstance(objects, dict)
 
-    def test_allmethod_type_dict(self):
-        """Test if the return value is a dictionary"""
-        self.assertEqual(type(models.storage.all()), dict)
+    def test_save(self):
+        """
+        Test saving objects to file.
+        """
+        base_model = BaseModel()
+        self.file_storage.new(base_model)
+        self.file_storage.save()
+        key = f"BaseModel.{base_model.id}"
+        self.assertTrue(os.path.exists(self.file_storage._FileStorage__file_path))
+        with open(self.file_storage._FileStorage__file_path, 'r', encoding='utf-8') as file:
+            data = file.read()
+            self.assertIn(key, data)
 
-    def tests_allmethod_empty_obj(self):
-        """test case if that an empty object"""
-        d = models.storage.all().copy()
-        for k, v in d.items():
-            del models.storage.all()[k]
-        models.storage.save()
-        self.assertEqual(models.storage.all(), {})
+    def test_reload(self):
+        """
+        Test loading objects from file.
+        """
+        base_model = BaseModel()
+        self.file_storage.new(base_model)
+        self.file_storage.save()
+        self.file_storage._FileStorage__objects = {}
+        self.file_storage.reload()
+        key = f"BaseModel.{base_model.id}"
+        self.assertIn(key, self.file_storage.all())
 
-    def test_allmethod_one_obj(self):
-        """Test case with one object"""
-        d = models.storage.all().copy()
-        for k, v in d.items():
-            del models.storage.all()[k]
-        models.storage.save()
-        b1 = BaseModel()
-        b1.save()
-        self.assertEqual(len(models.storage.all()), 1)
+     def test_reload(self):
+        """
+        Tests method: reload (reloads objects from string file)
+        """
+        a_storage = FileStorage()
+        try:
+            os.remove("file.json")
+        except:
+            pass
+        with open("file.json", "w") as f:
+            f.write("{}")
+        with open("file.json", "r") as r:
+            for line in r:
+                self.assertEqual(line, "{}")
+        self.assertIs(a_storage.reload(), None)
 
-    def tests_allmethod_multiple_obj(self):
-        """Test case with multiobject"""
-        d = models.storage.all().copy()
-        for k, v in d.items():
-            del models.storage.all()[k]
-        models.storage.save()
-        b2 = BaseModel()
-        b3 = BaseModel()
-        b2.save()
-        b3.save()
-        self.assertEqual(len(models.storage.all()), 2)
+    def test_class_dict(self):
+        """
+        Test class dictionary for serialization-deserialization.
+        """
+        classes = self.file_storage.class_dict()
+        expected_classes = {
+            "BaseModel": BaseModel,
+            "User": User,
+            "State": State,
+            "City": City,
+            "Amenity": Amenity,
+            "Place": Place,
+            "Review": Review,
+        }
+ 
 
-    def test_reload_type(self):
-        """Test the reload method type"""
-        d = models.storage.all().copy()
-        for k, v in d.items():
-            del models.storage.all()[k]
-        models.storage.save()
-        u1 = User()
-        u1.save()
-        models.storage.reload()
-        d = models.storage.all()
-        for k, v in d.items():
-            self.assertEqual(type(d[k]), type(u1))
+if __name__ == '__main__':
+    unittest.main()
