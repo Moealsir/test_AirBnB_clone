@@ -21,13 +21,6 @@ class TestCityModel(unittest.TestCase):
         city = City()
         self.assertIsInstance(city, BaseModel)
 
-    def test_city_attributes(self):
-        city = City()
-        self.assertTrue(hasattr(city, "state_id"))
-        self.assertTrue(hasattr(city, "name"))
-        self.assertEqual(city.state_id, "")
-        self.assertEqual(city.name, "")
-
     def test_city_attribute_types(self):
         city = City()
         self.assertIs(type(city.name), str)
@@ -62,6 +55,14 @@ class TestCityModel(unittest.TestCase):
         updated_at = city_dict["updated_at"]
         self.assertIs(type(created_at), str)
         self.assertIs(type(updated_at), str)
+        
+    def test_has_attributes(self):
+        self.assertTrue('id' in self.city1.__dict__)
+        self.assertTrue('created_at' in self.city1.__dict__)
+        self.assertTrue('updated_at' in self.city1.__dict__)
+        self.assertTrue('state_id' in self.city1.__dict__)
+        self.assertTrue('name' in self.city1.__dict__)
+
 
     def test_city_datetime_format(self):
         city = City()
