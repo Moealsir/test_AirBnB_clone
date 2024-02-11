@@ -1,3 +1,4 @@
+"""whew"""
 import unittest
 import sys
 from unittest.mock import patch
@@ -9,9 +10,10 @@ sys.path.append('../')
 
 
 class TestCity(unittest.TestCase):
+    """whew"""
 
     def test_attributes(self):
-        # Test if City instance has the expected attributes
+        """Test if City instance has the expected attributes"""
         city = City()
         self.assertTrue(hasattr(city, 'id'))
         self.assertTrue(hasattr(city, 'created_at'))
@@ -20,7 +22,7 @@ class TestCity(unittest.TestCase):
         self.assertTrue(hasattr(city, 'name'))
 
     def test_attribute_types(self):
-        # Test if attribute types are correct
+        """Test if attribute types are correct"""
         city = City()
         self.assertIsInstance(city.id, str)
         self.assertIsInstance(city.created_at, datetime)
@@ -29,13 +31,13 @@ class TestCity(unittest.TestCase):
         self.assertIsInstance(city.name, str)
 
     def test_attribute_defaults(self):
-        # Test if attribute defaults are correct
+        """Test if attribute defaults are correct"""
         city = City()
         self.assertEqual(city.state_id, "")
         self.assertEqual(city.name, "")
 
     def test_attribute_assignment(self):
-        # Test if attributes can be assigned properly
+        """Test if attributes can be assigned properly"""
         city = City()
         city.state_id = "123"
         city.name = "Test City"

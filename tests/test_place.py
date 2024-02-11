@@ -1,3 +1,4 @@
+"""whew"""
 import unittest
 import sys
 from unittest.mock import patch
@@ -9,6 +10,7 @@ sys.path.append('../')
 
 
 class TestPlace(unittest.TestCase):
+    """whew"""
 
     def setUp(self):
         """Set up test variables"""
