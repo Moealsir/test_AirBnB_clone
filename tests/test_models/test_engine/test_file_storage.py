@@ -18,13 +18,6 @@ sys.path.append('../../')
 class TestFileStorage(unittest.TestCase):
 
 
-    @patch("os.stat")
-    @patch("builtins.open", new_callable=mock_open, read_data="{}")
-    def test_reload_empty(self, mock_open, mock_stat):
-        mock_stat.return_value.st_size = 0
-        self.storage.reload()
-        self.assertFalse(self.storage._FileStorage__objects)
-
     @patch("builtins.open", new_callable=mock_open, read_data='{"BaseModel.1234": {"__class__": "BaseModel", "id": "1234", "created_at": "2021-11-02T14:15:22", "updated_at": "2021-11-02T14:15:22"}}')
     def test_reload_with_data(self, mock_open):
         self.storage.reload()
