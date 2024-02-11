@@ -17,16 +17,6 @@ sys.path.append('../../')
 
 class TestFileStorage(unittest.TestCase):
 
-    def setUp(self):
-        self.storage = FileStorage()
-        self.storage._FileStorage__objects = {}
-        self.base_model = BaseModel()
-        self.user = User()
-        self.state = State()
-        self.city = City()
-        self.amenity = Amenity()
-        self.place = Place()
-        self.review = Review()
 
     def test_new(self):
         self.storage.new(self.base_model)
