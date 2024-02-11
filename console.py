@@ -59,23 +59,24 @@ class HBNBCommand(cmd.Cmd):
         print(new_instance.id)
 
     def do_show(self, line):
-        """Retrieve an instance based on its ID"""
+        """Prints the string representation of an instance"""
         args = line.split()
-        if len(args) == 2:
-            class_name = args[0]
-            instance_id = args[1]
-            if class_name in self.all_classes:
-                key = "{}.{}".format(class_name, instance_id)
-                if key in storage.all():
-                    obj = storage.all()[key]
-                    print(obj)
-                else:
-                    print("** no instance found **")
-            else:
-                print("** class doesn't exist **")
+        if not args:
+            print("** class name missing **")
+            return
+        elif args[0] not in self.classes:
+            print("** class doesn't exist **")
+            return
+        elif len(args) == 1:
+            print("** instance id missing **")
+            return
         else:
-            print("** invalid command **")
-
+            key = "{}.{}".format(args[0], args[1])
+            if key in storage.all():
+                obj = storage.all()[key]
+                print(obj)
+            else:
+                print("** no instance found **")
 
     def do_destroy(self, line):
         """Function to destroy an instance of a class"""
@@ -142,6 +143,24 @@ class HBNBCommand(cmd.Cmd):
             return command, class_name, orig_line
 
         return cmd.Cmd.parseline(self, orig_line)
+
+    # def do_all(self, line):
+    #     """Prints all string representation of all instances"""
+    #     args = line.split()
+    #     all_instances = []
+
+    #     if not args:
+    #         for obj_key, obj in storage.all().items():
+    #             all_instances.append(str(obj))
+    #     elif args[0] not in self.classes:
+    #         print("** class doesn't exist **")
+    #         return
+    #     else:
+    #         class_name = args[0]
+    #         for obj_key, obj in storage.all().items():
+    #             if obj_key.split(".")[0] == class_name:
+    #                 all_instances.append(str(obj))
+    #     print(all_instances)
 
     def do_update(self, line):
         """Update an instance based on the class name and id."""
