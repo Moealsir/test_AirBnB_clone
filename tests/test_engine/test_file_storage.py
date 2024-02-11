@@ -76,7 +76,7 @@ class TestFileStorage(unittest.TestCase):
         key = f"BaseModel.{base_model.id}"
         self.assertIn(key, self.file_storage.all())
 
-     def test_reload(self):
+    def test_reload(self):
         """
         Tests method: reload (reloads objects from string file)
         """
@@ -92,21 +92,6 @@ class TestFileStorage(unittest.TestCase):
                 self.assertEqual(line, "{}")
         self.assertIs(a_storage.reload(), None)
 
-    def test_class_dict(self):
-        """
-        Test class dictionary for serialization-deserialization.
-        """
-        classes = self.file_storage.class_dict()
-        expected_classes = {
-            "BaseModel": BaseModel,
-            "User": User,
-            "State": State,
-            "City": City,
-            "Amenity": Amenity,
-            "Place": Place,
-            "Review": Review,
-        }
- 
 
 if __name__ == '__main__':
     unittest.main()

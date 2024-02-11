@@ -17,7 +17,6 @@ class FileStorage:
     Class for serializing instances to a JSON file
     and deserializingJSON file to instances.
     """
-
     __file_path = "file.json"
     __objects = {}
 
