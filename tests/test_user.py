@@ -1,13 +1,12 @@
 #!/usr/bin/python3
-
 import unittest
 import sys
-sys.path.append('../')
-
 import unittest
-from models.base_model  import BaseModel
+from models.base_model import BaseModel
 from models.user import User
 from datetime import datetime
+sys.path.append('../')
+
 
 class TestUserModel(unittest.TestCase):
 
@@ -52,7 +51,7 @@ class TestUserModel(unittest.TestCase):
         user.password = "pass123"
         user.first_name = "John"
         user.last_name = "Doe"
-        
+
         self.assertEqual(user.email, "test@example.com")
         self.assertEqual(user.password, "pass123")
         self.assertEqual(user.first_name, "John")
@@ -63,7 +62,7 @@ class TestUserModel(unittest.TestCase):
         current_time = datetime.now()
 
         self.assertLessEqual(user.created_at, current_time)
-        
+
         self.assertLessEqual(user.updated_at, current_time)
 
     def test_id_unique(self):
@@ -96,6 +95,7 @@ class TestUserModel(unittest.TestCase):
         user.save()
         updated_at_after = user.updated_at
         self.assertNotEqual(updated_at_before, updated_at_after)
+
 
 if __name__ == '__main__':
     unittest.main()

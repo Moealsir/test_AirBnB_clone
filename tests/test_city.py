@@ -1,20 +1,22 @@
 #!/usr/bin/python3
-
 import unittest
 import sys
-sys.path.append('../')
 from unittest.mock import patch
 import unittest
 from datetime import datetime
 from models.city import City
 from models.base_model import BaseModel
+sys.path.append('../')
+
 
 class TestBaseModel(unittest.TestCase):
     def test_base_model_instance(self):
         model = BaseModel()
         self.assertIsInstance(model, BaseModel)
 
+
 class TestCityModel(unittest.TestCase):
+
     def test_city_inheritance(self):
         city = City()
         self.assertIsInstance(city, BaseModel)
@@ -64,8 +66,10 @@ class TestCityModel(unittest.TestCase):
     def test_city_datetime_format(self):
         city = City()
         city_dict = city.to_dict()
-        self.assertIsNotNone(datetime.strptime(city_dict["created_at"], '%Y-%m-%dT%H:%M:%S.%f'))
-        self.assertIsNotNone(datetime.strptime(city_dict["updated_at"], '%Y-%m-%dT%H:%M:%S.%f'))
+        self.assertIsNotNone(datetime.strptime(
+            city_dict["created_at"], '%Y-%m-%dT%H:%M:%S.%f'))
+        self.assertIsNotNone(datetime.strptime(
+            city_dict["updated_at"], '%Y-%m-%dT%H:%M:%S.%f'))
 
     def test_city_custom_attributes(self):
         city = City()
@@ -74,6 +78,7 @@ class TestCityModel(unittest.TestCase):
         city_dict = city.to_dict()
         self.assertIn("custom_attr", city_dict)
         self.assertEqual(city_dict["custom_attr"], "custom_val")
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,14 +1,12 @@
 #!/usr/bin/python3
 from unittest.mock import patch
 from datetime import datetime
-
-
 import unittest
 import sys
-sys.path.append('../')
 import uuid
 from models.base_model import BaseModel
 from datetime import datetime
+sys.path.append('../')
 
 
 class TestBaseModel(unittest.TestCase):

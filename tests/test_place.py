@@ -2,12 +2,12 @@
 
 import unittest
 import sys
-sys.path.append('../')
 from unittest.mock import patch
 import unittest
 from datetime import datetime
 from models.place import Place
 from models.base_model import BaseModel
+sys.path.append('../')
 
 
 class TestPlace(unittest.TestCase):
@@ -89,6 +89,7 @@ class TestPlace(unittest.TestCase):
         self.assertEqual(self.place.latitude, 33.33)
         self.assertEqual(self.place.longitude, -44.44)
         self.assertEqual(self.place.amenity_ids, ["sauna"])
+
 
 if __name__ == '__main__':
     unittest.main()

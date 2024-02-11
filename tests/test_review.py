@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-
 import unittest
 import sys
-sys.path.append('../')
 from unittest.mock import patch
 import unittest
 from datetime import datetime
 from models.review import Review
 from models.base_model import BaseModel
+sys.path.append('../')
+
 
 class TestReview(unittest.TestCase):
 
@@ -26,12 +26,12 @@ class TestReview(unittest.TestCase):
         self.assertEqual(review.place_id, "")
         self.assertEqual(review.user_id, "")
         self.assertEqual(review.text, "")
-    
+
     def test_id_is_unique(self):
         review1 = Review()
         review2 = Review()
         self.assertNotEqual(review1.id, review2.id)
-    
+
     def test_dates_are_datetime(self):
         review = Review()
         self.assertIsInstance(review.created_at, datetime)
@@ -95,6 +95,7 @@ class TestReview(unittest.TestCase):
         self.assertTrue(hasattr(review, "place_id"))
         self.assertTrue(hasattr(review, "user_id"))
         self.assertTrue(hasattr(review, "text"))
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -2,12 +2,12 @@
 
 import unittest
 import sys
-sys.path.append('../')
 from unittest.mock import patch
 import unittest
-from models.base_model  import BaseModel
+from models.base_model import BaseModel
 from models.state import State
 from datetime import datetime
+sys.path.append('../')
 
 
 class TestState(unittest.TestCase):
@@ -63,6 +63,7 @@ class TestState(unittest.TestCase):
         state = State()
         expected_format = f"[State] ({state.id}) {state.__dict__}"
         self.assertEqual(str(state), expected_format)
+
 
 if __name__ == "__main__":
     unittest.main()
