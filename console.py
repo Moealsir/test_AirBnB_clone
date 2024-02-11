@@ -3,7 +3,13 @@
 import cmd
 from models.base_model import BaseModel
 from models import storage
-from models import user
+from models.user import User
+from models.state import State
+from models.amenity import Amenity
+from models.place import Place
+from models.city import City
+from models.review import Review
+import re
 
 
 class HBNBCommand(cmd.Cmd):
@@ -94,22 +100,65 @@ class HBNBCommand(cmd.Cmd):
                 print("** no instance found **")
 
     def do_all(self, line):
-        """Prints all string representation of all instances"""
+        """Prints all string representation of all instances of a class"""
         args = line.split()
-        all_instances = []
-
-        if not args:
-            for obj_key, obj in storage.all().items():
-                all_instances.append(str(obj))
-        elif args[0] not in self.classes:
-            print("** class doesn't exist **")
-            return
-        else:
+        if len(args) == 1:
             class_name = args[0]
-            for obj_key, obj in storage.all().items():
-                if obj_key.split(".")[0] == class_name:
-                    all_instances.append(str(obj))
-        print(all_instances)
+            if class_name in self.all_classes:
+                all_instances = [str(obj) for obj in storage.all().values() if isinstance(obj, eval(class_name))]
+                print(all_instances)
+            else:
+                print("** class doesn't exist **")
+        else:
+            print("** invalid command **")
+
+
+    def do_count(self, line):
+        """Retrieve the number of instances of a class"""
+        args = line.split()
+        if len(args) == 1:
+            class_name = args[0]
+            if class_name in self.all_classes:
+                count = sum(1 for obj in storage.all().values() if isinstance(obj, eval(class_name)))
+                print(count)
+            else:
+                print("** class doesn't exist **")
+        else:
+            print("** invalid command **")
+
+    def parseline(self, line):
+        """Parse the line to handle <class name>.all() and <class name>.count()"""
+        orig_line = line
+        line = line.strip()
+        class_name = None
+        command = None
+
+        # Check if the line matches the pattern <class name>.all() or <class name>.count()
+        match = re.match(r'^(\w+)\.(all|count)\(\)$', line)
+        if match:
+            class_name = match.group(1)
+            command = match.group(2)
+            return command, class_name, orig_line
+
+        return cmd.Cmd.parseline(self, orig_line)
+
+    # def do_all(self, line):
+    #     """Prints all string representation of all instances"""
+    #     args = line.split()
+    #     all_instances = []
+
+    #     if not args:
+    #         for obj_key, obj in storage.all().items():
+    #             all_instances.append(str(obj))
+    #     elif args[0] not in self.classes:
+    #         print("** class doesn't exist **")
+    #         return
+    #     else:
+    #         class_name = args[0]
+    #         for obj_key, obj in storage.all().items():
+    #             if obj_key.split(".")[0] == class_name:
+    #                 all_instances.append(str(obj))
+    #     print(all_instances)
 
     def do_update(self, line):
         """Update an instance based on the class name and id."""
