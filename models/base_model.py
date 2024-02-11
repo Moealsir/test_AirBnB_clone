@@ -6,7 +6,6 @@ import models
 
 
 class BaseModel:
-
     """BaseMode  is the base class of all other classes in our application"""
 
     def __init__(self, *args, **kwargs):
