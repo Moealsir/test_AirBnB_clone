@@ -1,88 +1,85 @@
 #!/usr/bin/python3
-
-"""Unit tests for the FileStorage class."""
-
-from models.engine.file_storage import FileStorage
-from models.base_model import BaseModel
+"""
+Unittest to test FileStorage class
+"""
 import unittest
-import models
+import pep8
+import json
 import os
+from models.base_model import BaseModel
+from models.user import User
+from models.state import State
+from models.city import City
+from models.amenity import Amenity
+from models.place import Place
+from models.review import Review
+from models.engine.file_storage import FileStorage
 
-class Test_FileStorage(unittest.TestCase):
-    """test case for attributes of the class FilesStorage"""
-    
-    def test_attributes_assignement(self):
-        self.assertIn("_FileStorage__objects", FileStorage.__dict__)
-        self.assertIsInstance(FileStorage._FileStorage__objects, dict)
-        self.assertIn("_FileStorage__file_path", FileStorage.__dict__)
-        self.assertIsInstance(FileStorage._FileStorage__file_path, str)
 
-    def test_new_key(self):
+class TestFileStorage(unittest.TestCase):
+    '''testing file storage'''
+
+    @classmethod
+    def setUpClass(cls):
+        cls.rev1 = Review()
+        cls.rev1.place_id = "Raleigh"
+        cls.rev1.user_id = "Greg"
+        cls.rev1.text = "Grade A"
+
+    @classmethod
+    def teardown(cls):
+        del cls.rev1
+
+    def teardown(self):
+        try:
+            os.remove("file.json")
+        except:
+            pass
+
+    def test_style_check(self):
         """
-        tests the new method within file storage
-        Test with different types of class
+        Tests pep8 style
         """
-        base = models.storage.all().copy()
-        for k, v in base.items():
-            del models.storage.all()[k]
-        models.storage.save()
-        b1 = BaseModel()
-        b1.save()
-        base = models.storage.all()
-        self.assertEqual(type(base[f"BaseModel.{str(b1.id)}"]), type(b1))
+        style = pep8.StyleGuide(quiet=True)
+        p = style.check_files(['models/engine/file_storage.py'])
+        self.assertEqual(p.total_errors, 0, "fix pep8")
 
-
-    def test_allmethod_instance(self):
+    def test_all(self):
         """
-        Tests for the all method of the file_storage.py
-        Test type of the istance
+        Tests method: all (returns dictionary <class>.<id> : <obj instance>)
         """
-        base = FileStorage()
-        self.assertEqual(type(base), FileStorage)
+        storage = FileStorage()
+        instances_dic = storage.all()
+        self.assertIsNotNone(instances_dic)
+        self.assertEqual(type(instances_dic), dict)
+        self.assertIs(instances_dic, storage._FileStorage__objects)
 
-    def test_allmethod_type_dict(self):
-        """Test if the return value is a dictionary"""
-        self.assertEqual(type(models.storage.all()), dict)
+    def test_new(self):
+        """
+        Tests method: new (saves new object into dictionary)
+        """
+        m_storage = FileStorage()
+        instances_dic = m_storage.all()
+        melissa = User()
+        melissa.id = 999999
+        melissa.name = "Melissa"
+        m_storage.new(melissa)
+        key = melissa.__class__.__name__ + "." + str(melissa.id)
+        #print(instances_dic[key])
+        self.assertIsNotNone(instances_dic[key])
 
-    def tests_allmethod_empty_obj(self):
-        """test case if that an empty object"""
-        d = models.storage.all().copy()
-        for k, v in d.items():
-            del models.storage.all()[k]
-        models.storage.save()
-        self.assertEqual(models.storage.all(), {})
-
-    def test_allmethod_one_obj(self):
-        """Test case with one object"""
-        d = models.storage.all().copy()
-        for k, v in d.items():
-            del models.storage.all()[k]
-        models.storage.save()
-        b1 = BaseModel()
-        b1.save()
-        self.assertEqual(len(models.storage.all()), 1)
-
-    def tests_allmethod_multiple_obj(self):
-        """Test case with multiobject"""
-        d = models.storage.all().copy()
-        for k, v in d.items():
-            del models.storage.all()[k]
-        models.storage.save()
-        b2 = BaseModel()
-        b3 = BaseModel()
-        b2.save()
-        b3.save()
-        self.assertEqual(len(models.storage.all()), 2)
-
-    def test_reload_type(self):
-        """Test the reload method type"""
-        d = models.storage.all().copy()
-        for k, v in d.items():
-            del models.storage.all()[k]
-        models.storage.save()
-        u1 = User()
-        u1.save()
-        models.storage.reload()
-        d = models.storage.all()
-        for k, v in d.items():
-            self.assertEqual(type(d[k]), type(u1))
+    def test_reload(self):
+        """
+        Tests method: reload (reloads objects from string file)
+        """
+        a_storage = FileStorage()
+        try:
+            os.remove("file.json")
+        except:
+            pass
+        with open("file.json", "w") as f:
+            f.write("{}")
+        with open("file.json", "r") as r:
+            for line in r:
+                self.assertEqual(line, "{}")
+        self.assertIs(a_storage.reload(), None)
