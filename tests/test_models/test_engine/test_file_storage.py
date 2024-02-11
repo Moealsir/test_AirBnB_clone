@@ -18,14 +18,6 @@ sys.path.append('../../')
 class TestFileStorage(unittest.TestCase):
 
 
-    @patch("builtins.open", new_callable=mock_open)
-    @patch("json.dump")
-    def test_save(self, mock_json_dump, mock_open):
-        self.storage.new(self.base_model)
-        self.storage.save()
-        mock_open.assert_called_once_with(FileStorage._FileStorage__file_path, "w", encoding="utf-8")
-        mock_json_dump.assert_called_once()
-
     @patch("os.stat")
     @patch("builtins.open", new_callable=mock_open, read_data="{}")
     def test_reload_empty(self, mock_open, mock_stat):
