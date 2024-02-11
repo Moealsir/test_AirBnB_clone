@@ -99,18 +99,18 @@ class HBNBCommand(cmd.Cmd):
             else:
                 print("** no instance found **")
 
-    def do_all(self, line):
-        """Prints all string representation of all instances of a class"""
-        args = line.split()
-        if len(args) == 1:
-            class_name = args[0]
-            if class_name in self.all_classes:
-                all_instances = [str(obj) for obj in storage.all().values() if isinstance(obj, eval(class_name))]
-                print(all_instances)
-            else:
-                print("** class doesn't exist **")
-        else:
-            print("** invalid command **")
+    # def do_all(self, line):
+    #     """Prints all string representation of all instances of a class"""
+    #     args = line.split()
+    #     if len(args) == 1:
+    #         class_name = args[0]
+    #         if class_name in self.all_classes:
+    #             all_instances = [str(obj) for obj in storage.all().values() if isinstance(obj, eval(class_name))]
+    #             print(all_instances)
+    #         else:
+    #             print("** class doesn't exist **")
+    #     else:
+    #         print("** invalid command **")
 
     def do_count(self, line):
         """Retrieve the number of instances of a class"""
@@ -141,23 +141,23 @@ class HBNBCommand(cmd.Cmd):
 
         return cmd.Cmd.parseline(self, orig_line)
 
-    # def do_all(self, line):
-    #     """Prints all string representation of all instances"""
-    #     args = line.split()
-    #     all_instances = []
+    def do_all(self, line):
+        """Prints all string representation of all instances"""
+        args = line.split()
+        all_instances = []
 
-    #     if not args:
-    #         for obj_key, obj in storage.all().items():
-    #             all_instances.append(str(obj))
-    #     elif args[0] not in self.classes:
-    #         print("** class doesn't exist **")
-    #         return
-    #     else:
-    #         class_name = args[0]
-    #         for obj_key, obj in storage.all().items():
-    #             if obj_key.split(".")[0] == class_name:
-    #                 all_instances.append(str(obj))
-    #     print(all_instances)
+        if not args:
+            for obj_key, obj in storage.all().items():
+                all_instances.append(str(obj))
+        elif args[0] not in self.classes:
+            print("** class doesn't exist **")
+            return
+        else:
+            class_name = args[0]
+            for obj_key, obj in storage.all().items():
+                if obj_key.split(".")[0] == class_name:
+                    all_instances.append(str(obj))
+        print(all_instances)
 
     def do_update(self, line):
         """Update an instance based on the class name and id."""
