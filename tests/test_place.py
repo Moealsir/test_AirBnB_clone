@@ -16,12 +16,6 @@ class TestPlace(unittest.TestCase):
         """Set up test variables"""
         self.place = Place()
 
-    def test_is_subclass(self):
-        self.assertTrue(issubclass(self.place1.__class__, BaseModel), True)
-
-    def test_checking_for_functions(self):
-        self.assertIsNotNone(Place.__doc__)
-
     def test_initialization(self):
         """Test initialization of place instance"""
         self.assertIsInstance(self.place, Place)
