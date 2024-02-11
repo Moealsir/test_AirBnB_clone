@@ -56,16 +56,16 @@ class TestUser(unittest.TestCase):
         second_update_time = user.updated_at
         self.assertNotEqual(first_update_time, second_update_time)
 
-    # def test_user_to_dict_contains_correct_keys(self):
-    #     user = User()
-    #     user_dict = user.to_dict()
-    #     # self.assertIn("email", user_dict)
-    #     self.assertIn("password", user_dict)
-    #     self.assertIn("first_name", user_dict)
-    #     self.assertIn("last_name", user_dict)
-    #     self.assertIn("id", user_dict)
-    #     self.assertIn("created_at", user_dict)
-    #     self.assertIn("updated_at", user_dict)
+    def test_user_to_dict_contains_correct_keys(self):
+        user = User()
+        user_dict = user.to_dict()
+        self.assertIn("email", user_dict)
+        self.assertIn("password", user_dict)
+        self.assertIn("first_name", user_dict)
+        self.assertIn("last_name", user_dict)
+        self.assertIn("id", user_dict)
+        self.assertIn("created_at", user_dict)
+        self.assertIn("updated_at", user_dict)
 
     def test_user_to_dict_values(self):
         user = User()
