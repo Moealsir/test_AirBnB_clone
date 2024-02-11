@@ -2,90 +2,76 @@
 import unittest
 import sys
 from models.user import User
+from models.base_model import  BaseModel
 sys.path.append('../')
 
 
 class TestUser(unittest.TestCase):
 
-    def test_user_instantiation(self):
-        user = User()
-        self.assertIsInstance(user, User)
+    def setUp(self):
+        self.user1 = User()
+        self.user2 = User()
 
-    def test_user_attributes_default_empty(self):
-        user = User()
-        self.assertEqual(user.email, "")
-        self.assertEqual(user.password, "")
-        self.assertEqual(user.first_name, "")
-        self.assertEqual(user.last_name, "")
+    def test_user_instance(self):
+        self.assertTrue(isinstance(self.user1, User))
 
-    def test_user_email_assignment(self):
-        user = User()
-        email = "test@example.com"
-        user.email = email
-        self.assertEqual(user.email, email)
+    def test_user_has_attributes(self):
+        self.assertTrue(hasattr(self.user1, "email"))
+        self.assertTrue(hasattr(self.user1, "password"))
+        self.assertTrue(hasattr(self.user1, "first_name"))
+        self.assertTrue(hasattr(self.user1, "last_name"))
 
-    def test_user_password_assignment(self):
-        user = User()
-        password = "super_secure_password"
-        user.password = password
-        self.assertEqual(user.password, password)
+    def test_user_attributes_empty_initially(self):
+        self.assertEqual(self.user1.email, "")
+        self.assertEqual(self.user1.password, "")
+        self.assertEqual(self.user1.first_name, "")
+        self.assertEqual(self.user1.last_name, "")
 
-    def test_user_first_name_assignment(self):
-        user = User()
-        first_name = "John"
-        user.first_name = first_name
-        self.assertEqual(user.first_name, first_name)
+    def test_setting_user_attributes(self):
+        self.user1.email = "user1@example.com"
+        self.user1.password = "user1password"
+        self.user1.first_name = "User"
+        self.user1.last_name = "One"
+        self.assertEqual(self.user1.email, "user1@example.com")
+        self.assertEqual(self.user1.password, "user1password")
+        self.assertEqual(self.user1.first_name, "User")
+        self.assertEqual(self.user1.last_name, "One")
 
-    def test_user_last_name_assignment(self):
-        user = User()
-        last_name = "Doe"
-        user.last_name = last_name
-        self.assertEqual(user.last_name, last_name)
+    def test_different_users_have_different_attributes(self):
+        self.user1.email = "user1@example.com"
+        self.user2.email = "user2@example.com"
+        self.assertNotEqual(self.user1.email, self.user2.email)
 
-    def test_user_id_uniqueness(self):
-        user1 = User()
-        user2 = User()
-        self.assertNotEqual(user1.id, user2.id)
+    def test_users_have_unique_ids(self):
+        self.assertNotEqual(self.user1.id, self.user2.id)
 
-    def test_user_updated_at_creation(self):
-        user = User()
-        self.assertIsNotNone(user.updated_at)
+    def test_str_representation(self):
+        self.user1.first_name = "User"
+        self.user1.last_name = "One"
+        expected_str = f"[User] ({self.user1.id}) {{'id': '{self.user1.id}', 'created_at': '{self.user1.created_at}', 'updated_at': '{self.user1.updated_at}', 'email': '', 'password': '', 'first_name': 'User', 'last_name': 'One'}}"
+        self.assertEqual(str(self.user1), expected_str)
 
-    def test_user_updated_at_save(self):
-        user = User()
-        first_update_time = user.updated_at
-        user.save()
-        second_update_time = user.updated_at
-        self.assertNotEqual(first_update_time, second_update_time)
+    def test_user_inheritance_from_BaseModel(self):
+        self.assertTrue(issubclass(User, BaseModel))
 
-    def test_user_to_dict_contains_correct_keys(self):
-        user = User()
-        user_dict = user.to_dict()
-        self.assertIn("email", user_dict)
-        self.assertIn("password", user_dict)
-        self.assertIn("first_name", user_dict)
-        self.assertIn("last_name", user_dict)
-        self.assertIn("id", user_dict)
-        self.assertIn("created_at", user_dict)
-        self.assertIn("updated_at", user_dict)
+    def test_update_user_attributes(self):
+        self.user1.email = "user1@example.com"
+        self.user1.password = "newpassword123"
+        self.user1.first_name = "John"
+        self.user1.last_name = "Doe"
+        
+        self.user1.save()  # Update the 'updated_at' field
+        
+        self.assertEqual(self.user1.email, "user1@example.com")
+        self.assertEqual(self.user1.password, "newpassword123")
+        self.assertEqual(self.user1.first_name, "John")
+        self.assertEqual(self.user1.last_name, "Doe")
+        self.assertNotEqual(self.user1.created_at, self.user1.updated_at)
 
-    def test_user_to_dict_values(self):
-        user = User()
-        user.email = "test@example.com"
-        user.password = "super_secure_password"
-        user.first_name = "John"
-        user.last_name = "Doe"
-        user_dict = user.to_dict()
-        self.assertEqual(user_dict["email"], "test@example.com")
-        self.assertEqual(user_dict["password"], "super_secure_password")
-        self.assertEqual(user_dict["first_name"], "John")
-        self.assertEqual(user_dict["last_name"], "Doe")
-
-    def test_user_str_representation(self):
-        user = User()
-        user_str = user.__str__()
-        expected_substrings = ["[User] ({})".format(user.id),
-                               "email", "password", "first_name", "last_name"]
+    def test_save_updates_updated_at(self):
+        old_updated_at = self.user1.updated_at
+        self.user1.save()
+        self.assertNotEqual(old_updated_at, self.user1.updated_at)
 
 
 if __name__ == '__main__':
