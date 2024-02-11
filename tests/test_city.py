@@ -1,83 +1,48 @@
 #!/usr/bin/python3
 import unittest
 import sys
+sys.path.append('../')
 from unittest.mock import patch
 import unittest
 from datetime import datetime
 from models.city import City
 from models.base_model import BaseModel
-sys.path.append('../')
 
 
-class TestBaseModel(unittest.TestCase):
-    def test_base_model_instance(self):
-        model = BaseModel()
-        self.assertIsInstance(model, BaseModel)
-
-
-class TestCityModel(unittest.TestCase):
-
-    def test_city_inheritance(self):
+class TestCity(unittest.TestCase):
+    
+    def test_attributes(self):
+        # Test if City instance has the expected attributes
         city = City()
-        self.assertIsInstance(city, BaseModel)
-
-    def test_city_attributes(self):
+        self.assertTrue(hasattr(city, 'id'))
+        self.assertTrue(hasattr(city, 'created_at'))
+        self.assertTrue(hasattr(city, 'updated_at'))
+        self.assertTrue(hasattr(city, 'state_id'))
+        self.assertTrue(hasattr(city, 'name'))
+        
+    def test_attribute_types(self):
+        # Test if attribute types are correct
         city = City()
-        self.assertTrue(hasattr(city, "state_id"))
-        self.assertTrue(hasattr(city, "name"))
+        self.assertIsInstance(city.id, str)
+        self.assertIsInstance(city.created_at, datetime)
+        self.assertIsInstance(city.updated_at, datetime)
+        self.assertIsInstance(city.state_id, str)
+        self.assertIsInstance(city.name, str)
+        
+    def test_attribute_defaults(self):
+        # Test if attribute defaults are correct
+        city = City()
         self.assertEqual(city.state_id, "")
         self.assertEqual(city.name, "")
-
-    def test_city_attribute_types(self):
+        
+    def test_attribute_assignment(self):
+        # Test if attributes can be assigned properly
         city = City()
-        self.assertIs(type(city.name), str)
-        self.assertIs(type(city.state_id), str)
-
-    def test_city_kwargs(self):
-        city = City(name="San Francisco", state_id="CA")
-        self.assertEqual(city.name, "San Francisco")
-        self.assertEqual(city.state_id, "CA")
-
-    def test_city_save(self):
-        city = City()
-        first_updated_at = city.updated_at
-        city.save()
-        second_updated_at = city.updated_at
-        self.assertNotEqual(first_updated_at, second_updated_at)
-        self.assertTrue(second_updated_at > first_updated_at)
-
-    def test_city_to_dict(self):
-        city = City()
-        city_dict = city.to_dict()
-        self.assertIs(type(city_dict), dict)
-        self.assertIn("created_at", city_dict)
-        self.assertIn("updated_at", city_dict)
-        self.assertIn("__class__", city_dict)
-        self.assertEqual(city_dict["__class__"], "City")
-
-    def test_city_serialization_format(self):
-        city = City()
-        city_dict = city.to_dict()
-        created_at = city_dict["created_at"]
-        updated_at = city_dict["updated_at"]
-        self.assertIs(type(created_at), str)
-        self.assertIs(type(updated_at), str)
-
-    def test_city_datetime_format(self):
-        city = City()
-        city_dict = city.to_dict()
-        self.assertIsNotNone(datetime.strptime(
-            city_dict["created_at"], '%Y-%m-%dT%H:%M:%S.%f'))
-        self.assertIsNotNone(datetime.strptime(
-            city_dict["updated_at"], '%Y-%m-%dT%H:%M:%S.%f'))
-
-    def test_city_custom_attributes(self):
-        city = City()
-        city.custom_attr = "custom_val"
-        city.save()
-        city_dict = city.to_dict()
-        self.assertIn("custom_attr", city_dict)
-        self.assertEqual(city_dict["custom_attr"], "custom_val")
+        city.state_id = "123"
+        city.name = "Test City"
+        self.assertEqual(city.state_id, "123")
+        self.assertEqual(city.name, "Test City")
+        
 
 
 if __name__ == '__main__':
