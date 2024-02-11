@@ -112,7 +112,6 @@ class HBNBCommand(cmd.Cmd):
         else:
             print("** invalid command **")
 
-
     def do_count(self, line):
         """Retrieve the number of instances of a class"""
         args = line.split()
