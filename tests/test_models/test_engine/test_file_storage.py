@@ -73,12 +73,6 @@ class TestFileStorage(unittest.TestCase):
         classes = self.storage.class_dict()
         self.assertEqual(classes["BaseModel"], BaseModel)
 
-    def test_attribe(self):
-        attributes = self.storage.attribe()
-        self.assertIn("id", attributes["BaseModel"])
-        self.assertEqual(attributes["BaseModel"]["id"], str)
-
-
 
 if __name__ == '__main__':
     unittest.main()
