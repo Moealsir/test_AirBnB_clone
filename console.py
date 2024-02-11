@@ -105,7 +105,7 @@ class HBNBCommand(cmd.Cmd):
         if len(args) == 1:
             class_name = args[0]
             if class_name in self.all_classes:
-                all_instances = [str(obj) for obj in storage.all().values() if isinstance(obj,eval(class_name))]
+                all_instances = [str(obj) for obj in storage.all().values() if isinstance(obj, eval(class_name))]
                 print(all_instances)
             else:
                 print("** class doesn't exist **")
@@ -119,9 +119,7 @@ class HBNBCommand(cmd.Cmd):
         if len(args) == 1:
             class_name = args[0]
             if class_name in self.all_classes:
-                count = sum(
-                    1 for obj in storage.all().values() if isinstance(
-                        obj, eval(class_name)))
+                count = sum(1 for obj in storage.all().values() if isinstance(obj, eval(class_name)))
                 print(count)
             else:
                 print("** class doesn't exist **")
