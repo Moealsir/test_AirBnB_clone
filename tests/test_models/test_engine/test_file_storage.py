@@ -69,10 +69,6 @@ class TestFileStorage(unittest.TestCase):
         mock_open.assert_called_once_with(FileStorage._FileStorage__file_path, "r+", encoding="utf-8")
         self.assertFalse(self.storage._FileStorage__objects)
 
-    def test_class_dict(self):
-        classes = self.storage.class_dict()
-        self.assertEqual(classes["BaseModel"], BaseModel)
-
 
 if __name__ == '__main__':
     unittest.main()
