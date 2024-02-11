@@ -1,87 +1,97 @@
-"""whew"""
+#!/usr/bin/python3
+
+""" Defines a class TestUser for User module. """
+
 import unittest
-import sys
 from models.user import User
 from models.base_model import BaseModel
-sys.path.append('../')
+import datetime
 
 
-class TestUser(unittest.TestCase):
-    """whew"""
+class Test_User(unittest.TestCase):
+    """Defines tests for User Class"""
 
-    def setUp(self):
-        """whew"""
-        self.user1 = User()
-        self.user2 = User()
+    @classmethod
+    def setUp(cls):
+        """Runs for each test case.
+        """
+        cls.user1 = User()
+        cls.user1.first_name = "wad saif"
 
-    def test_user_instance(self):
-        """whew"""
-        self.assertTrue(isinstance(self.user1, User))
+    @classmethod
+    def tearDown(cls):
+        """Cleans up after each test.
+        """
+        del cls.user1
 
-    def test_user_has_attributes(self):
-        """whew"""
-        self.assertTrue(hasattr(self.user1, "email"))
-        self.assertTrue(hasattr(self.user1, "password"))
-        self.assertTrue(hasattr(self.user1, "first_name"))
-        self.assertTrue(hasattr(self.user1, "last_name"))
+    def test_class_exists(self):
+        """Tests if class exists.
+        """
+        result = "<class 'models.user.User'>"
+        self.assertEqual(str(type(self.user1)), result)
 
-    def test_user_attributes_empty_initially(self):
-        """whew"""
-        self.assertEqual(self.user1.email, "")
-        self.assertEqual(self.user1.password, "")
-        self.assertEqual(self.user1.first_name, "")
-        self.assertEqual(self.user1.last_name, "")
+    def test_inheritance(self):
+        """Test if User is a subclass and instace of BaseModel.
+        """
+        self.assertIsInstance(self.user1, User)
+        self.assertEqual(type(self.user1), User)
+        self.assertEqual(issubclass(self.user1.__class__, BaseModel), True)
 
-    def test_setting_user_attributes(self):
-        """whew"""
-        self.user1.email = "user1@example.com"
-        self.user1.password = "user1password"
-        self.user1.first_name = "User"
-        self.user1.last_name = "One"
-        self.assertEqual(self.user1.email, "user1@example.com")
-        self.assertEqual(self.user1.password, "user1password")
-        self.assertEqual(self.user1.first_name, "User")
-        self.assertEqual(self.user1.last_name, "One")
+    def test_types(self):
+        """Test if attributes type is correct.
+        """
+        self.assertIsInstance(self.user1.id, str)
+        self.assertEqual(type(self.user1.id), str)
+        self.assertIsInstance(self.user1.created_at, datetime.datetime)
+        self.assertIsInstance(self.user1.updated_at, datetime.datetime)
+        self.assertIsInstance(self.user1.first_name, str)
+        self.assertIsInstance(self.user1.last_name, str)
+        self.assertIsInstance(self.user1.email, str)
+        self.assertIsInstance(self.user1.password, str)
 
-    def test_different_users_have_different_attributes(self):
-        """whew"""
-        self.user1.email = "user1@example.com"
-        self.user2.email = "user2@example.com"
-        self.assertNotEqual(self.user1.email, self.user2.email)
-
-    def test_users_have_unique_ids(self):
-        """whew"""
-        self.assertNotEqual(self.user1.id, self.user2.id)
-
-    def test_str_representation(self):
-        """whew"""
-        self.user1.first_name = "User"
-        self.user1.last_name = "One"
-
-    def test_user_inheritance_from_BaseModel(self):
-        """whew"""
-        self.assertTrue(issubclass(User, BaseModel))
-
-    def test_update_user_attributes(self):
-        """whew"""
-        self.user1.email = "user1@example.com"
-        self.user1.password = "newpassword123"
-        self.user1.first_name = "John"
-        self.user1.last_name = "Doe"
+    def test_save_method(self):
+        """Test case of save method is working correctly after update."""
 
         self.user1.save()
-
-        self.assertEqual(self.user1.email, "user1@example.com")
-        self.assertEqual(self.user1.password, "newpassword123")
-        self.assertEqual(self.user1.first_name, "John")
-        self.assertEqual(self.user1.last_name, "Doe")
         self.assertNotEqual(self.user1.created_at, self.user1.updated_at)
 
-    def test_save_updates_updated_at(self):
-        """whew"""
-        old_updated_at = self.user1.updated_at
-        self.user1.save()
-        self.assertNotEqual(old_updated_at, self.user1.updated_at)
+    def test_func(self):
+        """Test if User module is documented."""
+
+        self.assertIsNotNone(User.__doc__)
+
+    def test_has_attr(self):
+        """Test if expected attributes exist."""
+
+        self.assertTrue(hasattr(self.user1, 'id'))
+        self.assertTrue(hasattr(self.user1, 'created_at'))
+        self.assertTrue(hasattr(self.user1, 'updated_at'))
+        self.assertTrue(hasattr(self.user1, 'first_name'))
+        self.assertTrue(hasattr(self.user1, 'last_name'))
+        self.assertTrue(hasattr(self.user1, 'email'))
+        self.assertTrue(hasattr(self.user1, 'password'))
+
+    def test_to_dict(self):
+        """test case of to_dict method is working correctly."""
+
+        my_model_json = self.user1.to_dict()
+        self.assertEqual(str, type(my_model_json['created_at']))
+        self.assertEqual(my_model_json['created_at'],
+                         self.user1.created_at.isoformat())
+        self.assertEqual(datetime.datetime, type(self.user1.created_at))
+        self.assertEqual(my_model_json['__class__'],
+                         self.user1.__class__.__name__)
+        self.assertEqual(my_model_json['id'], self.user1.id)
+
+    def test_unq_id(self):
+        """Test case of each instance is created with a unique ID."""
+
+        user2 = self.user1.__class__()
+        user3 = self.user1.__class__()
+        user4 = self.user1.__class__()
+        self.assertNotEqual(self.user1.id, user2.id)
+        self.assertNotEqual(self.user1.id, user3.id)
+        self.assertNotEqual(self.user1.id, user4.id)
 
 
 if __name__ == '__main__':
