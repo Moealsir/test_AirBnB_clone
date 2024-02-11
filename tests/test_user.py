@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 import unittest
 import sys
-sys.path.append('../')
 from models.user import User
+sys.path.append('../')
+
+
 class TestUser(unittest.TestCase):
 
     def test_user_instantiation(self):
@@ -82,8 +84,8 @@ class TestUser(unittest.TestCase):
     def test_user_str_representation(self):
         user = User()
         user_str = user.__str__()
-        expected_substrings = ["[User] ({})".format(user.id), "email", "password", "first_name", "last_name"]
-
+        expected_substrings = ["[User] ({})".format(user.id),
+                               "email", "password", "first_name", "last_name"]
 
 
 if __name__ == '__main__':

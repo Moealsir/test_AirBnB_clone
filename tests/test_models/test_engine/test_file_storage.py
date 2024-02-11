@@ -14,8 +14,6 @@ import json
 import os
 from io import StringIO
 
-# The actual code to be tested is assumed to be in a file named storage.py
-
 
 class TestFileStorage(unittest.TestCase):
 
