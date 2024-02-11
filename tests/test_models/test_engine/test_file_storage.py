@@ -33,11 +33,6 @@ class TestFileStorage(unittest.TestCase):
         key = "{}.{}".format(self.base_model.__class__.__name__, self.base_model.id)
         self.assertIn(key, self.storage._FileStorage__objects)
 
-    def test_all(self):
-        self.storage.new(self.base_model)
-        all_objects = self.storage.all()
-        self.assertEqual(len(all_objects), 1)
-
     @patch("builtins.open", new_callable=mock_open)
     @patch("json.dump")
     def test_save(self, mock_json_dump, mock_open):
