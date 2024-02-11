@@ -1,5 +1,4 @@
 import sys
-sys.path.append('../../')
 import unittest
 from models.engine.file_storage import FileStorage
 from unittest.mock import patch, mock_open
@@ -13,6 +12,7 @@ from models.review import Review
 import json
 import os
 from io import StringIO
+sys.path.append('../../')
 
 
 class TestFileStorage(unittest.TestCase):
