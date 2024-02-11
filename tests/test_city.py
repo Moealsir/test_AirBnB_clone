@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 import unittest
 import sys
 from unittest.mock import patch
