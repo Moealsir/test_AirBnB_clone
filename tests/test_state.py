@@ -1,22 +1,69 @@
-import sys
+#!/usr/bin/python3
+
 import unittest
-from models.engine.file_storage import FileStorage
-from unittest.mock import patch, mock_open
+import sys
+from unittest.mock import patch
+import unittest
 from models.base_model import BaseModel
-from models.user import User
 from models.state import State
-from models.city import City
-from models.amenity import Amenity
-from models.place import Place
-from models.review import Review
-import json
-import os
-from io import StringIO
+from datetime import datetime
 sys.path.append('../')
 
 
 class TestState(unittest.TestCase):
 
+    def test_state_inheritance(self):
+        self.assertTrue(issubclass(State, BaseModel))
 
-if __name__ == '__main__':
+    def test_state_attributes(self):
+        state = State()
+        self.assertTrue(hasattr(state, "id"))
+        self.assertTrue(hasattr(state, "created_at"))
+        self.assertTrue(hasattr(state, "updated_at"))
+        self.assertTrue(hasattr(state, "name"))
+        self.assertEqual(state.name, "")
+
+    def test_state_attribute_type(self):
+        state = State()
+        self.assertIsInstance(state.id, str)
+        self.assertIsInstance(state.created_at, datetime)
+        self.assertIsInstance(state.updated_at, datetime)
+        self.assertIsInstance(state.name, str)
+
+    @patch('models.state.BaseModel.save')
+    def test_state_save(self, mock_save):
+        state = State()
+        state.save()
+        mock_save.assert_called_once()
+
+    @patch('models.state.BaseModel.to_dict')
+    def test_state_to_dict(self, mock_to_dict):
+        state = State()
+        state.to_dict()
+        mock_to_dict.assert_called_once()
+
+    def test_state_init_no_args(self):
+        state = State()
+        self.assertIsInstance(state, State)
+
+    def test_state_init_kwargs(self):
+        kwargs = {
+            "id": "1234",
+            "created_at": datetime.utcnow().isoformat(),
+            "updated_at": datetime.utcnow().isoformat(),
+            "name": "California"
+        }
+        state = State(**kwargs)
+        for key, value in kwargs.items():
+            if key in ["created_at", "updated_at"]:
+                value = datetime.strptime(value, '%Y-%m-%dT%H:%M:%S.%f')
+            self.assertEqual(getattr(state, key), value)
+
+    def test_state_str(self):
+        state = State()
+        expected_format = f"[State] ({state.id}) {state.__dict__}"
+        self.assertEqual(str(state), expected_format)
+
+
+if __name__ == "__main__":
     unittest.main()

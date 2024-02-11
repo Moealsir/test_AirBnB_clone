@@ -32,6 +32,50 @@ class HBNBCommand(cmd.Cmd):
         self.objects = storage.all()
         storage.reload()
 
+    def default(self, line):
+        """Handle unrecognized commands"""
+        args = line.split('(')
+        if len(args) != 2:
+            print("** invalid command **")
+            return
+
+        cmd_args = args[1].split(')')[0]
+        cmd_name = args[0].strip()
+
+        if not cmd_args:
+            print("** invalid command **")
+            return
+
+        class_name, action = cmd_name.split('.')
+
+        if class_name not in self.all_classes:
+            print("** class doesn't exist **")
+            return
+
+        instance_id = None
+        update_dict = None
+
+        if action == 'show':
+            instance_id = cmd_args.strip().strip('"')
+            self.do_show(f"{class_name} {instance_id}")
+
+        elif action == 'destroy':
+            instance_id = cmd_args.strip().strip('"')
+            self.do_destroy(f"{class_name} {instance_id}")
+
+        elif action == 'update':
+            cmd_args = cmd_args.split(',', 1)
+            if len(cmd_args) != 2:
+                print("** invalid command **")
+                return
+            instance_id = cmd_args[0].strip().strip('"')
+            update_dict = eval(cmd_args[1].strip())
+            self.do_update(f"{class_name} {instance_id}", update_dict)
+
+        else:
+            print("** invalid command **")
+
+
     def emptyline(self):
         """empty input"""
         pass

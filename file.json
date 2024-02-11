@@ -1,0 +1,32 @@
+{
+  "User.02138232-1c95-4ed4-907b-080a4ae9f70e": {
+    "id": "02138232-1c95-4ed4-907b-080a4ae9f70e",
+    "created_at": "2024-02-11T17:47:22.638200",
+    "updated_at": "2024-02-11T17:47:22.638256",
+    "__class__": "User"
+  },
+  "BaseModel.ce84c7c2-d84b-4d94-b7c2-80554ab34111": {
+    "id": "ce84c7c2-d84b-4d94-b7c2-80554ab34111",
+    "created_at": "2024-02-11T17:47:34.349672",
+    "updated_at": "2024-02-11T17:47:34.349682",
+    "__class__": "BaseModel"
+  },
+  "State.b6a8a382-8b13-4d5b-9a8d-5234735776cb": {
+    "id": "b6a8a382-8b13-4d5b-9a8d-5234735776cb",
+    "created_at": "2024-02-11T17:47:48.284451",
+    "updated_at": "2024-02-11T17:47:48.284464",
+    "__class__": "State"
+  },
+  "State.89cfa29f-ac25-4b8a-8ea9-503aa2992f40": {
+    "id": "89cfa29f-ac25-4b8a-8ea9-503aa2992f40",
+    "created_at": "2024-02-11T17:47:52.787541",
+    "updated_at": "2024-02-11T17:47:52.787549",
+    "__class__": "State"
+  },
+  "State.f99ceff8-7a5d-492e-8dab-63efcb65d998": {
+    "id": "f99ceff8-7a5d-492e-8dab-63efcb65d998",
+    "created_at": "2024-02-11T17:47:53.674229",
+    "updated_at": "2024-02-11T17:47:53.674238",
+    "__class__": "State"
+  }
+}
