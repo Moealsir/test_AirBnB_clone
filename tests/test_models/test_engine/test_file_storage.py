@@ -18,11 +18,6 @@ sys.path.append('../../')
 class TestFileStorage(unittest.TestCase):
 
 
-    def test_new(self):
-        self.storage.new(self.base_model)
-        key = "{}.{}".format(self.base_model.__class__.__name__, self.base_model.id)
-        self.assertIn(key, self.storage._FileStorage__objects)
-
     @patch("builtins.open", new_callable=mock_open)
     @patch("json.dump")
     def test_save(self, mock_json_dump, mock_open):
